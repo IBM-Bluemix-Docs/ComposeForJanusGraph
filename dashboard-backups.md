@@ -25,7 +25,7 @@ Daily backups of your database are automatically scheduled. To view your existin
 1. Navigate to the _Manage_ page of your service Dashboard.
 2. Click **Backups** in the tabs to open the _Backups_ page. A list of available backups is shown, with the most recent backups at the top of the list:
 
-  ![Available backups](./images/managing-backups.png "A list of available backups, including a pending backup")
+  ![Available backups](./images/janusgraph-backups-show.png "A list of available backups, including a pending backup")
 
 ## Creating a manual backup
 

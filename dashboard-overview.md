@@ -19,11 +19,11 @@ The _Overview_ page shows you information about your Bluemix Compose database. T
 
 The _Deployment Details_ panel shows details of your service.
 
-![Deployment Details](./images/deployment-details.png "A view of the Deployment Details panel")
+![Deployment Details](./images/janusgraph-deployment-details.png "A view of the Deployment Details panel")
 
 ### Type
 
-The type of database that is offered by the service; in this case `JanusGraph`.
+The type of database that is offered by the service, and the database version that your service uses.
 
 ### Name
 
@@ -32,10 +32,6 @@ An internal identifier for the service.
 ### Usage
 
 The size of your database and the amount of storage provided by your service plan.
-
-### Version
-
-The database version that your service uses.
 
 ### Scale Resouces
 

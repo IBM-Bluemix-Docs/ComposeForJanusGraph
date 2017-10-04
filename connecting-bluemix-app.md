@@ -31,7 +31,6 @@ Field Name|Description
 `misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting an external application - Token Authentication](./connecting-external.html#token-authentication).
 `misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting an external application - Websockets](./connecting-external.html#websockets).
 `misc.gremlin_console_yaml`|YAML information that is used to configure the Gremlin console to connect to the service.  See [Connecting an external application - Gremlin Console](./connecting-external.html#gremlin-console).
-
 {: caption="Table 1. Compose for JanusGraph credentials" caption-side="top"}
 
 ## Using the credentials
