@@ -21,11 +21,13 @@ Compose For JanusGraph
 
 
 	{: .navgroup id="howto"}
+	dashboard-scaling-resources.md
+	dashboard-whitelists.md
+	dashboard-update-service-password.md
+	data-browser.md
+	
 	{: .topicgroup}
 	Connecting to Compose for JanusGraph
 		connecting-external.md
 		connecting-bluemix-app.md
-	
-	data-browser.md
-	dashboard-scaling-resources.md
 	{: .navgroup-end}

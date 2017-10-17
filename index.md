@@ -27,7 +27,7 @@ When you provision your service instance, you can choose the *Standard* or *Ente
 
 ## Managing Compose for JanusGraph
 
-You can manage your service from the service dashboard. Here you can find information about your Bluemix Compose database and how to connect to it. You can also manage your backups from the dashboard and allocate more resources for your service. For more information, see [Service Overview](./dashboard-overview.html), [Backups](./dashboard-backups.html), and [Scaling Resources](./dashboard-scaling-resources.html).
+You can manage your service from the service dashboard. Here you can find information about your Bluemix Compose database and how to connect to it. You can also manage your backups, allocate more resources for your service, use whitelists to restrict access to your databases, and reset the service password. For more information, see [Service Overview](./dashboard-overview.html), [Backups](./dashboard-backups.html), [Scaling Resources](./dashboard-scaling-resources.html), [Whitelists](./dashboard-whitelists.html), and [Updating the Service Password](./dashboard-update-service-password.html).
 
 ## Connecting to Compose for JanusGraph
 
