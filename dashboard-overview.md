@@ -13,7 +13,7 @@ lastupdated: "2017-09-05"
 
 # Service Overview
 
-The _Overview_ page shows you information about your Bluemix Compose database. The overview includes essential identifying information and current resource usage. You'll also find a section for connection strings that you can use with tools or make use of tools to connect to your database.
+The _Overview_ page shows you information about your {{site.data.keyword.cloud_notm}} Compose database. The overview includes essential identifying information and current resource usage. You'll also find a section for connection strings that you can use with tools or make use of tools to connect to your database.
 
 ## Deployment Details
 
@@ -33,9 +33,6 @@ An internal identifier for the service.
 
 The size of your database and the amount of storage provided by your service plan.
 
-### Scale Resouces
-
-If your service needs additional storage, or you want to reduce the amount of storage allocated to your service, you can do this by scaling resources. See [Scaling Resources](./dashboard-scaling-resources.html) for more details.
 
 ## Connection Strings
 

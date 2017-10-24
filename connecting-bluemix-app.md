@@ -11,9 +11,9 @@ lastupdated: "2017-09-13"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Connecting a Bluemix application
+# Connecting an {{site.data.keyword.cloud_notm}} application
 
-To connect a Bluemix application to your service, use the service credentials that are created when the service is provisioned.
+To connect an {{site.data.keyword.cloud_notm}} application to your service, use the service credentials that are created when the service is provisioned.
 
 ## Available credentials
 
@@ -39,20 +39,20 @@ Your application needs to be connected to your service to use the service creden
 
 ### Connecting the application to the service
 
-If you already have a Bluemix application you can connect it to a service from your Bluemix account:
+If you already have an {{site.data.keyword.cloud_notm}} application you can connect it to a service from your {{site.data.keyword.cloud_notm}} account:
 
-1. Log in to your Bluemix account
+1. Log in to your {{site.data.keyword.cloud_notm}} account
 2. From your dashboard, select the application you want to connect to your service.
-3. In the connections panel of the application _Overview_ page, click **Connect new** or **Connect existing** to connect to a new or existing Bluemix service.
+3. In the connections panel of the application _Overview_ page, click **Connect new** or **Connect existing** to connect to a new or existing {{site.data.keyword.cloud_notm}} service.
 
   - If you clicked **Connect existing**, a list of available services is shown. Select the service you want to connect your app to, and click **Connect**.
   - If you clicked **Connect new**, follow the steps to provision a new service instance. When you select a service from the catalogue to provision, the _Connect to_ field will be automatically completed with the name of your application.
 
-If you have an application that you haven't uploaded to Bluemix you can bind the application to the service before uploading it to Bluemix: 
+If you have an application that you haven't uploaded to {{site.data.keyword.cloud_notm}} you can bind the application to the service before uploading it to {{site.data.keyword.cloud_notm}}: 
 
-1. Log in to your Bluemix account
+1. Log in to your {{site.data.keyword.cloud_notm}} account
 2. Download and install the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli) tool
-3. Connect to Bluemix in the command line tool and follow the prompts to log in.
+3. Connect to {{site.data.keyword.cloud_notm}} in the command line tool and follow the prompts to log in.
 
   ```
   $ cf api https://api.ng.bluemix.net
@@ -62,7 +62,7 @@ If you have an application that you haven't uploaded to Bluemix you can bind the
 4. Open your application's `manifest.yml` file.
 
   - Change the `host` value to something unique. The host you choose will determinate the subdomain of your application's URL:  `<host>.mybluemix.net`.
-  - Change the `name` value. The value you choose will be the name of the app as it appears in your Bluemix dashboard.
+  - Change the `name` value. The value you choose will be the name of the app as it appears in your {{site.data.keyword.cloud_notm}} dashboard.
 
 5. Update the `services` value in `manifest.yml` to match the name of your service. `manifest.yml` will now look similar to this:
 
@@ -108,10 +108,10 @@ Your application needs to parse the Cloud Foundry environvent variables. In Node
   let jgurl = credentials.misc.session[0];
   ```
 
-3. Push the app to Bluemix. When you push the app it will automatically be bound to the service.
+3. Push the app to {{site.data.keyword.cloud_notm}}. When you push the app it will automatically be bound to the service.
 
   ```
   $ cf push
   ```
 
-For more information on using applications with Bluemix services, see [Adding a service to your app](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+For more information on using applications with {{site.data.keyword.cloud_notm}} services, see [Adding a service to your app](https://console.bluemix.net/docs/services/reqnsi.html#add_service).

@@ -12,6 +12,7 @@ Compose For JanusGraph
 	The Service Dashboard
 		dashboard-overview.md
 		dashboard-backups.md
+		dashboard-settings.md
 
 	{: .topicgroup}
 	Tutorials
@@ -21,9 +22,6 @@ Compose For JanusGraph
 
 
 	{: .navgroup id="howto"}
-	dashboard-scaling-resources.md
-	dashboard-whitelists.md
-	dashboard-update-service-password.md
 	data-browser.md
 	
 	{: .topicgroup}
