@@ -14,7 +14,7 @@ lastupdated: "2017-10-23"
 
 # Settings
 
-These features allow you to adapt your {{site.data.keyword.composeForJanusGraph}} service to better suit your needs and requirements.
+These features allow you to adapt your {{site.data.keyword.composeForJanusGraph_full}} service to better suit your needs and requirements.
 
 
 ## Upgrade Version
@@ -50,7 +50,7 @@ The changes take effect when you click on the **Update Password** button. This w
 ### Updating Connected Applications
 Changing the password will invalidate the existing connection string and generate a new one. This will cause a service interruption until connected applications are updated with the new connection string. You will have to do this by suppling the new connection string to your applications.
 
-More information on connecting your applications is in [Connecting an {{site.data.keyword.cloud_notm}} Application](./connecting-bluemix-app.html).
+More information on connecting your applications is in [Connecting an {{site.data.keyword.cloud}} Application](./connecting-bluemix-app.html).
 and [Connecting an external application](./connecting-external.html).
 
 

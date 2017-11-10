@@ -16,7 +16,7 @@ lastupdated: "2017-09-01"
 
 Exploring your graph data from the command line can be a complex task, and it can be difficult to form traversals. It can be hard to visualize the results, returned as text or JSON output, in terms of digestible graph relationships. This is where the Browser for JanusGraph on Compose comes in.
 
-The Data Browser for {{site.data.keyword.composeForJanusGraph}} combines an easy to use Query Builder with rich Query Response Cards that stack up below the builder. Each card records the query and displays the results both as an interactive JSON view and as a visualized graph that can be explored, relative to the JSON view. Each card can help you refine your next query.
+The Data Browser for {{site.data.keyword.composeForJanusGraph_full}} combines an easy to use Query Builder with rich Query Response Cards that stack up below the builder. Each card records the query and displays the results both as an interactive JSON view and as a visualized graph that can be explored, relative to the JSON view. Each card can help you refine your next query.
 
 ## Getting started with the Data Browser
 

@@ -21,13 +21,13 @@ lastupdated: "2017-10-24"
 
 [Create a {{site.data.keyword.composeForJanusGraph}} instance](https://console.bluemix.net/catalog/services/compose-for-janusgraph/).
 
-When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Leave the service unbound; you can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud_notm}} application](./connecting-bluemix-app.html).
+When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Leave the service unbound; you can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud}} application](./connecting-bluemix-app.html).
 
 When you provision your service instance, you can choose the *Standard* or *Enterprise* plans. With the *Enterprise* plan, you can provision your instance into an available {{site.data.keyword.composeEnterprise}} cluster. {{site.data.keyword.composeEnterprise}} provides the security and isolation required by enterprise compliance and uses dedicated networking to ensure the performance of the deployed databases. See the [Compose Enterprise documentation](../ComposeEnterprise/index.html) for more details.
 
 ## Managing Compose for JanusGraph
 
-You can manage your service from the service dashboard. Here you can find information about your {{site.data.keyword.Bluemix_notm}} Compose database and how to connect to it. You can also:
+You can manage your service from the service dashboard. Here you can find information about your {{site.data.keyword.cloud_notm}} Compose database and how to connect to it. You can also:
 - manage your backups
 - allocate more resources for your service
 - change the service password

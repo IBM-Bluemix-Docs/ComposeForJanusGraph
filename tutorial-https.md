@@ -14,13 +14,7 @@ lastupdated: "2017-09-13"
 
 # Creating and Traversing a Graph using HTTPS
 
-{{site.data.keyword.composeForJanusGraph}} comes with a sample graph database, 'The Graph of the Gods'. This tutorial uses that sample database to illustrate some JanusGraph concepts. Follow the steps to create, open and traverse the graph, using CURL to send Gremlin commands.
-
-## The Graph of the Gods
-
-To give you an idea of the graph you are working with, here's what The Graph of the Gods looks like, with all its vertices, edges and properties.
-
-![The Graph Of The Gods](./images/db-graph-of-the-gods-2.png "The Graph of the Gods, showing relationships between the nodes")
+{{site.data.keyword.composeForJanusGraph_full}} comes with a sample graph database, 'The Graph of the Gods'. This tutorial uses that sample database to illustrate some JanusGraph concepts. Follow the steps to create, open and traverse the graph, using CURL to send Gremlin commands. To view a visual representation of the graph, see the JanusGraph [Getting Started](http://docs.janusgraph.org/latest/getting-started.html) documentation. 
 
 ## 1. Connect to Compose for JanusGraph
 

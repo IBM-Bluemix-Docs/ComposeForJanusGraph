@@ -13,7 +13,7 @@ lastupdated: "2017-09-05"
 
 # Service Overview
 
-The _Overview_ page shows you information about your {{site.data.keyword.cloud_notm}} Compose database. The overview includes essential identifying information and current resource usage. You'll also find a section for connection strings that you can use with tools or make use of tools to connect to your database.
+The _Overview_ page shows you information about your {{site.data.keyword.cloud}} Compose database. The overview includes essential identifying information and current resource usage. You'll also find a section for connection strings that you can use with tools or make use of tools to connect to your database.
 
 ## Deployment Details
 

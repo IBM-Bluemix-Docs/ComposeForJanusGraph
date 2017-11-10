@@ -13,7 +13,7 @@ lastupdated: "2017-09-13"
 
 # Connecting an {{site.data.keyword.cloud_notm}} application
 
-To connect an {{site.data.keyword.cloud_notm}} application to your service, use the service credentials that are created when the service is provisioned.
+To connect an {{site.data.keyword.cloud}} application to your service, use the service credentials that are created when the service is provisioned.
 
 ## Available credentials
 
@@ -86,7 +86,7 @@ Your application needs to parse the Cloud Foundry environvent variables. In Node
   npm install --save cfenv
   ```
 
-2. Extract the {{site.data.keyword.composeForJanusGraph}} credentials from the Cloud Foundry environment variables.
+2. Extract the {{site.data.keyword.composeForJanusGraph_full}} credentials from the Cloud Foundry environment variables.
 
   ```javascript
   const cfenv = require('cfenv');

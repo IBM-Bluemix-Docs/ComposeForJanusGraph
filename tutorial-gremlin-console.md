@@ -14,7 +14,7 @@ lastupdated: "2017-09-13"
 
 # Creating and Traversing a Graph using Gremlin Console
 
-This topic will help you get started with your first JanusGraph graph database. For this tutorial we're going to use the Gremlin Console to send commands to the JanusGraph server.
+This topic will help you get started with your first {{site.data.keyword.composeForJanusGraph_full}} database. For this tutorial we're going to use the Gremlin Console to send commands to the JanusGraph server.
 
 ## 1. Install Gremlin
 
