@@ -7,6 +7,7 @@ Compose For JanusGraph
 	{: .navgroup id="learn"}
 	index.md
 	janusgraph-concepts.md
+	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
 	The Service Dashboard
