@@ -1,0 +1,31 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="compose-for-janusgraph" audience="service" href="/docs/services/ComposeForJanusGraph/index.html"}
+Compose For JanusGraph
+
+	{: .navgroup id="learn"}
+	index.md
+	janusgraph-concepts.md
+
+	{: .topicgroup}
+	El panel del control del servicio
+		dashboard-overview.md
+		dashboard-backups.md
+		dashboard-settings.md
+
+	{: .topicgroup}
+	Guías de aprendizaje
+		tutorial-https.md
+		tutorial-gremlin-console.md
+	{: .navgroup-end}
+
+
+	{: .navgroup id="howto"}
+	data-browser.md
+	
+	{: .topicgroup}
+	Conexión con Compose for JanusGraph
+		connecting-external.md
+		connecting-bluemix-app.md
+	{: .navgroup-end}
