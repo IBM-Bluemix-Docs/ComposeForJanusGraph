@@ -7,6 +7,7 @@ Compose For JanusGraph
 	{: .navgroup id="learn"}
 	index.md
 	janusgraph-concepts.md
+	[Video: Compose for JanusGraph conceptual overview](http://ibm.biz/janusgraph-learning)
 	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
@@ -17,6 +18,7 @@ Compose For JanusGraph
 
 	{: .topicgroup}
 	Tutorials
+		[Video: Getting started with Compose for JanusGraph](https://developer.ibm.com/clouddataservices/docs/janusgraph/get-started/)
 		tutorial-https.md
 		tutorial-gremlin-console.md
 	{: .navgroup-end}

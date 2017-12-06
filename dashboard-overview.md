@@ -23,7 +23,7 @@ The _Deployment Details_ panel shows details of your service.
 
 ### Type
 
-The type of database that is offered by the service, and the database version that your service uses.
+The type of database that is offered by the service, and the database version that your service uses. If a more recent database version is available, a notification is displayed, together with a link to the [Upgrade version](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) section of your service dashboard.
 
 ### Name
 

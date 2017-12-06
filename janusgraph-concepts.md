@@ -2,12 +2,14 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-04"
+lastupdated: "2017-12-06"
 ---
 
 # JanusGraph Concepts
 
-JanusGraph is a graph database. You can create, query and amend a number of graphs within the database. JanusGraph is built upon the Apache Tinkerpop stack and uses the Gremlin language for traversal, commands, and queries. To read more about JanusGraph, see the [JanusGraph Documentation](http://docs.janusgraph.org/latest/index.html).
+JanusGraph is a graph database. You can create, query and amend a number of graphs within the database. JanusGraph is built upon the Apache Tinkerpop stack and uses the Gremlin language for traversal, commands, and queries.
+
+To read more about JanusGraph, see the [JanusGraph Documentation](http://docs.janusgraph.org/latest/index.html).
 
 ## Introduction to Graph Databases
 
@@ -24,11 +26,13 @@ Within JanusGraph, each graph has a unique name. To create, open, modify, and qu
 ## Vertices
 
 A vertex is a graph element that represents an object. At vertex creation it has an identifier set by the graph engine and a label that is user defined. A vertex can additionally store properties which can be indexed and queried upon.
+
 Read more about how to create, query, and other implementation details for vertices, see the [Tinkerpop/Gremlin documentation](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Edges
 
 An edge is a graph element that represents a relationship. To create an edge, the user provides the incoming/outgoing vertices and a label. The edge will be assigned an identifier by the graph engine. An edge can additionally store properties which can be indexed and queried upon.
+
 Read more about how to create, query, and other implementation details for edges, see the [Tinkerpop/Gremlin documentation](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Properties

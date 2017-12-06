@@ -47,7 +47,9 @@ A new, randomly generated password will appear, or you can type your own passwor
   
 ![Updating the etcd password](./images/janusgraph-update-password.png "The automatic password generator")
 
-The changes take effect when you click on the **Update Password** button. This will change the credentials that you and your services use to connect and is a part of your service's connection string. The _Deployment Details_ pane will show the progress of the running job.
+Click **Update Password**. You will be asked to confirm the change. Click **Update Password** in the dialog to confirm the new password, or cancel to cancel the change. The _Deployment Details_ pane will show the progress of the running job.
+
+**Note:** Changing the password changes the credentials that you and your services use to connect, and invalidates your service's connection string. It can also result in downtime.
 
 ### Updating Connected Applications
 Changing the password will invalidate the existing connection string and generate a new one. This will cause a service interruption until connected applications are updated with the new connection string. You will have to do this by suppling the new connection string to your applications.
