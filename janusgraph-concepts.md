@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-12-06"
+lastupdated: "2017-12-12"
 ---
 
 # JanusGraph Concepts
@@ -10,6 +10,8 @@ lastupdated: "2017-12-06"
 JanusGraph is a graph database. You can create, query and amend a number of graphs within the database. JanusGraph is built upon the Apache Tinkerpop stack and uses the Gremlin language for traversal, commands, and queries.
 
 To read more about JanusGraph, see the [JanusGraph Documentation](http://docs.janusgraph.org/latest/index.html).
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Introduction to Graph Databases
 

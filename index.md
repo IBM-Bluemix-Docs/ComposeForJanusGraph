@@ -2,7 +2,7 @@
 
 Copyright:
   Years: 2017
-lastupdated: "2017-12-06"
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -17,7 +17,7 @@ lastupdated: "2017-12-06"
 {{site.data.keyword.composeForJanusGraph_full}} is a scalable graph database that is optimized for storing and querying highly interconnected data that is modeled as millions or billions of vertices and edges. Simple and efficient retrieval of data from these complex structures is enabled by JanusGraph’s Apache Tinkerpop(TM) compatibility, which allows you to perform efficient queries that would be difficult or impossible with a traditional relational database. {{site.data.keyword.composeForJanusGraph}} makes JanusGraph even better by managing it for you, offering an easy, scalable deployment system that delivers high availability and redundancy, automated no-stop backups and much more.
 {:shortdesc}
 
-A video giving a conceptual overview of {{site.data.keyword.composeForJanusGraph}} is available from the [{{site.data.keyword.composeForJanusGraph}} Learning Center](http://ibm.biz/janusgraph-learning) on {{site.data.keyword.IBM_notm}} developerWorks.
+For an overview of {{site.data.keyword.composeForJanusGraph}}, see [JanusGraph Concepts](./janusgraph-concepts.html)
 
 ## Creating a Compose for JanusGraph service instance
 
