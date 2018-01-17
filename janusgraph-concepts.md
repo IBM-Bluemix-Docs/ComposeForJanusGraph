@@ -13,6 +13,9 @@ To read more about JanusGraph, see the [JanusGraph Documentation](http://docs.ja
 
 <iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
+You can find more videos about {{site.data.keyword.composeForJanusGraph}} in the [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
+{: .tip}
+
 ## Introduction to Graph Databases
 
 At its simplest, a graph is a set of vertices with edges between them. The vertex, the singular form of vertices, is the fundamental unit of the graph and represents some indivisible object. In practical terms, this might be a person, location or object.  It can have properties to describe the object. 
