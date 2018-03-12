@@ -1,13 +1,20 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # JanusGraph 概念
 
-JanusGraph 是圖形資料庫。您可以在資料庫中建立、查詢及修正許多圖形。JanusGraph 建置於 Apache Tinkerpop 堆疊之上，並使用 Gremlin 語言來進行遍訪、指令及查詢。若要閱讀 JanusGraph 的相關資訊，請參閱 [JanusGraph 文件](http://docs.janusgraph.org/latest/index.html)。
+JanusGraph 是圖形資料庫。您可以在資料庫中建立、查詢及修正許多圖形。JanusGraph 建置於 Apache Tinkerpop 堆疊之上，並使用 Gremlin 語言來進行遍訪、指令及查詢。
+
+若要閱讀 JanusGraph 的相關資訊，請參閱 [JanusGraph 文件](http://docs.janusgraph.org/latest/index.html)。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+您可以在 [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning) 找到其他關於 {{site.data.keyword.composeForJanusGraph}} 的視訊。
+{: .tip}
 
 ## 圖形資料庫簡介
 
@@ -23,11 +30,15 @@ JanusGraph 是圖形資料庫。您可以在資料庫中建立、查詢及修正
 
 ## 頂點
 
-頂點是代表物件的圖形元素。在頂點建立時，它有一個由圖形引擎設定的 ID，以及一個使用者定義的標籤。頂點可以額外儲存可以編製索引與用來查詢的內容。若要閱讀如何建立、查詢頂點的相關資訊，以及其他實作詳細資料，請參閱 [Tinkerpop/Gremlin 文件](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
+頂點是代表物件的圖形元素。在頂點建立時，它有一個由圖形引擎設定的 ID，以及一個使用者定義的標籤。頂點可以額外儲存可以編製索引與用來查詢的內容。
+
+若要閱讀如何建立、查詢頂點的相關資訊，以及其他實作詳細資料，請參閱 [Tinkerpop/Gremlin 文件](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
 
 ## 邊緣
 
-邊緣是代表關係的圖形元素。若要建立邊緣，使用者要提供送入/送出的頂點與標籤。將由圖形引擎指派 ID 給邊緣。邊緣可以額外儲存可以編製索引與用來查詢的內容。若要閱讀如何建立、查詢邊緣的相關資訊，以及其他實作詳細資料，請參閱 [Tinkerpop/Gremlin 文件](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
+邊緣是代表關係的圖形元素。若要建立邊緣，使用者要提供送入/送出的頂點與標籤。將由圖形引擎指派 ID 給邊緣。邊緣可以額外儲存可以編製索引與用來查詢的內容。
+
+若要閱讀如何建立、查詢邊緣的相關資訊，以及其他實作詳細資料，請參閱 [Tinkerpop/Gremlin 文件](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
 
 ## 內容
 

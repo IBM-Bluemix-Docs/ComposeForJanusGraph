@@ -6,20 +6,22 @@ Compose For JanusGraph
 
 	{: .navgroup id="learn"}
 	index.md
+	pricing.md
 	janusgraph-concepts.md
+	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
-	O Painel de serviço   		
-		dashboard-overview.md 		
-		dashboard-backups.md 		
+	O Painel de serviço
+		dashboard-overview.md
+		dashboard-backups.md
 		dashboard-settings.md
 
 	{: .topicgroup}
 	Tutoriais
+		[Vídeo: Introdução ao Compose for JanusGraph](https://developer.ibm.com/clouddataservices/docs/janusgraph/get-started/)
 		tutorial-https.md
 		tutorial-gremlin-console.md
 	{: .navgroup-end}
-
 
 	{: .navgroup id="howto"}
 	data-browser.md

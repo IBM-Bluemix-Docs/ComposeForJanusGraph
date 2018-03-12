@@ -6,7 +6,9 @@ Compose For JanusGraph
 
 	{: .navgroup id="learn"}
 	index.md
+	pricing.md
 	janusgraph-concepts.md
+	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
 	El panel del control del servicio
@@ -16,6 +18,7 @@ Compose For JanusGraph
 
 	{: .topicgroup}
 	Guías de aprendizaje
+		[Vídeo: Iniciación a Compose for JanusGraph](https://developer.ibm.com/clouddataservices/docs/janusgraph/get-started/)
 		tutorial-https.md
 		tutorial-gremlin-console.md
 	{: .navgroup-end}

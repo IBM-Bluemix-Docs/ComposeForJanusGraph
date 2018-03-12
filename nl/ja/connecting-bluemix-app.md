@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -18,30 +18,24 @@ lastupdated: "2017-09-13"
 ## 使用可能な資格情報
 
 フィールド名|説明
-
 ----------|-----------
 `deployment_id`|Compose 内で作成された、サービスの内部 ID。
-
 `name`|データベース・デプロイメント名。
-
 `db_type`|サービスによって提供されるデータベースのタイプ。この場合は、`JanusGraph`。
-
 `uri_cli`|トークン・ベースの認証で gremlin 照会を送信する方法を示す `CURL` コマンド・ライン。
 `uri_cli_1`|データベース・インスタンスに接続する代替 `CURL` コマンド・ライン。
-
 `maps`|未使用
-`uri`|サービスに接続するときに使用する `https` URI。接続先のサーバーのホスト名とポート番号が含まれます。
-[外部アプリケーションの接続](./connecting-external.html)を参照してください。
+`uri`|サービスに接続するときに使用する `https` URI。接続先のサーバーのホスト名とポート番号が含まれます。 [外部アプリケーションの接続](./connecting-external.html)を参照してください。
 `uri_direct_1`|サービスに接続するための代替 `https` URI。
 `misc`|`session`、`websocket`、および `gremlin_console_yaml` フィールドを含む親フィールド。
-`misc.session`| サービスとの対話に使用できる 60 分認証トークンを取得するために使用する `https` URI。[外部アプリケーションの接続 - トークン認証](./connecting-external.html#token-authentication)を参照してください。
-`misc.websocket`|Websocket を使用してサービスに接続するときに使用する `wss` URI。[外部アプリケーションの接続 - Websocket](./connecting-external.html#websockets) を参照してください。
-`misc.gremlin_console_yaml`|サービスに接続するように Gremlin コンソールを構成するために使用する YAML 情報。[外部アプリケーションの接続 - Gremlin コンソール](./connecting-external.html#gremlin-console)を参照してください。
+`misc.session`| サービスとの対話に使用できる 60 分認証トークンを取得するために使用する `https` URI。 [外部アプリケーションの接続 - トークン認証](./connecting-external.html#token-authentication)を参照してください。
+`misc.websocket`|Websocket を使用してサービスに接続するときに使用する `wss` URI。 [外部アプリケーションの接続 - Websocket](./connecting-external.html#websockets) を参照してください。
+`misc.gremlin_console_yaml`|サービスに接続するように Gremlin コンソールを構成するために使用する YAML 情報。  [外部アプリケーションの接続 - Gremlin コンソール](./connecting-external.html#gremlin-console)を参照してください。
 {: caption="表 1. Compose for JanusGraph の資格情報" caption-side="top"}
 
 ## 資格情報の使用
 
-サービス資格情報を使用するには、アプリケーションをサービスに接続する必要があります。以下のステップは、その方法を示しています (例として Node.js を使用)。
+サービス資格情報を使用するには、アプリケーションをサービスに接続する必要があります。 以下のステップは、その方法を示しています (例として Node.js を使用)。
 
 ### サービスへのアプリケーションの接続
 
@@ -51,8 +45,8 @@ lastupdated: "2017-09-13"
 2. ダッシュボードから、サービスに接続するアプリケーションを選択します。
 3. アプリケーション_「概要」_ページの接続パネルで、**「新規に接続」**または**「既存に接続」**をクリックして、新規または既存の {{site.data.keyword.cloud_notm}} サービスに接続します。
 
-  - **「既存に接続」**をクリックした場合は、選択可能サービスのリストが表示されます。アプリケーションの接続先にするサービスを選択して、**「接続」**をクリックします。
-  - **「新規に接続」**をクリックした場合は、新しいサービス・インスタンスをプロビジョンするためのステップに従ってください。プロビジョンするサービスをカタログから選択すると、_「接続」_フィールドにアプリケーションの名前が自動的に入力されます。
+  - **「既存に接続」**をクリックした場合は、選択可能サービスのリストが表示されます。 アプリケーションの接続先にするサービスを選択して、**「接続」**をクリックします。
+  - **「新規に接続」**をクリックした場合は、新しいサービス・インスタンスをプロビジョンするためのステップに従ってください。 プロビジョンするサービスをカタログから選択すると、_「接続」_フィールドにアプリケーションの名前が自動的に入力されます。
 
 {{site.data.keyword.cloud_notm}} にアップロードされていないアプリケーションがある場合は、アプリケーションをサービスにバインドしてから {{site.data.keyword.cloud_notm}} にアップロードしてください。 
 
@@ -67,10 +61,10 @@ lastupdated: "2017-09-13"
 
 4. アプリケーションの `manifest.yml` ファイルを開きます。
 
-  - `host` 値を固有のものに変更します。アプリケーションの URL のサブドメインは、`<host>.mybluemix.net` のように、選択したホストによって決まります。
-  - `name` 値を変更します。選択した値は、{{site.data.keyword.cloud_notm}} ダッシュボードでのアプリケーションの表示名になります。
+  - `host` 値を固有のものに変更します。 アプリケーションの URL のサブドメインは、`<host>.mybluemix.net` のように、選択したホストによって決まります。
+  - `name` 値を変更します。 選択した値は、{{site.data.keyword.cloud_notm}} ダッシュボードでのアプリケーションの表示名になります。
 
-5. `manifest.yml` 内の `services` 値を更新して、サービスの名前と一致させます。この段階で、`manifest.yml` は次のようになります。
+5. `manifest.yml` 内の `services` 値を更新して、サービスの名前と一致させます。 この段階で、`manifest.yml` は次のようになります。
 
   ```
   ---
@@ -84,7 +78,7 @@ lastupdated: "2017-09-13"
 
 ### 資格情報へのアクセスと使用
 
-アプリケーションは Cloud Foundry 環境変数を解析する必要があります。Node.js では、[cfenv](https://www.npmjs.com/package/cfenv) パッケージを使用して行えます。
+アプリケーションは Cloud Foundry 環境変数を解析する必要があります。 Node.js では、[cfenv](https://www.npmjs.com/package/cfenv) パッケージを使用して行えます。
 
 1. `--save` を指定してパッケージをインストールして `package.json` を更新します。
 
@@ -108,13 +102,13 @@ lastupdated: "2017-09-13"
   let credentials = janusgraph_services[0].credentials;
   ```
 
-  これで、サービス資格情報を使用できるようになりました。例えば、認証トークンの獲得に使用できるセッション URI を取得するには、次のようにします。
+  これで、サービス資格情報を使用できるようになりました。 例えば、認証トークンの獲得に使用できるセッション URI を取得するには、次のようにします。
 
   ```javascript
   let jgurl = credentials.misc.session[0];
   ```
 
-3. アプリケーションを {{site.data.keyword.cloud_notm}} にプッシュします。プッシュされたアプリケーションは、自動的にサービスにバインドされます。
+3. アプリケーションを {{site.data.keyword.cloud_notm}} にプッシュします。 プッシュされたアプリケーションは、自動的にサービスにバインドされます。
 
   ```
   $ cf push

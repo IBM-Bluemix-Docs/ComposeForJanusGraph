@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-09-05"
+  years: 2017,2018
+lastupdated: "2017-11-15"
 ---
 
 {:new_window: target="_blank"}
@@ -23,7 +23,7 @@ _部署详细信息_面板显示服务的详细信息。
 
 ### 类型
 
-服务所提供的数据库类型，以及服务所使用的数据库版本。
+服务所提供的数据库类型，以及服务所使用的数据库版本。如果有更新的数据库版本可用，那么会显示通知以及指向服务仪表板中[升级版本](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version)部分的链接。
 
 ### 名称
 
@@ -33,6 +33,9 @@ _部署详细信息_面板显示服务的详细信息。
 
 数据库的大小和服务套餐所提供的存储量。
 
+## 当前作业
+
+对服务进行管理更改（例如，扩展或执行手动备份）会启动作业。作业正在运行时，_当前作业_面板会显示在_概述_页面上，其中显示作业名和进度条。作业完成后，_当前作业_面板即不会再显示在_概述_页面上。
 
 ## 连接字符串
 
@@ -57,3 +60,20 @@ Websocket URI 可用于建立具有 JanusGraph 部署的长时间运行的会话
 ### Gremlin Console YAML
 
 使用 Gremlin Console，您可以利用所提供的任何配置，来连接到 {{site.data.keyword.composeForJanusGraph}}。有关如何使用 Gremlin Console YAML 的详细信息，请参阅[使用 Gremlin Console 创建和遍历图形](./tutorial-gremlin-console.html)。
+
+
+## 实例管理 API
+
+您可以通过 {{site.data.keyword.cloud_notm}} Compose API 来管理 {{site.data.keyword.composeForJanusGraph}} 服务。
+
+### 基础端点
+
+基础端点由服务所在的区域和服务实例标识组成。基础端点将位于每个端点的开头。
+
+### 部署标识
+
+部署标识对于大多数调用都是必需的，用于标识特定的部署实例。
+
+### 参考
+
+有关在所有 {{site.data.keyword.cloud_notm}} Compose 服务上使用 {{site.data.keyword.cloud_notm}} Compose API 的更多文档和参考信息，请参阅 [{{site.data.keyword.cloud_notm}} Compose API](https://www.compose.com/articles/the-ibm-cloud-compose-api/)。

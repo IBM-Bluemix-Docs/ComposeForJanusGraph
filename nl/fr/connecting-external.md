@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -47,7 +47,7 @@ Gremlin est un langage de traversée développé, mais un programme rédigé dan
 Si vous envoyez plusieurs fois le même script au serveurs, vous améliorerez les performances en fournissant un dictionnaire de liaisons ("bindings") facultatif avec une mappe des variables disponibles pour le script gremlin. Les performances sont optimisées car le serveur n'a pas à recompiler le script gremlin.
 {: .tip}
 
-Vous trouverez des renseignements supplémentaires concernant le protocole HTTP dans la section [Connexion via REST](http://tinkerpop.apache.org/docs/3.2.3/reference/#_connecting_via_rest) de la Documentation Apache Tinkerpop. 
+Vous trouverez des renseignements supplémentaires concernant le protocole HTTP dans la section [Connexion via REST](http://tinkerpop.apache.org/docs/3.2.3/reference/#_connecting_via_rest) de la Documentation Apache Tinkerpop.
 
 Pour envoyer un script Gremlin au noeud final, vous devez être authentifié. Il existe deux types d'authentification d'accès aux requêtes HTTP : l'authentification de base et l'authentification par jeton.
 
@@ -128,6 +128,7 @@ Les réponses aux requêtes se présentent sous la forme d'un document JSON avec
 }
 ```
 `requestId` est l'identificateur unique de la requête. `status` contient un message en clair, un code de style de statut HTTPet d'autres attributs relatifs au statut indiqué. `result` contient un objet de données structuré selon ce que le code Gremlin exécuté renvoie et une section de métadonnées destinée à toutes les informations supplémentaires situées en dehors de la portée des données de résultat.
+
 ## Websockets
 
 Les WebSockets sont un moyen efficace pour créer une connexion bidirectionnelle à long terme via TCP et TLS idéale pour des sessions interactives entre des applications client et le serveur JanusGraph. Un grand nombre des bibliothèques pour JanusGraph utilisent des WebSockets comme connexion au serveur ; pour utiliser JanusGraph sur Compose, elles doivent pouvoir effectuer une authentification de base et utiliser WSS, WebSockets sécurisés via TLS. 
@@ -141,4 +142,3 @@ La console Gremlin est l'outil essentiel pour utiliser des serveurs activés pou
 Pour configurer la console Gremlin vous fournissez un fichier YAML contenant les informations appropriées. Vous trouverez ces éléments de configuration dans le panneau _Gremlin Console YAML_ sur la page Vue d'ensemble du tableau de bord du service.
 
 Pour plus d'informations sur la manière d'obtenir, installer et configurer et utiliser la console Gremlin, voir [Création et traversée d'un graphique à l'aide de la console Gremlin](./tutorial-gremlin-console.html).
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-10-16"
 ---
 
@@ -14,9 +14,17 @@ lastupdated: "2017-10-16"
 # Copias de seguridad
 {: #backups}
 
-Puede crear y descargar copias de seguridad desde el separador _Copias de seguridad_ de la página *Gestionar* del panel de control del servicio. Dispone de copias de seguridad planificadas y manuales.
+Puede crear y descargar copias de seguridad desde el separador _Copias de seguridad_ de la página _Gestionar_ del panel de control del servicio. Las copias de seguridad diarias, semanales, mensuales y bajo demanda están disponibles. Se retienen según la siguiente planificación:
 
-Las copias se crean haciendo una copia de seguridad de los nodos de la base de datos Scylla. Las copias de seguridad de Scylla se realizan mediante el programa de utilidad de instantánea de Scylla, que hace copia de seguridad de todos los archivos de datos del disco almacenados en el directorio de datos. La instantánea se puede ejecutar mientras las bases de datos están en línea.
+Tipo de copia de seguridad|Planificación de retención
+----------|-----------
+Diario|Las copias de seguridad diarias se retienen durante 7 días
+Semanal|Las copias de seguridad semanales se retienen durante 4 semanas
+Mensual|Las copias de seguridad mensuales se retienen durante 3 meses
+Bajo demanda|Se retiene una copia de seguridad bajo demanda. La copia de seguridad retenida es siempre la copia de seguridad bajo demanda más reciente.
+{: caption="Tabla 1. Planificación de retención de copia de seguridad" caption-side="top"}
+
+Las planificaciones de copia de seguridad y las políticas de retención están corregidas. Si necesita mantener más copias de seguridad de las que permite la planificación de retención, debe descargar copias de seguridad y retener archivados según sus necesidades empresariales.
 
 ## Visualización de las copias de seguridad existentes
 

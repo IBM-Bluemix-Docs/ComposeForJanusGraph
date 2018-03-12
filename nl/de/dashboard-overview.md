@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-09-05"
+  years: 2017,2018
+lastupdated: "2017-11-15"
 ---
 
 {:new_window: target="_blank"}
@@ -23,7 +23,7 @@ Die Anzeige _Bereitstellungsdetails_ enthält Details zu Ihrem Service.
 
 ### Typ
 
-Der Datenbanktyp, der vom Service angeboten wird, und die Datenbankversion, die Ihr Service verwendet.
+Der Datenbanktyp, der vom Service angeboten wird, und die Datenbankversion, die Ihr Service verwendet. Wenn eine neuere Datenbankversion verfügbar ist, wird eine Benachrichtigung zusammen mit einem Link zum Abschnitt [Upgradeversion](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) Ihres Service-Dashboards angezeigt.
 
 ### Name
 
@@ -33,6 +33,9 @@ Eine interne ID für den Service.
 
 Die Größe Ihrer Datenbank und der von Ihrem Serviceplan bereitgestellte Speicherplatz.
 
+## Aktuelle Jobs
+
+Durch administrative Änderungen an Ihrem Service (wie Skalieren oder Erstellen einer manuellen Sicherung) starten Sie einen Job. Während der Ausführung eines Jobs, wird auf der Seite _Übersicht_ das Fenster _Aktuelle Jobs_ mit dem Jobnamen und einer Fortschrittsleiste angezeigt. Wenn der Job abgeschlossen ist, wird das Fenster _Aktuelle Jobs_ auf der Seite _Übersicht_ nicht mehr angezeigt.
 
 ## Verbindungszeichenfolgen
 
@@ -42,12 +45,11 @@ Die einzelnen Verbindungszeichenfolgen für Ihren Service befinden sich jeweils 
 
 ### Sitzung
 
-Sie können mithilfe eines Sitzungs-URI ein Berechtigungstoken abrufen, das 60 Minuten gültig ist. Sie sollten die bereitgestellten Token verwenden, wenn Sie über die HTTPS- oder WebSocket-URIs Aufrufe an die Bereitstellung vornehmen. 
+Sie können mithilfe eines Sitzungs-URI ein Berechtigungstoken abrufen, das 60 Minuten gültig ist. Sie sollten die bereitgestellten Token verwenden, wenn Sie über die HTTPS- oder WebSocket-URIs Aufrufe an die Bereitstellung vornehmen.
 
 ### HTTPS
 
 Dies ist die grundlegende Verbindungszeichenfolge für eine JanusGraph-Bereitstellung. Um eine HTTPS-Verbindungszeichenfolge verwenden zu können, müssen Sie die Berechtigungsnachweise des Benutzers mit Verwaltungsaufgaben bereitstellen, damit eine Verbindung zum Server hergestellt werden kann. Weitere Informationen zur Verwendung von HTTPS finden Sie im Abschnitt [Diagramme mit HTTPs erstellen und traversieren](./tutorial-https.html).
-
 
 ### WebSocket
 
@@ -59,3 +61,19 @@ Einige Bibliotheken für JanusGraph verwenden WebSockets als ihre Verbindung zum
 
 Sie können eine der bereitgestellten Konfigurationen verwenden, um mithilfe der Gremlin-Konsole eine Verbindung zu {{site.data.keyword.composeForJanusGraph}} herzustellen. Weitere Informationen zur Verwendung der YAML-Datei für die Gremlin-Konsole finden Sie im Abschnitt [Diagramme mit der Gremlin-Konsole erstellen und traversieren](./tutorial-gremlin-console.html).
 
+
+## Instanzverwaltungs-API
+
+Sie können Ihren {{site.data.keyword.composeForJanusGraph}}-Service über die {{site.data.keyword.cloud_notm}} Compose-API verwalten.
+
+### Basisendpunkt
+
+Der Basisendpunkt setzt sich aus der Region, in der sich der Service befindet, und der Serviceinstanz-ID zusammen. Er steht am Anfang von jedem Endpunkt.
+
+### Bereitstellungs-ID
+
+Die Bereitstellungs-ID wird für die meisten Aufrufe benötigt und gibt eine bestimmte Bereitstellungsinstanz an.
+
+### Referenz
+
+Zusätzliche Dokumentation und Referenz zur Verwendung der {{site.data.keyword.cloud_notm}} Compose-API für alle {{site.data.keyword.cloud_notm}} Compose-Services finden Sie in [Die {{site.data.keyword.cloud_notm}} Compose-API](https://www.compose.com/articles/the-ibm-cloud-compose-api/).

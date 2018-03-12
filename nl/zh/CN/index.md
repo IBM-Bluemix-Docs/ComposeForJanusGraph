@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-10-24"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -16,6 +16,8 @@ lastupdated: "2017-10-24"
 
 {{site.data.keyword.composeForJanusGraph_full}} 是一个可扩展的图形数据库，针对存储和查询高度互连的数据进行了优化，这些数据建模为百万或几十亿个顶点和边。通过 JanusGraph 的 Apache Tinkerpop(TM) 兼容性，可以简单高效地从这些复杂结构中检索数据，这使您能够执行高效的查询，而这些查询在传统的关系数据库中是很难或不可能执行的。{{site.data.keyword.composeForJanusGraph}} 通过为您管理 JanusGraph，使其性能更佳，同时提供一个简单的可扩展部署系统，以实现高可用性和冗余、自动不停止备份等。
 {:shortdesc}
+
+有关 {{site.data.keyword.composeForJanusGraph}} 的概述，请参阅 [JanusGraph 概念](./janusgraph-concepts.html)
 
 ## 创建 Compose for JanusGraph 服务实例
 

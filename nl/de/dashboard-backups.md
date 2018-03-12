@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-10-16"
 ---
 
@@ -14,9 +14,17 @@ lastupdated: "2017-10-16"
 # Sicherungen
 {: #backups}
 
-Sie können Sicherungen erstellen und über die Registerkarte _Sicherungen_ der Seite *Verwalten* Ihres Service-Dashboards herunterladen. Es sind sowohl geplante als auch manuelle Sicherungen verfügbar.
+Sie können Sicherungen erstellen und über die Registerkarte _Sicherungen_ der Seite _Verwalten_ Ihres Service-Dashboards herunterladen. Dabei sind tägliche, wöchentliche und monatliche Sicherungen sowie Sicherungen nach Bedarf verfügbar. Die Aufbewahrungszeit richtet sich nach folgendem Zeitplan:
 
-Sicherungen werden erstellt, indem die Scylla-Datenbankknoten gesichert werden. Scylla-Sicherungen werden mithilfe des Scylla-Dienstprogramms für Snapshots erstellt, wobei alle On-Disk-Datendateien im Datenverzeichnis gespeichert werden. Der Snapshot kann aktiv sein, während Ihre Datenbanken online sind.
+Sicherungstyp|Aufbewahrungszeitplan
+----------|-----------
+Täglich|Tägliche Sicherungen werden 7 Tage aufbewahrt
+Wöchentlich|Wöchentliche Sicherungen werden 4 Wochen aufbewahrt
+Monatlich|Monatliche Sicherungen werden 3 Monate aufbewahrt
+Bei Bedarf|Es wird eine bei Bedarf erstellte Sicherung aufbewahrt. Dabei ist die aufbewahrte Sicherung immer die letzte bei Bedarf erstellte Sicherung.
+{: caption="Tabelle 1. Aufbewahrungszeitplan für Sicherungen" caption-side="top"}
+
+Sicherungszeitpläne und Aufbewahrungsrichtlinien sind festgelegt. Falls Sie mehr Sicherungen benötigen als die, die im Aufbewahrungszeitplan vorgesehen sind, sollten Sie Sicherungen herunterladen und Sicherungsarchive gemäß Ihren Geschäftsanforderungen aufbewahren.
 
 ## Vorhandene Sicherungen anzeigen
 

@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-10-24"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -16,6 +16,8 @@ lastupdated: "2017-10-24"
 
 {{site.data.keyword.composeForJanusGraph_full}} es una base de datos gráfica escalable optimizada para almacenar y consultar datos altamente interconectados diseñados como millones de vértices y bordes. La recuperación de forma simple y eficiente de datos de estas estructuras complejas se consigue mediante la compatibilidad con Apache Tinkerpop(TM) de JanusGraph, que le permite realizar consultas eficientes que resultarían muy difíciles o imposibles con una base de datos relacional tradicional. {{site.data.keyword.composeForJanusGraph}} convierte JanusGraph en un excelente método de gestión, que ofrece un sistema de despliegue escalable y sencillo que ofrece una alga disponibilidad y redundancia, copias de seguridad continuas automáticas y muchos más.
 {:shortdesc}
+
+Para obtener una visión general de {{site.data.keyword.composeForJanusGraph}}, consulte [Conceptos de JanusGraph](./janusgraph-concepts.html)
 
 ## Creación de una instancia de servicio de Compose for JanusGraph
 

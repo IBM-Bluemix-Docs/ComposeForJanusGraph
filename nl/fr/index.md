@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-10-24"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -17,13 +17,15 @@ lastupdated: "2017-10-24"
 {{site.data.keyword.composeForJanusGraph_full}} est une base de données de graphiques évolutive optimisée pour le stockage et l'interrogation de données hautement interconnectées, modélisée en millions ou milliards de sommets et arêtes. L'extraction simple efficace des données à partir de ces structures complexes est mise en oeuvre par la compatibilité Apache Tinkerpop(TM) de JanusGraph, qui permet d'effectuer des requêtes efficaces, difficiles, voire impossibles, avec une base de données relationnelle classique. {{site.data.keyword.composeForJanusGraph}} étend les fonctionnalités de JanusGraph en les gérant à votre place, vous offrant un système de déploiement évolutif facile à utiliser, qui fournit des fonctions de haute disponibilité et de redondance, des sauvegardes sans interruption automatisées, etc.
 {:shortdesc}
 
+Pour une présentation de {{site.data.keyword.composeForJanusGraph}}, voir [Concepts JanusGraph](./janusgraph-concepts.html)
+
 ## Création d'une instance de service Compose for JanusGraph
 
 [Créez une instance {{site.data.keyword.composeForJanusGraph}}](https://console.bluemix.net/catalog/services/compose-for-janusgraph/).
 
 Lorsque vous créez une instance du service, prenez soin de sélectionner un nom pour votre service et un nom de données d'identification. Laissez le service non lié ; vous pourrez connecter une application à votre service ultérieurement en utilisant les données d'identification fournies lors de la mise à disposition du service. Pour plus d'informations sur les diverses valeurs de données d'identification et la manière de les utiliser dans une application, voir [Connexion d'une application {{site.data.keyword.cloud}}](./connecting-bluemix-app.html).
 
-Lorsque vous mettez à disposition l'instance de service, vous avez le choix entre le plan *Standard* et le plan *Entreprise*. Avec le plan *Entreprise*, vous pouvez mettre votre instance à disposition dans un cluster {{site.data.keyword.composeEnterprise}} disponible. {{site.data.keyword.composeEnterprise}} fournit la sécurité et l'isolement requis par les normes de conformité des entreprises et utilise un réseau dédié pour garantir les performances des bases de données déployées. Pour plus d'informations, voir la [documentation Compose - Entreprise](../ComposeEnterprise/index.html).
+Lorsque vous mettez à disposition l'instance de service, vous avez le choix entre le plan *Standard* et le plan *Entreprise*. Avec le plan *Entreprise*, vous pouvez mettre votre instance à disposition dans un cluster {{site.data.keyword.composeEnterprise}} disponible. {{site.data.keyword.composeEnterprise}} offre la sécurité et l'isolement requis par les normes de conformité des entreprises et utilise un réseau dédié pour garantir les performances des bases de données déployées. Pour plus d'informations, voir la [documentation Compose - Entreprise](../ComposeEnterprise/index.html).
 
 ## Gestion de Compose for JanusGraph
 
@@ -31,7 +33,7 @@ Vous pouvez gérer votre service depuis son tableau de bord. Vous y trouverez de
 - gérer vos sauvegardes ;
 - allouer plus de ressources à votre service ;
 - modifier le mot de passe du service ;
-- constituer des listes blanches pour limiter l'accès à vos bases de données.
+- constituer des listes blanches pour limiter l'accès à vos bases de données. 
 Pour plus d'informations, voir [Paramètres](./dashboard-settings.html).
 
 ## Connexion à Compose for JanusGraph

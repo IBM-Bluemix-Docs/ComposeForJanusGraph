@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -128,6 +128,8 @@ $ curl -XPOST -H "Authorization: Token $JGTOKEN" -d '{"gremlin" : "1+1" }' "http
 }
 ```
 `requestId` 是要求的唯一 ID。`status` 包含可讀取的訊息、HTTP 狀態樣式碼，以及報告狀態的其他屬性。`result` 包含一個資料物件，其結構根據執行的 Gremp 程式碼所傳回的任何內容，以及包含一個 meta 區段，其中有超出結果資料範圍外的所有額外資訊。
+
+
 
 ## Websocket
 

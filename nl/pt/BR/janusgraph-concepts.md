@@ -1,13 +1,20 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # Conceitos do JanusGraph
 
-JanusGraph é um banco de dados de gráfico. É possível criar, consultar e corrigir vários gráficos dentro do banco de dados. O JanusGraph é construído na pilha do Apache Tinkerpop e usa a linguagem Gremlin para passagem, comandos e consultas. Para ler mais sobre o JanusGraph, veja a [Documentação do JanusGraph](http://docs.janusgraph.org/latest/index.html).
+JanusGraph é um banco de dados de gráfico. É possível criar, consultar e corrigir vários gráficos dentro do banco de dados. O JanusGraph é construído na pilha do Apache Tinkerpop e usa a linguagem Gremlin para passagem, comandos e consultas.
+
+Para ler mais sobre o JanusGraph, veja a [Documentação do JanusGraph](http://docs.janusgraph.org/latest/index.html).
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+É possível localizar mais vídeos sobre o {{site.data.keyword.composeForJanusGraph}} no [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
+{: .tip}
 
 ## Introdução aos bancos de dados de gráfico
 
@@ -24,11 +31,13 @@ No JanusGraph, cada gráfico tem um nome exclusivo. Para criar, abrir, modificar
 ## Vértices
 
 Um vértice é um elemento gráfico que representa um objeto. Na criação do vértice, ele tem um identificador configurado pelo mecanismo de gráfico e um rótulo que é definido pelo usuário. Um vértice pode também armazenar propriedades que podem ser indexadas e consultadas.
+
 Leia mais sobre como criar, consultar e outros detalhes de implementação para vértices, veja a [Documentação do Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Bordas
 
 Uma borda é um elemento gráfico que representa um relacionamento. Para criar uma borda, o usuário fornece os vértices recebidos/de saída e um rótulo. A borda será designada a um identificador pelo mecanismo de gráfico. Uma borda pode também armazenar propriedades que podem ser indexadas e consultadas.
+
 Leia mais sobre como criar, consultar e outros detalhes de implementação para bordas, veja a [Documentação do Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Propriedades

@@ -6,7 +6,9 @@ Compose For JanusGraph
 
 	{: .navgroup id="learn"}
 	index.md
+	pricing.md
 	janusgraph-concepts.md
+	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
 	服务仪表板
@@ -16,6 +18,7 @@ Compose For JanusGraph
 
 	{: .topicgroup}
 	教程
+		[视频：Compose for JanusGraph 入门](https://developer.ibm.com/clouddataservices/docs/janusgraph/get-started/)
 		tutorial-https.md
 		tutorial-gremlin-console.md
 	{: .navgroup-end}

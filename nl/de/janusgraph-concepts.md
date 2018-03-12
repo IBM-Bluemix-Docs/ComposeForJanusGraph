@@ -1,17 +1,24 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # JanusGraph - Konzepte
 
-JanusGraph ist eine Diagrammdatenbank. Sie können eine Reihe von Diagrammen in der Datenbank erstellen, einrichten und erweitern. JanusGraph baut auf dem Apache Tinkerpop-Stapel auf und verwendet die Sprache Gremlin für die Traversierung, Befehle und Abfrage. Weitere Informationen zu JanusGraph finden Sie in der [Dokumentation zu JanusGraph](http://docs.janusgraph.org/latest/index.html).
+JanusGraph ist eine Diagrammdatenbank. Sie können eine Reihe von Diagrammen in der Datenbank erstellen, einrichten und erweitern. JanusGraph baut auf dem Apache Tinkerpop-Stapel auf und verwendet die Sprache Gremlin für die Traversierung, Befehle und Abfrage.
+
+Weitere Informationen zu JanusGraph finden Sie in der [Dokumentation zu JanusGraph](http://docs.janusgraph.org/latest/index.html).
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+Weitere Videos zu {{site.data.keyword.composeForJanusGraph}} finden Sie im [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
+{: .tip}
 
 ## Einführung in Diagrammdatenbanken
 
-Einfach ausgedrückt, ist ein Diagramm eine Gruppe von Vertices mit Kanten dazwischen. Der Vertex (die Einzahl von Vertices) ist die Grundeinheit des Diagramms und stellt bestimmte unteilbare Objekte dar. In der Praxis kann dies eine Person, eine Position oder ein Objekt sein. Das Objekt lässt sich mithilfe von Eigenschaften beschreiben. 
+Einfach ausgedrückt, ist ein Diagramm eine Gruppe von Vertices mit Kanten dazwischen. Der Vertex (die Einzahl von Vertices) ist die Grundeinheit des Diagramms und stellt bestimmte unteilbare Objekte dar. In der Praxis kann dies eine Person, eine Position oder ein Objekt sein.  Das Objekt lässt sich mithilfe von Eigenschaften beschreiben. 
 
 Eine Kante ist eine Verbindung zwischen zwei Vertices, die eine Beziehung zwischen diesen ausdrückt. Sie kann eine Multiplizität, eine Richtung und Eigenschaften haben.
 
@@ -23,11 +30,15 @@ In JanusGraph hat jedes Diagramm einen eindeutigen Namen. Zum Erstellen, Öffnen
 
 ## Vertices
 
-Ein Vertex ist ein grafisches Element, das ein Objekt darstellt. Bei der Erstellung hat ein Vertex eine von der Diagrammengine festgelegte ID und eine benutzerdefinierte Bezeichnung. Ein Vertex kann außerdem Eigenschaften speichern, die indexiert und abgefragt werden können. Weitere Informationen zum Erstellen, Abfragen und zu anderen Implementierungsdetails von Vertices finden Sie in der [Dokumentation zu Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
+Ein Vertex ist ein grafisches Element, das ein Objekt darstellt. Bei der Erstellung hat ein Vertex eine von der Diagrammengine festgelegte ID und eine benutzerdefinierte Bezeichnung. Ein Vertex kann außerdem Eigenschaften speichern, die indexiert und abgefragt werden können.
+
+Weitere Informationen zum Erstellen, Abfragen und zu anderen Implementierungsdetails von Vertices finden Sie in der [Dokumentation zu Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Kanten
 
-Eine Kante ist ein grafisches Element, das eine Beziehung darstellt. Zum Erstellen einer Kante stellt der Benutzer die ein- und ausgehenden Vertices sowie eine Bezeichnung bereit. Die Diagrammengine weist der Kante eine ID zu. Eine Kante kann außerdem Eigenschaften speichern, die indexiert und abgefragt werden können. Weitere Informationen zum Erstellen, Abfragen und zu anderen Implementierungsdetails von Kanten finden Sie in der [Dokumentation zu Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
+Eine Kante ist ein grafisches Element, das eine Beziehung darstellt. Zum Erstellen einer Kante stellt der Benutzer die ein- und ausgehenden Vertices sowie eine Bezeichnung bereit. Die Diagrammengine weist der Kante eine ID zu. Eine Kante kann außerdem Eigenschaften speichern, die indexiert und abgefragt werden können.
+
+Weitere Informationen zum Erstellen, Abfragen und zu anderen Implementierungsdetails von Kanten finden Sie in der [Dokumentation zu Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Eigenschaften
 

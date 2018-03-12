@@ -1,17 +1,24 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # Concepts JanusGraph
 
-JanusGraph est une base de données de graphiques. Vous pouvez créer, interroger et modifier un grand nombre des graphiques de la base de données. JanusGraph est construit sur la pile Tinkerpop d'Apache et utilise le langage Gremlin pour les traversées, les commandes et les requêtes. Pour plus d'informations sur JanusGraph, voir la [documentation JanusGraph](http://docs.janusgraph.org/latest/index.html).
+JanusGraph est une base de données de graphiques. Vous pouvez créer, interroger et modifier un grand nombre des graphiques de la base de données. JanusGraph est construit sur la pile Tinkerpop d'Apache et utilise le langage Gremlin pour les traversées, les commandes et les requêtes.
+
+Pour plus d'informations sur JanusGraph, voir la [documentation JanusGraph](http://docs.janusgraph.org/latest/index.html).
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+D'autre vidéos concernant {{site.data.keyword.composeForJanusGraph}} sont disponibles dans le [centre d'apprentissage IBM Compose for JanusGraph](http://ibm.biz/janusgraph-learning).
+{: .tip}
 
 ## Introduction aux bases de données de graphiques
 
-Dans sa configuration la plus simple, un graphique est un ensemble de sommets avec des arêtes qui les relient. Le sommet est l'unité fondamentale du graphique et représente un objet indivisible. En termes clairs, cet objet peut être une personne, un emplacement ou un objet. Il peut avoir des propriétés qui décrivent l'objet. 
+Dans sa configuration la plus simple, un graphique est un ensemble de sommets avec des arêtes qui les relient. Le sommet est l'unité fondamentale du graphique et représente un objet indivisible. En termes clairs, cet objet peut être une personne, un emplacement ou un objet.  Il peut avoir des propriétés qui décrivent l'objet. 
 
 Une arête est une connexion entre deux sommets qui symbolise une relation entre ces sommets. Elle peut avoir une multiplicité, une direction et des propriétés.
 
@@ -24,11 +31,13 @@ Dans JanusGraph, chaque graphique a un nom unique. Pour créer, ouvrir, modifier
 ## Sommets
 
 Un sommet est un élément de graphique qui représente un objet. A sa création, un identificateur défini par le moteur de graphique et un libellé défini par l'utilisateur sont attribués au sommet. Un sommet peut en outre stocker des propriétés qui peuvent être indexées et faire l'objet d'une requête.
+
 Pour plus d'informations sur la création, l'interrogation et autres détails d'implémentation liés aux sommets, voir la [documentation Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Arêtes
 
 Une arête est un élément de graphique qui représente une relation. Pour créer une arête, l'utilisateur fournit les sommets entrants/sortants et un libellé. Le moteur de graphique affecte un identificateur à l'arête. Une arête peut en outre stocker des propriétés qui peuvent être indexées et faire l'objet d'une requête.
+
 Pour plus d'informations sur la création, l'interrogation et autres détails d'implémentation liés aux arêtes, voir la [documentation Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Propriétés

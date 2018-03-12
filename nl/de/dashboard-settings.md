@@ -1,7 +1,7 @@
 ---
 
 Copyright:
-  Years: 2017
+  years: 2017,2018
 lastupdated: "2017-10-23"
 ---
 
@@ -34,7 +34,9 @@ Wenn Ihr Service zusätzlichen Speicher benötigt oder Sie den Speicherplatz ver
     ![Seite 'Ressourcen skalieren'](./images/janusgraph-scale-show.png "Seite 'Ressourcen skalieren'")
 
 3. Passen Sie den Schieberegler an, um den Speicher zu erhöhen oder zu verringern, der dem {{site.data.keyword.composeForJanusGraph}}-Service zugeordnet ist. Verschieben Sie den Schieberegler nach links, um den Speicherplatz zu verringern, oder nach rechts, um ihn zu erhöhen.
-4. Klicken Sie auf **Bereitstellung skalieren**, um die Neuskalierung auszulösen und zur Dashboardübersicht zurückzukehren. Oben auf der Seite wird die Nachricht 'Skalierung eingeleitet' angezeigt, damit Sie wissen, dass die Neuskalierung läuft. Nach dem Abschluss der Skalierung wird die Anzeige _Bereitstellungsdetails_ aktualisiert und zeigt die aktuelle Nutzung sowie den neuen Wert für den verfügbaren Speicher an.
+4. Klicken Sie auf **Bereitstellung skalieren**, um die Neuskalierung auszulösen und zur Dashboardübersicht zurückzukehren. 
+
+Nach dem Abschluss der Skalierung wird die Anzeige _Bereitstellungsdetails_ aktualisiert und zeigt die aktuelle Nutzung sowie den neuen Wert für den verfügbaren Speicher an.
 
 
 ## Kennwort aktualisieren
@@ -45,12 +47,15 @@ Es wird ein neues, zufällig generiertes Kennwort angezeigt. Alternativ können 
   
 ![Kennwort für etcd aktualisieren](./images/janusgraph-update-password.png "Automatischer Kennwortgenerator")
 
-Die Änderungen werden wirksam, wenn Sie auf die Schaltfläche **Kennwort aktualisieren** klicken. Damit werden die Berechtigungsnachweise geändert, mit denen Sie und Ihre Services eine Verbindung herstellen und die zur Verbindungszeichenfolge Ihres Service gehören. In der Anzeige _Bereitstellungsdetails_ wird der Verarbeitungsfortschritt des Jobs angezeigt.
+Klicken Sie auf **Kennwort aktualisieren**. Sie werden aufgefordert, die Änderung zu bestätigen. Klicken Sie im Dialog auf **Kennwort aktualisieren**, um das neue Kennwort zu bestätigen, oder brechen Sie die Änderung ab. In der Anzeige _Bereitstellungsdetails_ wird der Verarbeitungsfortschritt des Jobs angezeigt.
+
+**Hinweis:** Durch Ändern des Kennworts werden die Berechtigungsnachweise geändert, mit denen Sie und Ihre Services eine Verbindung herstellen, und die Verbindungszeichenfolge Ihres Service wird ungültig. Dies kann auch zu Ausfallzeiten führen.
 
 ### Verbundene Anwendungen aktualisieren
 Die Änderung des Kennworts bewirkt, dass die vorhandene Verbindungszeichenfolge ungültig wird und eine neue generiert wird. Dies führt zu einer Serviceunterbrechung, bis die verbundenen Anwendungen mit der neuen Verbindungszeichenfolge aktualisiert werden. Dazu müssen Sie Ihren Anwendungen die neue Verbindungszeichenfolge zur Verfügung stellen.
 
-Weitere Informationen zum Verbinden Ihrer Anwendungen finden Sie in den Abschnitten [{{site.data.keyword.cloud}}-Anwendung verbinden](./connecting-bluemix-app.html) und [Externe Anwendung verbinden](./connecting-external.html).
+Weitere Informationen zum Verbinden Ihrer Anwendungen finden Sie in den Abschnitten [{{site.data.keyword.cloud}}-Anwendung verbinden](./connecting-bluemix-app.html)
+und [Externe Anwendung verbinden](./connecting-external.html).
 
 
 ## Whitelists verwenden
@@ -64,7 +69,6 @@ Das Feld *IP* kann eine einzelne vollständige IPv4- oder IPv6-Adresse mit oder 
 
 Beachten Sie Folgendes: Zwar lässt der IP-Eintrag IPv6 zu, doch ist derzeit keine Compose-Bereitstellung für den IPv6-Netzbetrieb verfügbar, sodass keine Filterung dieser Adressen möglich ist.
 
-
 ### Netzmasken
 Verwenden Sie eine Netzmaske, um eine Verbindung von einem angegebenen IP-Adressbereich zuzulassen. Bei Verwendung einer Netzmaske muss die IP-Adresse vollständig angegeben werden. Es muss also beispielsweise 192.168.1.0/24 statt 192.168.1/24 eingegeben werden.
 
@@ -75,4 +79,5 @@ Die *Beschreibung* kann ein beliebiger für den Benutzer hilfreicher Text zum Id
 Einträge in die Whitelist werden automatisch zu den Compose-Servern hinzugefügt, damit sie eine Verbindung herstellen können.
 
 ### Entfernen
-Klicken Sie, wenn Sie eine IP-Adresse oder Netzmaske aus der Whitelist entfernen wollen, auf den neben ihr angezeigten Eintrag *Entfernen*. Wenn alle Einträge in der Whitelist entfernt werden, wird die Whitelist inaktiviert und die TCP-Zugriffsportale akzeptieren alle IP-Adressen.
+Klicken Sie, wenn Sie eine IP-Adresse oder Netzmaske aus der Whitelist entfernen wollen, auf den neben ihr angezeigten Eintrag *Entfernen*.
+Wenn alle Einträge in der Whitelist entfernt werden, wird die Whitelist inaktiviert und die TCP-Zugriffsportale akzeptieren alle IP-Adressen.

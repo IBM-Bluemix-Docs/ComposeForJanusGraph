@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -68,7 +68,7 @@ gremlin>
 Die Gremlin-Konsole leitet nicht alles automatisch an den fernen Server weiter: Um einen Befehl an den Server zu senden, müssen Sie dem Befehl das Präfix `:>` voranstellen. Alternativ können Sie alle Konsolenbefehle mit `:remote console` an den fernen Server weiterleiten. Dies veranschaulichen die folgenden Befehle und Antworten:
 
 ```text
-$ bin/gremlin.sh
+$ bin/gremlin.sh                                                                   
 
         \,,,/
         (o o)
@@ -87,7 +87,7 @@ gremlin> :remote console
 ==>All scripts will now be sent to Gremlin Server - [portal93-4.ianuspater.compose-3.composedb.com/159.8.153.216:18045]-[016d7a68-cf70-450e-92eb-4e5e2a647b5b] - type ':remote console' to return to local mode
 gremlin> 1+1
 ==>2
-gremlin>
+gremlin> 
 
 ```
 

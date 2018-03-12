@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2017-09-13"
 
 # Gremlin Console を使用したグラフの作成とトラバース
 
-このトピックでは、{{site.data.keyword.composeForJanusGraph_full}} データベースを初めて使用する時の手順を取り上げます。このチュートリアルでは、Gremlin Console を使用して JanusGraph サーバーにコマンドを送信します。
+このトピックでは、{{site.data.keyword.composeForJanusGraph_full}} データベースを初めて使用する時の手順を取り上げます。 このチュートリアルでは、Gremlin Console を使用して JanusGraph サーバーにコマンドを送信します。
 
 ## 1. Gremlin をインストールします。
 
@@ -40,17 +40,17 @@ Gremlin Console をインストールするには、以下のようにします�
 
   ```
 
-5. Gremlin Console を構成します。{{site.data.keyword.composeForJanusGraph}} サービスの*「概要」*ページに、Gremlin Console の YAML があります。いずれかの構成を `conf` ディレクトリー内のファイルに保存します。このサンプルでは、`conf/compose.yaml` として保存します。
+5. Gremlin Console を構成します。 {{site.data.keyword.composeForJanusGraph}} サービスの*「概要」*ページに、Gremlin Console の YAML があります。 いずれかの構成を `conf` ディレクトリー内のファイルに保存します。 このサンプルでは、`conf/compose.yaml` として保存します。
  
 ## 2. Compose for JanusGraph に接続します。
 
-接続を確認するために、`bin/gremlin.sh` を再び実行します。`:remote` コマンドを使用して tinkerpop サーバーに接続します。
+接続を確認するために、`bin/gremlin.sh` を再び実行します。 `:remote` コマンドを使用して tinkerpop サーバーに接続します。
 
 ```text
 :remote connect tinkerpop.server conf/compose.yaml session
 ```
 
-ここでは、Gremlin に対して `connect` コマンドを送信しています。`conf/compose.yaml` の構成に基づいて `tinkerpop.server` に接続するためのコマンドです。さらに、`session` という引数を渡して、セッション・サポートを有効にしています。
+ここでは、Gremlin に対して `connect` コマンドを送信しています。`conf/compose.yaml` の構成に基づいて `tinkerpop.server` に接続するためのコマンドです。 さらに、`session` という引数を渡して、セッション・サポートを有効にしています。
 
 `:help :remote` と入力すると、`:remote` コマンドのオプションが表示されます。
 {: .tip}
@@ -65,7 +65,7 @@ gremlin>
 
 ## 3. サーバーにコマンドを送信します。
 
-Gremlin Console は、何でも自動的にリモート・サーバーに転送するわけではありません。サーバーにコマンドを送信するには、コマンドに `:>` という接頭部を付ける必要があります。あるいは、`:remote console` によってリモート・サーバーにすべてのコンソール・コマンドをリダイレクトすることもできます。その点を示した以下の一連のコマンドと応答をご覧ください。
+Gremlin Console は、何でも自動的にリモート・サーバーに転送するわけではありません。サーバーにコマンドを送信するには、コマンドに `:>` という接頭部を付ける必要があります。 あるいは、`:remote console` によってリモート・サーバーにすべてのコンソール・コマンドをリダイレクトすることもできます。 その点を示した以下の一連のコマンドと応答をご覧ください。
 
 ```text
 $ bin/gremlin.sh                                                                   
@@ -93,7 +93,7 @@ gremlin>
 
 ## 4. グラフを作成します。
 
-{{site.data.keyword.composeForJanusGraph}} には、グラフを作成したり開いたり閉じたりするための専用のグラフ・ファクトリーがあります。このファクトリー (`ConfiguredGraphFactory`) を使用すれば、基礎になっているストレージ・メカニズムについて知る必要はありません。グラフに名前を付けるだけで、新しいグラフを作成できます。最初に、新しいグラフを作成してください。このチュートリアルのサンプル・コマンドでは、グラフ名を _mygraph_ にしています。
+{{site.data.keyword.composeForJanusGraph}} には、グラフを作成したり開いたり閉じたりするための専用のグラフ・ファクトリーがあります。 このファクトリー (`ConfiguredGraphFactory`) を使用すれば、基礎になっているストレージ・メカニズムについて知る必要はありません。グラフに名前を付けるだけで、新しいグラフを作成できます。 最初に、新しいグラフを作成してください。 このチュートリアルのサンプル・コマンドでは、グラフ名を _mygraph_ にしています。
 
 `def` キーワードを使用してグラフの変数を宣言します。
 
@@ -106,7 +106,7 @@ def graph=ConfiguredGraphFactory.create("mygraph")
 
 ## 5. グラフを開きます。
 
-グラフを作成したら、グラフを操作するためにまず開く必要があります。そのために、`ConfiguredGraphFactory` で `open()` を呼び出します。それでは、次のようにグラフを開いてください。
+グラフを作成したら、グラフを操作するためにまず開く必要があります。 そのために、`ConfiguredGraphFactory` で `open()` を呼び出します。 それでは、次のようにグラフを開いてください。
 
 ```
 def graph=ConfiguredGraphFactory.open("mygraph")
@@ -122,7 +122,7 @@ graph.tx().commit()
 
 ## 6. グラフに頂点を追加します。
 
-このグラフに、ソフトウェア開発者の情報とその開発者たちが作成したソフトウェアの情報を組み込みます。ここでは、marko という開発者と lop という名前のソフトウェアを追加します。
+このグラフに、ソフトウェア開発者の情報とその開発者たちが作成したソフトウェアの情報を組み込みます。 ここでは、marko という開発者と lop という名前のソフトウェアを追加します。
 
 まず、marko を追加します。
 

@@ -1,7 +1,7 @@
 ---
 
-Copyright:
-  Years: 2017
+copyright:
+  years: 2017,2018
 lastupdated: "2017-10-16"
 ---
 
@@ -14,9 +14,17 @@ lastupdated: "2017-10-16"
 # Backups
 {: #backups}
 
-É possível criar e fazer download de backups na guia _Backups_ da página *Gerenciar* de seu painel de serviço. Ambos os backups, planejado e manual, estão disponíveis.
+É possível criar e fazer download de backups na guia _Backups_ da página _Gerenciar_ de seu painel de serviço. Backups diários, mensais e on demand estão disponíveis. Eles são retidos de acordo com planejamento a seguir:
 
-Os backups são criados fazendo backup dos nós de banco de dados do Scylla. Os backups do Scylla são tomados usando o utilitário de captura instantânea Scylla, fazendo backup de todos os arquivos de dados no disco armazenados no diretório de dados. A captura instantânea pode ser executada enquanto seus bancos de dados estão on-line.
+Tipo de backup|Planejamento de retenção
+----------|-----------
+Diárias|Os backups diários são retidos por 7 dias
+Semanal|Backups semanais são retidos por 4 semanas
+Mensal|Backups mensais são retidos por 3 meses
+On demand|Um backup on demand é retido. O backup retido é sempre o backup on demand mais recente.
+{: caption="Tabela 1. Planejamento de retenção de backup" caption-side="top"}
+
+Planejamentos de backup e políticas de retenção são fixos. Se você precisar manter mais backups do que o planejamento de retenção permite, faça download de backups e retenha os arquivos de acordo com as suas necessidades de negócios.
 
 ## Visualizando backups existentes
 

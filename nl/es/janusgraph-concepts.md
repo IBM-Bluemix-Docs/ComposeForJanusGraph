@@ -1,13 +1,20 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # Conceptos de JanusGraph
 
-JanusGraph es una base de datos gráfica. Puede crear, consultar y corregir varios gráficos dentro de la base de datos. JanusGraph se basa en la pila Apache Tinkerpop y utiliza el lenguaje Gremlin para cruces, mandatos y consultas. Para obtener más información sobre JanusGraph, consulte la [documentación de JanusGraph](http://docs.janusgraph.org/latest/index.html).
+JanusGraph es una base de datos gráfica. Puede crear, consultar y corregir varios gráficos dentro de la base de datos. JanusGraph se basa en la pila Apache Tinkerpop y utiliza el lenguaje Gremlin para cruces, mandatos y consultas.
+
+Para obtener más información sobre JanusGraph, consulte la [documentación de JanusGraph](http://docs.janusgraph.org/latest/index.html).
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+Puede encontrar más vídeos sobre {{site.data.keyword.composeForJanusGraph}} en el [Centro de aprendizaje de IBM Compose for JanusGraph](http://ibm.biz/janusgraph-learning).
+{: .tip}
 
 ## Introducción a las bases de datos gráficas
 
@@ -24,11 +31,13 @@ En JanusGraph, cada gráfico tiene un nombre exclusivo. Para crear, abrir, modif
 ## Vértices
 
 Un vértice es un elemento gráfico que representa un objeto. Cuando se crea, el vértice tiene un identificador definido por el motor del gráfico y una etiqueta definida por el usuario. Un vértice puede almacenar propiedades que se pueden indexar y que se pueden consultar.
+
 Para obtener más información sobre cómo crear y consultar y para ver otros detalles de la implementación de vértices, consulte la [documentación de Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Bordes
 
 Un borde es un elemento gráfico que representa una relación. Para crear un borde, el usuario proporciona los vértices de entrada y de salida y una etiqueta. El motor del gráfico asignará un identificador al borde. Un borde puede almacenar propiedades que se pueden indexar y que se pueden consultar.
+
 Para obtener más información sobre cómo crear y consultar y para ver otros detalles de la implementación de bordes, consulte la [documentación de Tinkerpop/Gremlin](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure).
 
 ## Propiedades

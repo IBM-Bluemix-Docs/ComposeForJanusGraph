@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -128,6 +128,7 @@ Antworten auf Abfragen erfolgen im Format eines JSON-Dokuments: mit einem Wert f
 }
 ```
 `requestId` ist eine eindeutige ID für die Anforderung. `status` enthält eine lesbare Nachricht, einen Darstellungscode für den HTTP-Status und weitere Attribute des dokumentierten Status. `result` enthält ein Datenobjekt, das entsprechend der Ausgabe des ausgeführten Gremlin-Codes strukturiert ist, und einen Meta-Abschnitt für zusätzliche Informationen, die außerhalb des Bereichs der Ergebnisdaten liegen.
+
 ## WebSockets
 
 WebSockets bieten ein effizientes Verfahren zum Erstellen einer bidirektionalen Verbindung mit langer Lebensdauer über TCP und TLS, das ideal für interaktive Sitzungen zwischen Clientanwendungen und dem JanusGraph-Server ist. Einige Bibliotheken für JanusGraph verwenden WebSockets als ihre Verbindung zum Server. Für die Arbeit mit JanusGraph on Compose müssen sie in der Lage sein, die Basisauthentifizierung und WSS (sichere WebSockets über TLS) zu verwenden. 
@@ -141,4 +142,3 @@ Die Gremlin-Konsole ist ein wichtiges Tool für die Arbeit mit Tinkerpop-fähige
 Zum Konfigurieren der Gremlin-Konsole stellen Sie eine YAML-Datei mit den entsprechenden Details bereit. Sie finden diese Konfiguration in der Anzeige _YAML-Datei für Gremlin-Konsole_ auf der Übersichtsseite des Service-Dashboards.
 
 Weitere Informationen zum Abrufen, Installieren, Konfigurieren und Verwenden der Gremlin-Konsole finden Sie im Abschnitt [Diagramme mit der Gremlin-Konsole erstellen und traversieren](./tutorial-gremlin-console.html).
-

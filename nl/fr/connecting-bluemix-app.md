@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -30,7 +30,7 @@ Nom de zone|Description
 `misc`|Zone parent qui contient les zones `session`, `websocket` et `gremlin_console_yaml`.
 `misc.session`| Identificateur URI `https` permettant d'extraire un jeton d'authentification valable 60 minutes pouvant être utilisé pour interagir avec le service. Voir [Connexion d'une application externe - Authentification par jeton](./connecting-external.html#token-authentication).
 `misc.websocket`|Identificateurs URI `wss` utilisés lors de la connexion au service à l'aide de Websockets. Voir [Connexion d'une application externe - Websockets](./connecting-external.html#websockets).
-`misc.gremlin_console_yaml`|Informations YAML utilisées pour configurer la console Gremlin en vue de la connexion au service. Voir [Connexion d'une application externe - Console Gremlin](./connecting-external.html#gremlin-console).
+`misc.gremlin_console_yaml`|Informations YAML utilisées pour configurer la console Gremlin en vue de la connexion au service.  Voir [Connexion d'une application externe - Console Gremlin](./connecting-external.html#gremlin-console).
 {: caption="Tableau 1. Données d'identification Compose for JanusGraph" caption-side="top"}
 
 ## Utilisation des données d'identification
@@ -102,7 +102,7 @@ Votre application a besoin d'analyser les variables d'environnement Cloud Foundr
   let credentials = janusgraph_services[0].credentials;
   ```
 
-  Vous pouvez maintenant utiliser les données d'identification du service du service. Par exemple, pour vous procurer un identificateur URI de session permettant d'obtenir un jeton d'authentification :
+  Vous pouvez maintenant utiliser les données d'identification du service. Par exemple, pour vous procurer un identificateur URI de session permettant d'obtenir un jeton d'authentification :
 
   ```javascript
   let jgurl = credentials.misc.session[0];

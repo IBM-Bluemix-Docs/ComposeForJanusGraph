@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-10-24"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -16,6 +16,8 @@ lastupdated: "2017-10-24"
 
 {{site.data.keyword.composeForJanusGraph_full}} ist eine skalierbare Diagrammdatenbank, die für die Speicherung und Abfrage stark vernetzter Daten optimiert ist, die als Millionen oder Milliarden von Vertices und Kanten modelliert werden. Der einfache und effiziente Abruf von Daten aus diesen komplexen Strukturen wird mit der Apache Tinkerpop(TM)-Kompatibilität von JanusGraph ermöglicht, die die Ausführung effizienter Abfragen zulässt, die mit einer traditionellen relationalen Datenbank schwer oder unmöglich wären. {{site.data.keyword.composeForJanusGraph}} verwaltet JanusGraph für Sie und macht es dadurch noch besser. Die Datenbank bietet ein einfaches, skalierbares Bereitstellungssystem, das Hochverfügbarkeit und Redundanz, automatisierte und dauerhaft aktive Sicherungen und vieles mehr bietet.
 {:shortdesc}
+
+Eine Übersicht über {{site.data.keyword.composeForJanusGraph}} finden Sie in [JanusGraph - Konzepte](./janusgraph-concepts.html)
 
 ## Compose for JanusGraph-Serviceinstanz erstellen
 
@@ -31,7 +33,8 @@ Sie können Ihren Service über das Service-Dashboard verwalten. Hier finden Sie
 - Ihre Sicherungen verwalten
 - Ihrem Service mehr Ressourcen zuordnen
 - Das Servicekennwort ändern
-- Whitelists verwenden, um den Zugriff auf Ihre Datenbank zu beschränken. Weitere Informationen finden Sie im Abschnitt [Einstellungen](./dashboard-settings.html).
+- Whitelists verwenden, um den Zugriff auf Ihre Datenbank zu beschränken. 
+Weitere Informationen finden Sie im Abschnitt [Einstellungen](./dashboard-settings.html).
 
 ## Verbindung zu Compose for JanusGraph herstellen
 

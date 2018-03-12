@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -13,7 +13,7 @@ lastupdated: "2017-09-13"
 
 # {{site.data.keyword.cloud_notm}}-Anwendung verbinden
 
-Verbinden Sie eine {{site.data.keyword.cloud}}-Anwendung mit Ihrem Service mithilfe der Berechtigungsnachweise dieses Service, die bei dessen Bereitstellung erstellt werden. 
+Verbinden Sie eine {{site.data.keyword.cloud}}-Anwendung mit Ihrem Service mithilfe der Berechtigungsnachweise dieses Service, die bei dessen Bereitstellung erstellt werden.
 
 ## Verfügbare Berechtigungsnachweise
 
@@ -30,7 +30,7 @@ Feldname|Beschreibung
 `misc`|Ein übergeordnetes Feld, das die Felder `session`, `websocket` und `gremlin_console_yaml` enthält.
 `misc.session`| Ein `https`-URI zum Abrufen eines 60-minütigen Authentifizierungstokens, das zur Interaktion mit dem Service verwendet werden kann. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - Tokenauthentifizierung](./connecting-external.html#token-authentication).
 `misc.websocket`|Die `wss`-URIs, die beim Herstellen einer Verbindung zu dem Service mithilfe von WebSockets verwendet werden. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - WebSockets](./connecting-external.html#websockets).
-`misc.gremlin_console_yaml`|YAML-Informationen, mit denen die Gremlin-Konsole zum Herstellen einer Verbindung zu dem Service konfiguriert wird. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - Gremlin-Konsole ](./connecting-external.html#gremlin-console).
+`misc.gremlin_console_yaml`|YAML-Informationen, mit denen die Gremlin-Konsole zum Herstellen einer Verbindung zu dem Service konfiguriert wird.  Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - Gremlin-Konsole ](./connecting-external.html#gremlin-console).
 {: caption="Tabelle 1. Compose for JanusGraph - Berechtigungsnachweise" caption-side="top"}
 
 ## Berechtigungsnachweise verwenden

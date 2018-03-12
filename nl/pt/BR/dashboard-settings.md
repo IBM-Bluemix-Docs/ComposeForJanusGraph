@@ -1,7 +1,7 @@
 ---
 
 Copyright:
-  Years: 2017
+  years: 2017,2018
 lastupdated: "2017-10-23"
 ---
 
@@ -34,7 +34,9 @@ Se o seu serviço precisa de armazenamento adicional, ou você deseja reduzir a 
     ![The Scale Resources page](./images/janusgraph-scale-show.png "The Scale Resources page")
 
 3. Ajuste a régua de controle para levantar ou abaixar o armazenamento alocado para o serviço {{site.data.keyword.composeForJanusGraph}}. Mova a régua de controle para a esquerda para reduzir a quantia de armazenamento ou mova-a para a direita para aumentar o armazenamento.
-4. Clique em **Escalar implementação** para acionar o novo ajuste de escala e retorne para a visão geral do painel. Uma mensagem 'Ajuste de escala iniciado' aparece na parte superior da página para permitir que você saiba que o novo ajuste de escala está em andamento. Quando o ajuste de escala for concluído, a área de janela _Detalhes da implementação_ será atualizada para mostrar o uso atual e o novo valor para o armazenamento disponível.
+4. Clique em **Escalar implementação** para acionar o novo ajuste de escala e retorne para a visão geral do painel. 
+
+Quando o ajuste de escala for concluído, a área de janela _Detalhes da implementação_ será atualizada para mostrar o uso atual e o novo valor para o armazenamento disponível.
 
 
 ## Atualizar a senha
@@ -45,7 +47,9 @@ Uma nova senha gerada aleatoriamente aparecerá ou será possível digitar sua p
   
 ![Updating the etcd password](./images/janusgraph-update-password.png "The automatic password generator")
 
-As mudanças entram em vigor quando você clica no botão **Atualizar senha**. Isso mudará as credenciais que você e seus serviços usam para se conectar e faz parte da sequência de conexões de seu serviço. A área de janela _Detalhes da implementação_ mostrará o progresso da tarefa em execução.
+Clique em **Atualizar senha**. Será solicitado que você confirme a mudança. Clique em **Atualizar senha** no diálogo para confirmar a nova senha ou cancele para cancelar a mudança. A área de janela _Detalhes da implementação_ mostrará o progresso da tarefa em execução.
+
+**Nota:** a troca da senha muda as credenciais que você e os seus serviços usam para se conectar e invalida a sequência de conexões do seu serviço. Ela também pode resultar em tempo de inatividade.
 
 ### Atualizando aplicativos conectados
 Mudar a senha invalidará a sequência de conexões existente e gerar uma nova. Isso causará uma interrupção de serviço até que aplicativos conectados sejam atualizados com a nova sequência de conexões. Você precisará fazer isso fornecendo a nova sequência de conexões para seus aplicativos.

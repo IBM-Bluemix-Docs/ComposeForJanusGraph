@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  Years: 2017
-lastupdated: "2017-10-24"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 {:new_window: target="_blank"}
@@ -16,6 +16,8 @@ lastupdated: "2017-10-24"
 
 {{site.data.keyword.composeForJanusGraph_full}} 是一個可調式圖形資料庫，已針對儲存及查詢模型化為數百萬或數十億個頂點和邊緣的高度交互連接資料而最佳化。JanuGraph 的 Apache Tinkerpop(TM) 相容性讓您能簡單且有效率地擷取這些複雜結構，如此您可以執行有效率的查詢，而使用傳統關聯式資料庫的話可能會很困難或是不可能達成。{{site.data.keyword.composeForJanusGraph}} 讓 JanusGraph 變得更好，因為它會為您管理、提供容易、可擴充的部署系統，此系統能提供高可用性與備援、自動化備份等等，以及更多其他功能。
 {:shortdesc}
+
+如需 {{site.data.keyword.composeForJanusGraph}} 的概觀，請參閱 [JanusGraph 概念](./janusgraph-concepts.html)
 
 ## 建立 Compose for JanusGraph 服務實例
 

@@ -1,13 +1,20 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-08-04"
+  years: 2017,2018
+lastupdated: "2017-12-12"
 ---
 
 # JanusGraph 概念
 
-JanusGraph 是图形数据库。您可以在数据库中创建、查询和修改许多图形。JanusGraph 基于 Apache Tinerpop 堆栈构建，并使用 Gremlin 语言进行遍历、命令和查询。要阅读有关 JanusGraph 的更多信息，请参阅 [JanusGraph 文档](http://docs.janusgraph.org/latest/index.html)。
+JanusGraph 是图形数据库。您可以在数据库中创建、查询和修改许多图形。JanusGraph 基于 Apache Tinerpop 堆栈构建，并使用 Gremlin 语言进行遍历、命令和查询。
+
+要阅读有关 JanusGraph 的更多信息，请参阅 [JanusGraph 文档](http://docs.janusgraph.org/latest/index.html)。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+您可以在 [IBM Compose for JanusGraph 学习中心](http://ibm.biz/janusgraph-learning)找到有关 {{site.data.keyword.composeForJanusGraph}} 的更多视频。
+{: .tip}
 
 ## 图形数据库简介
 
@@ -24,11 +31,15 @@ JanusGraph 是图形数据库。您可以在数据库中创建、查询和修改
 ## 顶点
 
 顶点是表示对象的图形元素。在创建顶点时，它具有由图形引擎设置的标识以及用户定义的标签。顶点还可以存储建立索引和查询所依据的属性。
+
+
 有关如何创建、查询顶点的更多信息以及顶点的其他实现详细信息，请参阅 [Tinkerpop/Gremlin 文档](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
 
 ## 边
 
 边是表示关系的图形元素。要创建边，用户需要提供传入/传出顶点和标签。图形引擎将为边分配一个标识。边还可以存储建立索引和查询所依据的属性。
+
+
 有关如何创建、查询边的更多信息以及边的其他实现详细信息，请参阅 [Tinkerpop/Gremlin 文档](http://tinkerpop.apache.org/docs/3.2.3/reference/#_the_graph_structure)。
 
 ## 属性

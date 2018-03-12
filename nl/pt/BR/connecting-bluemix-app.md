@@ -1,7 +1,7 @@
 ---
 
-Copyright:
-  Years: 2017
+copyright:
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -30,7 +30,7 @@ Campo de nome|Descrição
 `misc`|Um campo pai que contém os campos `session`, `websocket` e `gremlin_console_yaml`.
 `misc.session`| Um URI `https` que um usa para recuperar um token de autenticação de 60 minutos que pode ser usado para interagir com o serviço. Veja [Conectando um aplicativo externo - autenticação do token](./connecting-external.html#token-authentication).
 `misc.websocket`|Os URIs `wss` que são usados ao se conectar ao serviço usando Websockets. Veja [Conectando um aplicativo externo - Websockets](./connecting-external.html#websockets).
-`misc.gremlin_console_yaml`|Informações do YAML que são usadas para configurar o console Gremlin para se conectar ao serviço. Veja [Conectando um aplicativo externo - Gremlin Console](./connecting-external.html#gremlin-console).
+`misc.gremlin_console_yaml`|Informações do YAML que são usadas para configurar o console Gremlin para se conectar ao serviço.  Veja [Conectando um aplicativo externo - Gremlin Console](./connecting-external.html#gremlin-console).
 {: caption="Tabela 1. Credenciais do Compose for JanusGraph" caption-side="top"}
 
 ## Usando as credenciais

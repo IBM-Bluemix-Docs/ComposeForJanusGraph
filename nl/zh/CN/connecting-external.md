@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017
+  years: 2017,2018
 lastupdated: "2017-09-13"
 ---
 
@@ -128,6 +128,8 @@ $ curl -XPOST -H "Authorization: Token $JGTOKEN" -d '{"gremlin" : "1+1" }' "http
 }
 ```
 `requestId` 是请求的唯一标识。`status` 包含已报告状态的可读消息、HTTP 状态样式代码和其他属性。`result` 包含根据所执行的 Gremlin 代码返回的任何数据构造的数据对象，以及在结果数据范围外的任何额外信息的元部分。
+
+
 
 ## Websocket
 

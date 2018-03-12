@@ -1,7 +1,7 @@
 ---
 
 Copyright:
-  Years: 2017
+  years: 2017,2018
 lastupdated: "2017-10-23"
 ---
 
@@ -34,7 +34,9 @@ Si el servicio necesita más almacenamiento, o si desea reducir la cantidad de a
     ![El panel Escalar recursos](./images/janusgraph-scale-show.png "El panel Escalar recursos")
 
 3. Ajuste el graduador para aumentar o reducir el almacenamiento asignado al servicio {{site.data.keyword.composeForJanusGraph}}. Mueva el graduador a la izquierda para reducir la cantidad de almacenamiento o muévalo a la derecha para aumentar el almacenamiento.
-4. Pulse **Despliegue de escalado** para activar el escalado y volver a la visión general del panel de control. Aparece un mensaje 'escalado iniciado' en la parte superior de la página que le indica que el proceso de escalado está en curso. Una vez finalizado el escalado, el panel _Detalles de despliegue_ se actualiza para mostrar el uso actual y el nuevo valor del almacenamiento disponible.
+4. Pulse **Despliegue de escalado** para activar el escalado y volver a la visión general del panel de control. 
+
+Una vez finalizado el escalado, el panel _Detalles de despliegue_ se actualiza para mostrar el uso actual y el nuevo valor del almacenamiento disponible.
 
 
 ## Actualizar contraseña
@@ -45,7 +47,9 @@ Aparecerá una nueva contraseña, generada aleatoriamente, o bien puede escribir
   
 ![Actualización de la contraseña etcd](./images/janusgraph-update-password.png "El generador automático de contraseñas")
 
-Los cambios entrarán en vigor cuando pulse el botón **Actualizar contraseña**. Esto cambiará las credenciales que usted y sus servicios utilizan para conectarse y forma parte de la serie de conexión del servicio. El panel _Detalles de despliegue_ mostrará el progreso del trabajo en ejecución.
+Pulse **Actualizar contraseña**. Se le solicitará que confirme el cambio. Pulse **Actualizar contraseña** en el diálogo para confirmar la nueva contraseña, o Cancelar para cancelar el cambio. El panel _Detalles de despliegue_ mostrará el progreso del trabajo en ejecución.
+
+**Nota:** Cambiar la contraseña cambia las credenciales que usted y sus servicios utilizan para conectarse, e invalida la serie de conexión del servicio. También puede dar lugar a tiempo de inactividad.
 
 ### Actualización de aplicaciones conectadas
 Cambiar la contraseña invalidará la serie de conexión existente y generará una nueva. Esto provocará una interrupción del servicio hasta que las aplicaciones conectadas se actualicen con la nueva serie de conexión. Para ello tendrá que especificar la nueva serie de conexión para las aplicaciones.
@@ -56,7 +60,7 @@ y en [Conexión de una aplicación externa](./connecting-external.html).
 
 ## Utilización de listas blancas
 
-Si desea restringir el acceso a las bases de datos, puede crear una lista blanca de direcciones IP o rangos de direcciones IP específicos en el servicio. Cuando no hay direcciones IP en la lista blanca, esta se inhabilita y el despliegue aceptará conexiones procedentes de cualquier sistema de internet.
+Si desea restringir el acceso a las bases de datos, puede crear una lista blanca de direcciones IP o rangos de direcciones IP específicos en el servicio. Cuando no hay direcciones IP en la lista blanca, esta se inhabilita y el despliegue aceptará conexiones procedentes de cualquier sistema de Internet.
 
 ![Lista blanca de IP](./images/janusgraph-whitelist-show.png "Los campos de lista blanca.")
 
