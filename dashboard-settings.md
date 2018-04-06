@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -37,6 +37,10 @@ If your service needs additional storage, or you want to reduce the amount of st
 4. Click **Scale Deployment** to trigger the rescaling and return to the dashboard overview. 
 
 When the scaling is complete the _Deployment Details_ pane updates to show the current usage and the new value for the available storage.
+
+### Scaling Memory
+
+If you have a relatively small data set but need to execute complex queries, you may keep the storage nodes at the default size of 5GB, and scale the memory of the Engine nodes up to make your queries more performant. To add memory to Janus Graph Engine nodes, please contact support.
 
 
 ## Update Password

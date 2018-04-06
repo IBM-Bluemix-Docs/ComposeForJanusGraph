@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016,2018
-lastupdated: "2018-01-03"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ The base service configuration has a set price. Please consult the catalog tiles
 
 
 ## Expansion Options
-Finding the optimal configuration of memory and storage will vary across use-cases and workloads. If you need additional storage or memory for your service, you may increase the resources allocated to both the storage provided by the JanusGraph Storage cluster and the memory provided by the JanusGraph Engine nodes. 
+Finding the optimal configuration of memory and storage will vary across use-cases and workloads. If you need additional storage for large data sets, or additional memory for complex queries, you may increase the resources allocated to both the storage provided by the JanusGraph Storage cluster and the memory provided by the JanusGraph Engine nodes. 
 
 The storage clusters increase in units of 1GB and the price per unit _includes_ the cost to increase the resources on all the nodes in the cluster. Scaling of storage is available in the _Settings_ tab of the service.
  
