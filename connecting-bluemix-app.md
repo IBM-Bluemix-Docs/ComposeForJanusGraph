@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ Field Name|Description
 `name`|The database deployment name.
 `db_type`|The type of database that is offered by service; in this case `JanusGraph`.
 `uri_cli`|A `CURL` command line that illustrates how to send a gremlin query with token-based authentication.
-`uri_cli_1`|An alternative `CURL` command line that connects to the database instance.
+`uri_cli_1`|An secondary `CURL` command line that connects to the database instance.
 `maps`|unused
 `uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to. See [Connecting an external application](./connecting-external.html).
-`uri_direct_1`|An alternative `https` URI for connecting to the service.
+`uri_direct_1`|A secondary `https` URI for connecting to the service.
 `misc`|A parent field containing the `session`, `websocket` and `gremlin_console_yaml` fields.
 `misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting an external application - Token Authentication](./connecting-external.html#token-authentication).
 `misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting an external application - Websockets](./connecting-external.html#websockets).

@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ The _Deployment Details_ panel shows details of your service.
 
 The type of database that is offered by the service, and the database version that your service uses. If a more recent database version is available, a notification is displayed, together with a link to the [Upgrade version](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) section of your service dashboard.
 
-### Name
+### ID
 
 An internal identifier for the service.
 
