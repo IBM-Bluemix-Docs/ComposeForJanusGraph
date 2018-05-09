@@ -71,7 +71,7 @@ Use the following steps to restore a backup from a running JanusGraph service to
 
 3. Login with the appropriate account and credentials. `bx login` (or `bx login -help` to see all the login options).
 
-4. Switch to your Oranization and Space `bx target -o "$YOUR_ORG" -s "YOUR_SPACE"`
+4. Switch to your Organization and Space `bx target -o "$YOUR_ORG" -s "YOUR_SPACE"`
 
 5. Use the `service create` command to provision a new service, and provide the source service and the specific backup that you are restoring in a JSON object. For example:
 ``` 
