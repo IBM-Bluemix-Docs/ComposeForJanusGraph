@@ -19,23 +19,20 @@ An {{site.data.keyword.composeForJanusGraph_full}} service starts as a cluster o
 
 The base configuration also includes two HAProxy portals for access, HTTPS, and IP whitelisting. They have 64MB of memory each.
 
-### Cost
 The base service configuration has a set price. Please consult the catalog tiles on {{site.data.keyword.cloud_notm}} for base pricing in your local currency. For example, the base price in US dollars is $116/month. This includes the 5 units for the JanusGraph Storage cluster at $90/month and the 2 units for the JanusGraph Engine at $26/month.
 
+## Increasing resources
 
-## Expansion Options
 Finding the optimal configuration of memory and storage will vary across use-cases and workloads. If you need additional storage for large data sets, or additional memory for complex queries, you may increase the resources allocated to both the storage provided by the JanusGraph Storage cluster and the memory provided by the JanusGraph Engine nodes. 
 
 The storage clusters increase in units of 1GB and the price per unit _includes_ the cost to increase the resources on all the nodes in the cluster. Scaling of storage is available in the _Settings_ tab of the service.
  
 The engine nodes increase of units of 256MB of memory and the price per unit _includes_ the cost to increase the resources on both nodes. Currently, scaling of memory is only available through contacting support.
 
-### Cost
+## Calculating the cost of your deployment
+{: #tiered-pricing}
+
 Each additional unit (1GB) of JanusGraph Storage and each additional unit of JanusGraph Engine memory (256MB) has a per unit price which is listed in your local currency on the  {{site.data.keyword.cloud_notm}} catalog tile for the service. In US dollars, each unit of JanusGraph Storage is $18 and each unit of JanusGraph Engine is $13. As the _total_ size of all your {{site.data.keyword.composeForJanusGraph}} services increases, the per unit price decreases, as shown in [tiered pricing](#tiered-pricing).
-
-## Tiered Pricing
-
-### {{site.data.keyword.composeForJanusGraph}} Storage tiered pricing
 
 Number of Units of JanusGraph Storage|Price per Unit
 ----------|-----------
