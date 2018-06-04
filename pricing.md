@@ -46,7 +46,7 @@ Number of Units of JanusGraph Storage|Price per Unit
 5,000+ units|70% reduction -- $5.40 USD/Unit of Storage
 {: caption="Table 1. {{site.data.keyword.composeForJanusGraph}} Storage tiered pricing" caption-side="top"}
 
-### {{site.data.keyword.composeForJanusGraph}} Memory tiered pricing
+## {{site.data.keyword.composeForJanusGraph}} Memory tiered pricing
 
 Number of Units of JanusGraph Engine|Price per Unit
 ----------|-----------
