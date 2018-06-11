@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -37,6 +37,10 @@ Si el servicio necesita más almacenamiento, o si desea reducir la cantidad de a
 4. Pulse **Despliegue de escalado** para activar el escalado y volver a la visión general del panel de control. 
 
 Una vez finalizado el escalado, el panel _Detalles de despliegue_ se actualiza para mostrar el uso actual y el nuevo valor del almacenamiento disponible.
+
+### Escalado de memoria
+
+Si dispone de un conjunto de datos relativamente pequeño, pero necesita ejecutar consultas complejas, puede mantener el tamaño predeterminado de los nodos de almacenamiento, 5 GB, y aumentar la memoria de los nodos del motor para que el rendimiento de las consultas sea más eficiente. Para añadir memoria a los nodos de Janus Graph, póngase en contacto con el equipo de soporte.
 
 
 ## Actualizar contraseña

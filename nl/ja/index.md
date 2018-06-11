@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-12-12"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -33,8 +33,12 @@ lastupdated: "2017-12-12"
 - バックアップを管理する
 - サービスに割り振るリソースを増やす
 - サービス・パスワードを変更する
-- ホワイトリストを使用してデータベースへのアクセスを制限する 
+- ホワイトリストを使用してデータベースへのアクセスを制限する。 
+
 詳しくは、[設定](./dashboard-settings.html)を参照してください。
+
+{{site.data.keyword.composeForJanusGraph}} は、Cloud Foundry の役割を利用して、サービスへのアクセスを管理します。開発者役割を持つユーザーのみが、サービス・ダッシュボードを表示または使用できます。Cloud Foundry の役割について詳しくは、『[Cloud Foundry アクセス権限](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess)』および 『[Cloud Foundry のアクセス権限の管理](https://console.bluemix.net/docs/iam/mngcf.html#mngcf)』のページを参照してください。
+{: .tip}
 
 ## Compose for JanusGraph への接続
 

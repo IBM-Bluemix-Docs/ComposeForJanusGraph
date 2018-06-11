@@ -11,7 +11,7 @@ Compose For JanusGraph
 	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
-	El panel del control del servicio
+	El panel de control del servicio
 		dashboard-overview.md
 		dashboard-backups.md
 		dashboard-settings.md

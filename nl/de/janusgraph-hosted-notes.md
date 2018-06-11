@@ -74,7 +74,7 @@ Eine Ausnahme ist, wenn Sie die Verbindung über die Gremlin-Konsole mithilfe de
 :remote connect tinkerpop.server conf/compose.yaml
 ```
 
-Wenn Sie die Verbindung mit dem oben angegebenen Befehl herstellen, gibt es keine Sitzung und die Verbindung wird auf dieselbe Weise wie HTTP-Anforderungen ausgeführt. Wenn Sie aber `session` als ein Argument hinzufügen, wird die Sitzungsunterstützung aktiviert. 
+Wenn Sie die Verbindung mit dem oben angegebenen Befehl herstellen, gibt es keine Sitzung und die Verbindung wird auf dieselbe Weise wie HTTP-Anforderungen ausgeführt. Wenn Sie aber `session` als ein Argument hinzufügen, wird die Sitzungsunterstützung aktiviert.
 
 ```
 :remote connect tinkerpop.server conf/compose.yaml session

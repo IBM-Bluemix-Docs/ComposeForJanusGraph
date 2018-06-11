@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -37,6 +37,10 @@ Wenn Ihr Service zusätzlichen Speicher benötigt oder Sie den Speicherplatz ver
 4. Klicken Sie auf **Bereitstellung skalieren**, um die Neuskalierung auszulösen und zur Dashboardübersicht zurückzukehren. 
 
 Nach dem Abschluss der Skalierung wird die Anzeige _Bereitstellungsdetails_ aktualisiert und zeigt die aktuelle Nutzung sowie den neuen Wert für den verfügbaren Speicher an.
+
+### Hauptspeicher skalieren
+
+Wenn Sie über einen relativ kleinen Datensatz verfügen aber komplexe Abfragen ausführen müssen, können Sie die Speicherknoten auf einer Standardgröße von 5 GB belassen und den Hauptspeicher der Engineknoten skalieren, um die Leistung bei den Abfragen zu steigern. Bitte fordern Sie Unterstützung an, um die Speicherkapazität der Janus Graph Engine-Knoten zu erweitern. 
 
 
 ## Kennwort aktualisieren

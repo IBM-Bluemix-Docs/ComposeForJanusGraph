@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -37,6 +37,10 @@ Se il tuo servizio necessita ulteriore memoria o desideri ridurre la quantità d
 4. Fai clic su **Scale Deployment** per attivare il ridimensionamento e ritorna alla panoramica del dashboard. 
 
 Quando il ridimensionamento è completo il pannello _Deployment Details_ si aggiorna per visualizzare l'utilizzo corrente e il nuovo valore per la memoria disponibile.
+
+### Ridimensionamento della memoria
+
+Se hai un dataset relativamente piccolo ma devi eseguire delle query complesse, puoi mantenere i nodi di archiviazione alla dimensione predefinita di 5GB e ridimensionare la memoria dei nodi del motore ampliandola per migliorare le prestazioni delle tue query. Per aggiungere della memoria ai nodi del motore JanusGraph ti invitiamo a contattare il supporto.
 
 
 ## Aggiornamento della password

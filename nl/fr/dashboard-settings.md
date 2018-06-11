@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -26,9 +26,9 @@ Lorsqu'une nouvelle version de la base de données est disponible, un menu déro
 
 ## Mise à l'échelle des ressources
 
-Si votre service a besoin de plus d'espace de stokage, ou si vous voulez limiter la quantité de stockage allouée au service, vous pouvez effectuer une mise à l'échelle des ressources.
+Si votre service a besoin de plus d'espace de stockage, ou si vous voulez limiter la quantité de stockage allouée au service, vous pouvez effectuer une mise à l'échelle des ressources.
 
-1. Accédez à la page _Vue d'ensemble_ de votre service.
+1. Accédez à la page _Overview_ de votre service.
 2. Dans le panneau _Deployment Details_, cliquez sur **Scale Resources**. La page Scale Resources s'ouvre.
 
     ![Page Scale Resources](./images/janusgraph-scale-show.png "Page Scale Resources")
@@ -37,6 +37,10 @@ Si votre service a besoin de plus d'espace de stokage, ou si vous voulez limiter
 4. Cliquez sur **Scale Deployment** pour lancer le processus de mise à l'échelle et revenir dans la vue d'ensemble du tableau de bord. 
 
 Une fois la mise à l'échelle terminée, le panneau _Deployment Details_ est actualisé pour afficher l'utilisation actuelle et la nouvelle valeur de stockage disponible.
+
+### Mise à l'échelle de la mémoire
+
+Si vous disposez d'un jeu de données relativement peu important mais que vous devez exécuter des requêtes complexes, vous pouvez conserver la taille par défaut de 5 Go pour les noeuds de stockage et mettre à l'échelle la mémoire des noeuds JanusGraph Engine afin d'améliorer les performances des requêtes. Pour ajouter de la mémoire aux noeuds JanusGraph Engine, contactez le support.
 
 
 ## Mise à jour du mot de passe

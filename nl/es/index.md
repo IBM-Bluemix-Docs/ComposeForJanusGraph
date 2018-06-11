@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-12-12"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -34,7 +34,11 @@ Puede gestionar el servicio desde el panel de control del servicio. Aquí encont
 - asignar más recursos para el servicio
 - cambiar la contraseña del servicio
 - utilizar listas blancas para restringir el acceso a las bases de datos. 
+
 Para obtener más información, consulte [Valores](./dashboard-settings.html).
+
+{{site.data.keyword.composeForJanusGraph}} utiliza roles de Cloud Foundry para gestionar el acceso al servicio. Solo los usuarios con el rol de desarrollador pueden ver o utilizar el panel de control del servicio. Para obtener más información sobre los roles de Cloud Foundry, consulte las páginas [Acceso de Cloud Foundry](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) y [Gestión del acceso de Cloud Foundry](https://console.bluemix.net/docs/iam/mngcf.html#mngcf).
+{: .tip}
 
 ## Conexión con Compose for JanusGraph
 

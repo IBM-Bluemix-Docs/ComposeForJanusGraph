@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-12-12"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -32,12 +32,16 @@ Quando você provisiona sua instância de serviço, é possível escolher os pla
 
 ## Gerenciando o Compose for JanusGraph
 
-É possível gerenciar seu serviço no painel de serviço. Aqui é possível localizar informações sobre o banco de dados do {{site.data.keyword.cloud_notm}} Compose e como conectar-se a ele. Também é possível:
+É possível gerenciar seu serviço no painel de serviço. Aqui é possível localizar informações sobre o banco de dados do Compose do {{site.data.keyword.cloud_notm}} e como conectar-se a ele. Também é possível:
 - gerenciar seus backups
 - alocar mais recursos para seu serviço
 - mudar a senha do serviço
 - use listas de desbloqueio para restringir o acesso a seus bancos de dados. 
+
 Para obter mais informações, veja [Configurações](./dashboard-settings.html).
+
+O {{site.data.keyword.composeForJanusGraph}} depende de funções do Cloud Foundry para gerenciar o acesso ao serviço. Somente usuários com a função de Desenvolvedor podem ver ou usar o painel de serviço. Para obter mais informações sobre as funções do Cloud Foundry, veja as páginas [Acesso ao Cloud Foundry](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) e [Gerenciando ao acesso ao Cloud Foundry](https://console.bluemix.net/docs/iam/mngcf.html#mngcf).
+{: .tip}
 
 ## Conectando-se ao Compose for JanusGraph
 

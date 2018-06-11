@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016,2018
-lastupdated: "2018-01-03"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ La configurazione del servizio di base a un prezzo fissato. Consulta i tile del 
 
 
 ## Opzioni di espansione
-Il trovare la configurazione ottimale di memoria e archiviazione varierà tra i casi di utilizzo e i carichi di lavoro. Se hai bisogno di ulteriore archiviazione o memoria per il tuo servizio, puoi aumentare le risorse assegnate all'archiviazione fornita dal cluster di archiviazione JanusGraph e la memoria fornita dai nodi del motore JanusGraph. 
+Il trovare la configurazione ottimale di memoria e archiviazione varierà tra i casi di utilizzo e i carichi di lavoro. Se hai bisogno di ulteriore archiviazione per dataset di grandi dimensioni o di memoria aggiuntiva per query complesse, puoi aumentare le risorse assegnate all'archiviazione fornita dal cluster di archiviazione JanusGraph e la memoria fornita dai nodi del motore JanusGraph. 
 
 I cluster di archiviazione vengono incrementati in unità di 1GB e il prezzo per unità _include_ il costo dell'incremento delle risorse in tutti i nodi nel cluster. Il ridimensionamento dell'archiviazione è disponibile nella scheda _Settings_ del servizio.
  
@@ -35,7 +35,7 @@ Ogni unità aggiuntiva (1GB) di archiviazione JanusGraph e ogni unità di memori
 
 ## Prezzi a livelli
 
-### Prezzi a livelli dell'archiviazione {{site.data.keyword.composeForJanusGraph}} 
+### Prezzi a livelli dell'archiviazione {{site.data.keyword.composeForJanusGraph}}
 
 Numero di unità di archiviazione JanusGraph|Prezzo per unità
 ----------|-----------
@@ -47,18 +47,18 @@ Numero di unità di archiviazione JanusGraph|Prezzo per unità
 500 - 999 unità|50% di riduzione -- $9.00 USD/Unità di archiviazione
 1.000 - 4.999 unità|60% di riduzione -- $7.20 USD/Unità di archiviazione
 5.000+ unità|70% di riduzione -- $5.40 USD/Unità di archiviazione
-{: caption="Tabella 1. Prezzi a livelli di {{site.data.keyword.composeForJanusGraph}} " caption-side="top"}
+{: caption="Tabella 1. Prezzi a livelli di {{site.data.keyword.composeForJanusGraph}}" caption-side="top"}
 
-### Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}} 
+### Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}}
 
-Numero di unità di memoria JanusGraph |Prezzo per unità
+Numero di unità di memoria JanusGraph|Prezzo per unità
 ----------|-----------
-2 - 9 unità|prezzo per unità di base -- $13.00 USD/Unità di motore 
-10 - 24 unità|10% di riduzione -- $11.70 USD/Unità di motore 
-25 - 49 unità|20% di riduzione -- $10.40 USD/Unità di motore 
-50 - 99 unità|30% di riduzione -- $9.10 USD/Unità di motore 
-100 - 499 unità|40% di riduzione -- $7.80 USD/Unità di motore 
-500 - 999 unità|50% di riduzione -- $6.50 USD/Unità di motore 
-1.000 - 4.999 unità|60% di riduzione -- $5.20 USD/Unità di motore 
-5.000+ unità|70% di riduzione -- $3.90 USD/Unità di motore 
-{: caption="Tabella 2. Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}} " caption-side="top"}
+2 - 9 unità|prezzo per unità di base -- $13.00 USD/Unità di motore
+10 - 24 unità|10% di riduzione -- $11.70 USD/Unità di motore
+25 - 49 unità|20% di riduzione -- $10.40 USD/Unità di motore
+50 - 99 unità|30% di riduzione -- $9.10 USD/Unità di motore
+100 - 499 unità|40% di riduzione -- $7.80 USD/Unità di motore
+500 - 999 unità|50% di riduzione -- $6.50 USD/Unità di motore
+1.000 - 4.999 unità|60% di riduzione -- $5.20 USD/Unità di motore
+5.000+ unità|70% di riduzione -- $3.90 USD/Unità di motore
+{: caption="Tabella 2. Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}}" caption-side="top"}

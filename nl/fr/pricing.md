@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016,2018
-lastupdated: "2018-01-03"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ Le prix de la configuration du service de base est défini. Consultez les vignet
 
 
 ## Options d'extension
-La configuration optimale de mémoire et de stockage variera selon l'utilisation et la charge de travail. Si vous avez besoin de davantage de mémoire ou de stockage pour votre service, vous pouvez augmenter les ressources allouées au stockage fourni par le cluster JanusGraph Storage et à la mémoire fournie par les noeuds JanusGraph Engine. 
+La configuration optimale de mémoire et de stockage variera selon l'utilisation et la charge de travail. Si vous avez besoin de davantage de stockage pour des jeux de données volumineux ou de plus de mémoire pour votre des requêtes complexes, vous pouvez augmenter les ressources allouées au stockage fourni par le cluster JanusGraph Storage et à la mémoire fournie par les noeuds JanusGraph Engine. 
 
 Les clusters de stockage augmentent par unités de 1 Go et le prix unitaire _inclut_ le coût d'augmentation des ressources dans tous les noeuds du cluster. Une mise à l'échelle du stockage est disponible dans l'onglet _Paramètres_ du service.
  

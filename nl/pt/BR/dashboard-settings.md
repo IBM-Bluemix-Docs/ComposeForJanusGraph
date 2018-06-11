@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-10-23"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -37,6 +37,10 @@ Se o seu serviço precisa de armazenamento adicional, ou você deseja reduzir a 
 4. Clique em **Escalar implementação** para acionar o novo ajuste de escala e retorne para a visão geral do painel. 
 
 Quando o ajuste de escala for concluído, a área de janela _Detalhes da implementação_ será atualizada para mostrar o uso atual e o novo valor para o armazenamento disponível.
+
+### Memória de ajuste de escala
+
+Se você tiver configurado um conjunto de dados relativamente pequeno, mas precisar executar consultas complexas, poderá manter os nós de armazenamento no tamanho padrão de 5 GB e escalar a memória dos nós do Mecanismo para tornar as suas consultas mais eficientes. Para incluir memória nos nós do Mecanismo de Gráfico Janus, entre em contato com o suporte.
 
 
 ## Atualizar a senha

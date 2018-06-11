@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016,2018
-lastupdated: "2018-01-03"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ A configuração de serviço de base tem um preço definido. Consulte o ladrilho
 
 
 ## Opções de expansão
-A descoberta da configuração ideal de memória e armazenamento variará entre os casos de uso e cargas de trabalho. Se você precisar de armazenamento ou memória adicional para seu serviço, será possível aumentar os recursos alocados para o armazenamento fornecido pelo cluster do JanusGraph Storage e a memória fornecida pelos nós do JanusGraph Engine. 
+A descoberta da configuração ideal de memória e armazenamento variará entre os casos de uso e cargas de trabalho. Se você precisar de armazenamento adicional para conjuntos de dados grandes ou memória adicional para consultas complexas, poderá aumentar os recursos alocados para ambos, o armazenamento fornecido pelo cluster do JanusGraph Storage e a memória fornecida pelos nós do JanusGraph Engine. 
 
 O aumento de clusters de armazenamento em unidades de 1 GB e o preço por unidade _incluem_ o custo para aumentar os recursos em todos os nós no cluster. O ajuste de escala de armazenamento está disponível na guia _Configurações_ do serviço.
  

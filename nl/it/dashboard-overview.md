@@ -15,21 +15,21 @@ lastupdated: "2017-11-15"
 
 La pagina _Overview_ ti mostra le informazioni sul tuo database {{site.data.keyword.cloud}} Compose. La panoramica include le informazioni di identificazione essenziali e l'utilizzo della risorsa corrente. Troverai inoltre una sezione per le stringhe di connessione che puoi utilizzare con gli strumenti o utilizzare gli strumenti per il collegamento al tuo database.
 
-## Dettagli della distribuzione
+## Deployment Details
 
 Il pannello _Deployment Details_ mostra i dettagli del tuo servizio.
 
-![Dettagli della distribuzione](./images/janusgraph-deployment-details.png "Una vista del pannello dei dettagli della distribuzione")
+![Deployment Details](./images/janusgraph-deployment-details.png "Una vista del pannello dei dettagli della distribuzione")
 
-### Tipo
+### Type
 
 Il tipo di database offerto dal servizio e la versione che il servizio utilizza. Se è disponibile una versione più recente del database, viene visualizzata una notifica, insieme a un link alla sezione [Aggiorna versione](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) del tuo dashboard del servizio.
 
-### Nome
+### Name
 
 Un identificativo interno per il servizio.
 
-### Utilizzo
+### Usage
 
 La dimensione del tuo database e la quantità di memoria fornita dal tuo piano di servizio.
 

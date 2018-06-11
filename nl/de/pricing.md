@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016,2018
-lastupdated: "2018-01-03"
+lastupdated: "2018-03-27"
 ---
 
 {:new_window: target="_blank"}
@@ -15,7 +15,7 @@ lastupdated: "2018-01-03"
 {: #pricing}
 
 ## Basiskonfiguration
-Ein {{site.data.keyword.composeForJanusGraph_full}}-Service beginnt mit einem Cluster von zwei JanusGraph Engine-Knoten mit jeweils 512 MB Hauptspeicher, was 2 Ressourceneinheiten entspricht. JaunsGraph Storage ist ein Cluster mit drei Knoten mit jeweils 5 GB Speicher, was 5 Ressourceneinheiten entspricht. Der Service _umfasst_ Replikation und Hochverfügbarkeit. In jeder JanusGraph Engine-Einheit und im Einzelpreis sind die Ressourcenkosten für beide Engineknoten _enthalten_. Entsprechend sind auch in der JanusGraph Storage-Einheit und im Einzelpreis die Kosten der Ressourcen für alle drei Speicherknoten enthalten. 
+Ein {{site.data.keyword.composeForJanusGraph_full}}-Service beginnt mit einem Cluster von zwei JanusGraph Engine-Knoten mit jeweils 512 MB Hauptspeicher, was 2 Ressourceneinheiten entspricht. JaunsGraph Storage ist ein Cluster mit drei Knoten mit jeweils 5 GB Speicher, was 5 Ressourceneinheiten entspricht. Der Service _umfasst_ Replikation und Hochverfügbarkeit. In jeder JanusGraph Engine-Einheit und im Einzelpreis sind die Ressourcenkosten für beide Engineknoten _enthalten_. Entsprechend sind auch in der JanusGraph Storage-Einheit und im Einzelpreis die Kosten der Ressourcen für alle drei Speicherknoten enthalten.
 
 Zur Basiskonfiguration gehören zudem zwei HAProxy-Portale für Zugriff, HTTPS und IP-Whitelisting. Sie haben jeweils 64 MB Hauptspeicher.
 
@@ -24,7 +24,7 @@ Die Basisservicekonfiguration hat einen Festpreis. Den Grundpreis in Ihrer Lande
 
 
 ## Erweiterungsoptionen
-Welche die optimale Konfiguration von Speicher und Hauptspeicher ist, variiert je nach Anwendungsfällen und Workloads. Wenn Sie zusätzlichen Speicher oder Hauptspeicher für Ihren Service benötigen, können Sie die zugeordneten Ressourcen sowohl für den vom JanusGraph Storage-Cluster bereitgestellten Speicher als auch für den von den JanusGraph Engine-Knoten bereitgestellten Hauptspeicher erhöhen. 
+Welche die optimale Konfiguration von Speicher und Hauptspeicher ist, variiert je nach Anwendungsfällen und Workloads. Wenn Sie zusätzlichen Speicher für große Datensätze oder zusätzlichen Hauptspeicher für komplexe Abfragen benötigen, können Sie die zugeordneten Ressourcen sowohl für den vom JanusGraph Storage-Cluster bereitgestellten Speicher als auch für den von den JanusGraph Engine-Knoten bereitgestellten Hauptspeicher erhöhen. 
 
 In der Erhöhung der Speichercluster zu Einheiten von jeweils 1 GB und im Einzelpreis sind die Kosten für die Erweiterung der Ressourcen auf allen Knoten im Cluster _enthalten_. Das Skalieren des Speichers ist über die Registerkarte _Einstellungen_ des Service verfügbar.
  

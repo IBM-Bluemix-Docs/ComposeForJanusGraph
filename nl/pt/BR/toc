@@ -11,7 +11,7 @@ Compose For JanusGraph
 	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
-	O Painel de serviço
+	O Painel de serviço   		
 		dashboard-overview.md
 		dashboard-backups.md
 		dashboard-settings.md
@@ -22,6 +22,7 @@ Compose For JanusGraph
 		tutorial-https.md
 		tutorial-gremlin-console.md
 	{: .navgroup-end}
+
 
 	{: .navgroup id="howto"}
 	data-browser.md
