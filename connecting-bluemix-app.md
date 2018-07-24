@@ -114,4 +114,4 @@ Your application needs to parse the Cloud Foundry environvent variables. In Node
   $ cf push
   ```
 
-For more information on using applications with {{site.data.keyword.cloud_notm}} services, see [Adding a service to your app](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+For more information on using applications with {{site.data.keyword.cloud_notm}} services, see [Adding a service to your app](https://console.{DomainName}/docs/services/reqnsi.html#add_service).
