@@ -17,12 +17,12 @@ lastupdated: "2017-09-13"
 JanusGraph supports connections using HTTP requests or over WebSockets. All connections are performed over HTTPS and require authentication. HTTP-based requests support basic and token authentication. For anything other than a one-off call on the JanusGraph deployment, using WebSockets or Token Authentication will result in better performance. Basic authentication is an expensive process that slows down requests.
 
 For more on how to use HTTPs and to learn about creating and opening graphs, see [Creating and Traversing a Graph using HTTPS](./tutorial-https.html).
-{: .tip}
+{: tip}
 
 The actual communication between client and database involves the client sending requests in Gremlin, a dialect of the Groovy language customized for querying graph structures and the database responding to those queries. You can also send requests using the Gremlin Console.
 
 For details on how to get, install, configure and use the Gremlin Console, see [Creating and Traversing a Graph using Gremlin Console](./tutorial-gremlin-console.html).
-{: .tip}
+{: tip}
 
 ## HTTP requests
 
@@ -45,7 +45,7 @@ Gremlin is an extensive traversal language but a program in it can also be as si
 ``` 
 
 If you're sending the same script to the server several times, you can improve performance by providing an optional "bindings" dictionary with a map of variables that are available to the gremlin script. This helps with performance as the server won't have to recompile the gremlin script.
-{: .tip}
+{: tip}
 
 Additional information about the HTTP protocol can be found in the [Connecting via REST](http://tinkerpop.apache.org/docs/3.2.3/reference/#_connecting_via_rest) section of the Apache Tinkerpop Documentation
 
@@ -80,7 +80,7 @@ The returned JSON result contains the session token:
 ```
 
 The token is valid for 60 minutes
-{: .tip}
+{: tip}
 
 Extract the token value and then include it as the `Authorization` header in any further requests:
 

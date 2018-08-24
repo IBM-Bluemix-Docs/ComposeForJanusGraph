@@ -14,7 +14,7 @@ To read more about JanusGraph, see the [JanusGraph Documentation](http://docs.ja
 <iframe title="Compose for JanusGraph overview" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 You can find more videos about {{site.data.keyword.composeForJanusGraph}} in the [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
-{: .tip}
+{: tip}
 
 ## Introduction to Graph Databases
 

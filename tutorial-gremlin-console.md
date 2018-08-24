@@ -53,7 +53,7 @@ To verify the connection, execute `bin/gremlin.sh` again. Then, use the `:remote
 This command tells Gremlin to `connect` to something that is a `tinkerpop.server` using the configuration in `conf/compose.yaml`. We're also passing another argument - `session` - to enable session support.
 
 Type `:help :remote` to see the options for the `:remote` command.
-{: .tip}
+{: tip}
 
 If the connection is successful you'll see an SSL warning and a message to confirm the connection.
 
@@ -102,7 +102,7 @@ def graph=ConfiguredGraphFactory.create("mygraph")
 ```
 
 {{site.data.keyword.composeForJanusGraph}} graph names can include only alphanumeric characters and the underscore character.
-{: .tip}
+{: tip}
 
 ## 5. Open the graph
 

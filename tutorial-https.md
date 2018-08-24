@@ -46,7 +46,7 @@ If the request is successful, JanusGraph returns a response like this:
 You are now ready to start working with The Graph of the Gods.
 
 Add your Connection String on to the end of each of the CURL commands in the tutorial.
-{: .tip}
+{: tip}
 
 ## 2. Create the graph
 
@@ -59,7 +59,7 @@ curl -XPOST -d '{"gremlin": "def graph=ConfiguredGraphFactory.create(\"example\"
 ```
 
 {{site.data.keyword.composeForJanusGraph}} graph names can include only alphanumeric characters and the underscore character.
-{: .tip}
+{: tip}
 
 Note that the curl command ends with `;0;`. This is a workaround, because the HTTP request API emits an error (`{"message":"Cannot get namespace of root","Exception-Class":"java.lang.IllegalArgumentException"}`) even though it has completed the operation correctly. This only affects the graph type when code tries to return it.
 

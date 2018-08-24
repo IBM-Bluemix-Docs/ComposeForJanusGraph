@@ -85,7 +85,7 @@ The graph visualization of the query results looks like this:
 The visualizer renders the JSON results shown in the JSON viewer, so only the returned vertices and edges are visualized. If the query route traverses only vertices, then only vertices are returned, but if it includes edges, these are included in the results. There are a number of ways to populate the results with edges. A powerful method is to use the `path()` function. When added to a Gremlin query, `path()` returns the route taken to get to the vertices in the query response.
 
 The Gremlin documentation on [path-step](http://tinkerpop.apache.org/docs/current/reference/#path-step) has more on the `path()` function.
-{: .tip}
+{: tip}
 
 For example, the following query returns only vertices:
 

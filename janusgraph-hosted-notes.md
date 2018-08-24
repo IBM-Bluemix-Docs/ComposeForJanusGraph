@@ -81,7 +81,7 @@ If you make the connection using the command above there is no session, and the 
 ```
 
 Using a session, you can define a variable in one command and refer to it in another command.
-{: .tip}
+{: tip}
 
 ## Transactions
 
