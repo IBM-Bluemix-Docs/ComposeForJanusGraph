@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ Le panneau _Deployment Details_ affiche des détails concernant votre déploieme
 
 Type de base de données fourni par le service et version de base de données qu'utilise votre service. Lorsqu'une version plus récente de la base de données est disponible, une notification s'affiche, accompagnée d'un lien vers la section [Mise à niveau de la version](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) du tableau de bord de votre service.
 
-### Nom
+### ID
 
 Identificateur interne du service.
 

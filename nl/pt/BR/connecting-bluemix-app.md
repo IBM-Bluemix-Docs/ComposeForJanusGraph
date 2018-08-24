@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ Campo de nome|Descrição
 `name`|O nome da implementação do banco de dados.
 `db_type`|O tipo de banco de dados que é oferecido pelo serviço; neste caso, `JanusGraph`.
 `uri_cli`|Uma linha de comandos `CURL` que ilustra como enviar uma consulta do Gremlin com a autenticação baseada em token.
-`uri_cli_1`|Uma linha de comandos `CURL` alternativa que se conecta à instância de banco de dados.
+`uri_cli_1`|Uma linha de comandos `CURL` secundária que se conecta à instância de banco de dados.
 `maps`|não usado
 `uri`|O URI `https` que é usado ao se conectar ao serviço, que inclui o nome do host do servidor e o número da porta à qual se conectar. Veja [Conectando um aplicativo externo](./connecting-external.html).
-`uri_direct_1`|Um URI `https` alternativo para se conectar ao serviço.
+`uri_direct_1`|Um URI `https` secundário para se conectar ao serviço.
 `misc`|Um campo pai que contém os campos `session`, `websocket` e `gremlin_console_yaml`.
 `misc.session`| Um URI `https` que um usa para recuperar um token de autenticação de 60 minutos que pode ser usado para interagir com o serviço. Veja [Conectando um aplicativo externo - autenticação do token](./connecting-external.html#token-authentication).
 `misc.websocket`|Os URIs `wss` que são usados ao se conectar ao serviço usando Websockets. Veja [Conectando um aplicativo externo - Websockets](./connecting-external.html#websockets).
@@ -114,4 +114,4 @@ Seu aplicativo precisa analisar as variáveis de ambiente do Cloud Foundry. No N
   $ cf push
   ```
 
-Para obter mais informações sobre o uso de aplicativos com serviços do {{site.data.keyword.cloud_notm}}, veja [Incluindo um serviço em seu app](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+Para obter mais informações sobre o uso de aplicativos com serviços do {{site.data.keyword.cloud_notm}}, veja [Incluindo um serviço em seu app](https://console.{DomainName}/docs/services/reqnsi.html#add_service).

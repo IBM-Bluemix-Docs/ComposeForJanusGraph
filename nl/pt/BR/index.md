@@ -21,14 +21,14 @@ Para obter uma visão geral do {{site.data.keyword.composeForJanusGraph}}, veja 
 
 ## Criando uma instância de serviço do Compose for JanusGraph
 
-[Crie uma instância do {{site.data.keyword.composeForJanusGraph}}](https://console.bluemix.net/catalog/services/compose-for-janusgraph/).
+[Criar uma {{site.data.keyword.composeForJanusGraph}} instância](https://console.{DomainName}/catalog/services/compose-for-janusgraph/).
 
 Ao criar uma instância do serviço, assegure-se de escolher um nome para seu
 serviço e um nome de credencial. Deixe o serviço desvinculado; é possível conectar um
 aplicativo ao seu serviço mais tarde usando as credenciais que são fornecidas quando o
 serviço é provisionado. Os vários valores de credencial e como usá-los em um aplicativo são detalhados em [Conectando um aplicativo {{site.data.keyword.cloud}}](./connecting-bluemix-app.html).
 
-Quando você provisiona sua instância de serviço, é possível escolher os planos *Padrão* ou *Corporativo*. Com o plano *Corporativo*, é possível provisionar sua instância em um cluster disponível do {{site.data.keyword.composeEnterprise}}. O {{site.data.keyword.composeEnterprise}} fornece a segurança e o isolamento requeridos pela conformidade corporativa e usa rede dedicada para assegurar o desempenho dos bancos de dados implementados. Veja a [Documentação do Compose Enterprise](../ComposeEnterprise/index.html) para obter mais detalhes.
+Quando você provisiona sua instância de serviço, é possível escolher os planos *Padrão* ou *Corporativo*. Com o plano *Corporativo*, é possível provisionar sua instância em um cluster disponível do {{site.data.keyword.composeEnterprise}}. O {{site.data.keyword.composeEnterprise}} fornece a segurança e o isolamento requeridos pela conformidade corporativa e usa rede dedicada para assegurar o desempenho dos bancos de dados implementados. Consulte a  [ documentação do {{site.data.keyword.composeEnterprise}}  ](/docs/services/ComposeEnterprise/index.html)  para obter mais detalhes.
 
 ## Gerenciando o Compose for JanusGraph
 
@@ -40,7 +40,7 @@ Quando você provisiona sua instância de serviço, é possível escolher os pla
 
 Para obter mais informações, veja [Configurações](./dashboard-settings.html).
 
-O {{site.data.keyword.composeForJanusGraph}} depende de funções do Cloud Foundry para gerenciar o acesso ao serviço. Somente usuários com a função de Desenvolvedor podem ver ou usar o painel de serviço. Para obter mais informações sobre as funções do Cloud Foundry, veja as páginas [Acesso ao Cloud Foundry](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess) e [Gerenciando ao acesso ao Cloud Foundry](https://console.bluemix.net/docs/iam/mngcf.html#mngcf).
+O {{site.data.keyword.composeForJanusGraph}} depende de funções do Cloud Foundry para gerenciar o acesso ao serviço. Somente usuários com a função de Desenvolvedor podem ver ou usar o painel de serviço. Para obter mais informações sobre as funções do Cloud Foundry, veja as páginas [Acesso ao Cloud Foundry](https://console.{DomainName}/docs/iam/cfaccess.html#cfaccess) e [Gerenciando ao acesso ao Cloud Foundry](https://console.{DomainName}/docs/iam/mngcf.html#mngcf).
 {: .tip}
 
 ## Conectando-se ao Compose for JanusGraph

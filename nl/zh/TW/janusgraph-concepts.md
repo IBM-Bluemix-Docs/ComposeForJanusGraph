@@ -11,7 +11,7 @@ JanusGraph 是圖形資料庫。您可以在資料庫中建立、查詢及修正
 
 若要閱讀 JanusGraph 的相關資訊，請參閱 [JanusGraph 文件](http://docs.janusgraph.org/latest/index.html)。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Compose for JanusGraph 概觀" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 您可以在 [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning) 找到其他關於 {{site.data.keyword.composeForJanusGraph}} 的視訊。
 {: .tip}

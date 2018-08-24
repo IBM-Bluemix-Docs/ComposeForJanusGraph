@@ -15,27 +15,24 @@ lastupdated: "2018-03-27"
 {: #pricing}
 
 ## 基本配置
-{{site.data.keyword.composeForJanusGraph_full}} 服務是從作為兩個「JanusGraph 引擎」節點組成的叢集開始，每一個都有 512MB 的記憶體，這等於 2 個資源單位。「JaunsGraph 儲存空間」是三節點叢集，其中每個節點都有 5GB 的儲存空間，這等於 5 個資源單位。服務_包括_ 抄寫及高可用性，因此每個「JanusGraph 引擎」單位及單價_包括_ 這兩個引擎節點上資源的成本。同樣地，每個「JanusGraph 儲存空間」單位及單價都包括三個儲存節點上資源的成本。
+{{site.data.keyword.composeForJanusGraph_full}} 服務是從作為兩個「JanusGraph 引擎」節點組成的叢集開始，每一個都有 512 MB 的記憶體，這等於 2 個資源單位。「JaunsGraph 儲存空間」是三節點叢集，其中每個節點都有 5 GB 的儲存空間，這等於 5 個資源單位。服務_包括_ 抄寫及高可用性，因此每個「JanusGraph 引擎」單位及單價_包括_ 這兩個引擎節點上資源的成本。同樣地，每個「JanusGraph 儲存空間」單位及單價都包括三個儲存節點上資源的成本。
 
-基本配置也包括兩個 HAProxy 入口網站，用於存取、HTTPS 及 IP 白名單。它們每個都有 64MB 的記憶體。
+基本配置也包括兩個 HAProxy 入口網站，用於存取、HTTPS 及 IP 白名單。它們每個都有 64 MB 的記憶體。
 
-### 成本
-基本服務配置具有固定價格。請參閱 {{site.data.keyword.cloud_notm}} 上的型錄磚，以取得當地貨幣的基本定價。例如，以美元表示的基本價為 $116/月。這包括 5 個單位用於「JanusGraph 儲存空間」叢集（定價為 $90/月)，以及 2 個單位用於「JanusGraph 引擎」（定期為 $26/月）。
+基本服務配置具有固定價格。請參閱 {{site.data.keyword.cloud_notm}} 上的型錄磚，以取得當地貨幣的基本定價。例如，以美元計價的基本價為 $116/月。這包括 5 個單位用於「JanusGraph 儲存空間」叢集（定價為 $90/月)，以及 2 個單位用於「JanusGraph 引擎」（定期為 $26/月）。
 
+## 增加資源
 
-## 擴充選項
 尋找記憶體及儲存空間的最佳配置將隨著使用案例及工作負載而有所不同。如果大型資料集需要額外的儲存空間，或複雜查詢需要額外的記憶體，則可以增加配置給下列兩個項目的資源：「JanusGraph 儲存空間」叢集所提供的儲存空間，以及「JanusGraph 引擎」節點所提供的記憶體。 
 
-儲存空間叢集的增加單位為 1GB，而且單價_包括_ 在叢集中所有節點上增加資源的成本。可在服務的_設定_ 標籤中調整儲存空間。
+儲存空間叢集的增加單位為 1 GB，而且單價_包括_ 在叢集中所有節點上增加資源的成本。可在服務的_設定_ 標籤中調整儲存空間。
  
-引擎節點的增加單位為 256MB 的記憶體，而且單價_包括_ 在這兩個節點上增加資源的成本。目前，只能透過聯絡支援中心才能調整記憶體。
+引擎節點的增加單位為 256 MB 的記憶體，而且單價_包括_ 在這兩個節點上增加資源的成本。目前，只能透過聯絡支援中心才能調整記憶體。
 
-### 成本
-「JanusGraph 儲存空間」的每個額外單位 (1GB)，以及「JanusGraph 引擎」記憶體的每個額外單位 (256MB) 都有一個單價，其會以當地貨幣列在服務的 {{site.data.keyword.cloud_notm}} 型錄磚上。以美元表示時，每單位的「JanusGraph 儲存空間」為 $18，而每單位的「JanusGraph 引擎」為 $13。當您的所有 {{site.data.keyword.composeForJanusGraph}} 服務的大小_總計_ 增加時，單價就會降低，如[分級定價](#tiered-pricing)中所示。
+## 計算部署的成本
+{: #tiered-pricing}
 
-## 分級定價
-
-### {{site.data.keyword.composeForJanusGraph}} 儲存空間分級定價
+「JanusGraph 儲存空間」的每個額外單位 (1 GB)，以及「JanusGraph 引擎」記憶體的每個額外單位 (256 MB) 都有單價，它會以當地貨幣列在服務的 {{site.data.keyword.cloud_notm}} 型錄磚上。以美元計價時，每單位的「JanusGraph 儲存空間」為 $18，而每單位的「JanusGraph 引擎」為 $13。當您的所有 {{site.data.keyword.composeForJanusGraph}} 服務的大小_總計_ 增加時，單價就會降低，如[分級定價](#tiered-pricing)中所示。
 
 JanusGraph 儲存空間單位數|單價
 ----------|-----------
@@ -49,7 +46,7 @@ JanusGraph 儲存空間單位數|單價
 5,000 個以上單位|折價 70% -- $5.40 美元/儲存空間單位
 {: caption="表 1. {{site.data.keyword.composeForJanusGraph}} 儲存空間分級定價" caption-side="top"}
 
-### {{site.data.keyword.composeForJanusGraph}} 記憶體分級定價
+## {{site.data.keyword.composeForJanusGraph}} 記憶體分級定價
 
 JanusGraph 引擎單位數|單價
 ----------|-----------

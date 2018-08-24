@@ -21,11 +21,11 @@ lastupdated: "2018-03-27"
 
 ## Compose for JanusGraph サービス・インスタンスの作成
 
-[{{site.data.keyword.composeForJanusGraph}} インスタンスを作成します](https://console.bluemix.net/catalog/services/compose-for-janusgraph/)。
+[{{site.data.keyword.composeForJanusGraph}} インスタンスを作成しま](https://console.{DomainName}/catalog/services/compose-for-janusgraph/)。
 
 サービスのインスタンスを作成するときは、必ずサービスの名前と資格情報名の両方を選択してください。 サービスをバインドしないでおきます。サービスをプロビジョンするときに指定される資格情報を使用して、アプリケーションをサービスに接続できます。 各種の資格情報の値とアプリケーションでその値を使用する方法の詳細については、[{{site.data.keyword.cloud}} アプリケーションの接続](./connecting-bluemix-app.html)を参照してください。
 
-サービス・インスタンスのプロビジョンでは、*標準*プランと*エンタープライズ*・プランのどちらかを選択できます。 *エンタープライズ*・プランの場合は、インスタンスを有効な {{site.data.keyword.composeEnterprise}} クラスターにプロビジョンできます。 {{site.data.keyword.composeEnterprise}} は、企業コンプライアンスで要求されるセキュリティーと分離を提供し、専用ネットワーキングを使用してデプロイ済みデータベースのパフォーマンスを確保します。 詳しくは、[Compose Enterprise 文書](../ComposeEnterprise/index.html)を参照してください。
+サービス・インスタンスのプロビジョンでは、*標準*プランと*エンタープライズ*・プランのどちらかを選択できます。 *エンタープライズ*・プランの場合は、インスタンスを有効な {{site.data.keyword.composeEnterprise}} クラスターにプロビジョンできます。 {{site.data.keyword.composeEnterprise}} は、企業コンプライアンスで要求されるセキュリティーと分離を提供し、専用ネットワーキングを使用してデプロイ済みデータベースのパフォーマンスを確保します。 詳しくは、[{{site.data.keyword.composeEnterprise}} 文書](/docs/services/ComposeEnterprise/index.html)を参照してください。
 
 ## Compose for JanusGraph の管理
 
@@ -37,7 +37,7 @@ lastupdated: "2018-03-27"
 
 詳しくは、[設定](./dashboard-settings.html)を参照してください。
 
-{{site.data.keyword.composeForJanusGraph}} は、Cloud Foundry の役割を利用して、サービスへのアクセスを管理します。開発者役割を持つユーザーのみが、サービス・ダッシュボードを表示または使用できます。Cloud Foundry の役割について詳しくは、『[Cloud Foundry アクセス権限](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess)』および 『[Cloud Foundry のアクセス権限の管理](https://console.bluemix.net/docs/iam/mngcf.html#mngcf)』のページを参照してください。
+{{site.data.keyword.composeForJanusGraph}} は、Cloud Foundry の役割を利用して、サービスへのアクセスを管理します。 開発者役割を持つユーザーのみが、サービス・ダッシュボードを表示または使用できます。 Cloud Foundry の役割について詳しくは、『[Cloud Foundry アクセス権限](https://console.{DomainName}/docs/iam/cfaccess.html#cfaccess)』および 『[Cloud Foundry のアクセス権限の管理](https://console.{DomainName}/docs/iam/mngcf.html#mngcf)』のページを参照してください。
 {: .tip}
 
 ## Compose for JanusGraph への接続

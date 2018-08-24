@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ _「デプロイメントの詳細 (Deployment Details)」_パネルには、サ
 
 サービスによって提供されるデータベースのタイプ、およびサービスが使用するデータベースのバージョン。 より新しいバージョンのデータベースが利用可能な場合は、通知が表示され、サービス・ダッシュボードの[「バージョンのアップグレード」](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version)セクションへのリンクが示されます。
 
-### 名前
+### ID
 
 サービスの内部 ID。
 

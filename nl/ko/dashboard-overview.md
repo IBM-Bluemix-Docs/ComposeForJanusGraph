@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ _배치 세부사항_ 패널에는 서비스의 세부사항이 표시됩니다.
 
 서비스에서 제공하는 데이터베이스의 유형과 서비스에서 사용하는 데이터베이스 버전입니다. 더 최신의 데이터베이스 버전이 사용 가능한 경우에는 알림이 서비스 대시보드의 [버전 업그레이드](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) 섹션에 대한 링크와 함께 표시됩니다.
 
-### 이름
+### ID
 
 서비스의 내부 ID입니다.
 

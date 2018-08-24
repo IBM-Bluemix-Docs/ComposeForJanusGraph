@@ -19,23 +19,20 @@ lastupdated: "2018-03-27"
 
 기본 구성은 액세스, HTTPS 및 IP 화이트리스팅을 위한 두 개의 HAProxy 포털 또한 포함합니다. 각각에는 64MB의 메모리가 있습니다.
 
-### 비용
 기본 서비스 구성에는 설정된 가격이 있습니다. 사용자의 지역 통화로 되어 있는 기본 가격 책정은 {{site.data.keyword.cloud_notm}}의 카탈로그 타일을 참조하십시오. 예를 들면, 기본 가격은 US 달러로 $116/월입니다. 이는 5개의 JanusGraph Storage 클러스터 단위에 대한 $90/월 비용과 2개의 JanusGraph Engine 단위에 대한 $26/월 비용을 포함합니다.
 
+## 리소스 증가
 
-## 확장 옵션
-메모리 및 스토리지에 대한 최적 구성은 유스 케이스 및 워크로드에 따라 달라집니다. 대규모 데이터 세트를 위해 추가 스토리지가 필요하거나 복잡한 조회를 위해 추가 메모리가 필요한 경우에는 JanusGraph Storage 클러스터에서 제공하는 스토리지와 JanusGraph Engine 노드에서 제공하는 메모리에 할당되는 리소스를 늘릴 수 있습니다.  
+메모리 및 스토리지에 대한 최적 구성은 유스 케이스 및 워크로드에 따라 달라집니다. 대규모 데이터 세트를 위해 추가 스토리지가 필요하거나 복잡한 조회를 위해 추가 메모리가 필요한 경우에는 JanusGraph Storage 클러스터에서 제공하는 스토리지와 JanusGraph Engine 노드에서 제공하는 메모리에 할당되는 리소스를 늘릴 수 있습니다. 
 
 스토리지 클러스터는 1GB 단위로 늘어나며 단위당 가격은 클러스터에 있는 모든 노드의 리소스를 늘리는 비용을 _포함_합니다. 스토리지 스케일링은 서비스의 _설정_ 탭에서 가능합니다.
  
 엔진 노드는 256MB 메모리 단위로 늘어나며 단위당 가격은 두 노드 전체의 리소스를 늘리는 비용을 _포함_합니다. 현재 메모리 스케일링은 지원 팀 문의를 통해서만 가능합니다.
 
-### 비용
+## 배치 비용 계산
+{: #tiered-pricing}
+
 JanusGraph Storage의 각 추가 단위(1GB)와 JanusGraph Engine 메모리의 각 추가 단위(256MB)에는 단위당 가격이 있으며, 이는 서비스에 대한 {{site.data.keyword.cloud_notm}} 카탈로그 타일에 사용자의 지역 통화로 나열되어 있습니다. US 달러로 각 JanusGraph Storage 단위는 $18이며 각 JanusGraph Engine 단위는 $13입니다. [단계별 가격 책정](#tiered-pricing)에 표시되어 있는 바와 같이, 사용자의 _총_ {{site.data.keyword.composeForJanusGraph}} 서비스 크기가 증가하면 단위당 가격은 감소합니다.
-
-## 단계별 가격 책정
-
-### {{site.data.keyword.composeForJanusGraph}} Storage 단계별 가격 책정
 
 JanusGraph Storage의 단위 수|단위당 가격
 ----------|-----------
@@ -49,7 +46,7 @@ JanusGraph Storage의 단위 수|단위당 가격
 5,000개 이상 단위|70% 감소 -- $5.40 USD/Storage 단위
 {: caption="표 1. {{site.data.keyword.composeForJanusGraph}} Storage 단계별 가격 책정" caption-side="top"}
 
-### {{site.data.keyword.composeForJanusGraph}} Memory 단계별 가격 책정
+## {{site.data.keyword.composeForJanusGraph}} Memory 단계별 가격 책정
 
 JanusGraph Engine의 단위 수|단위당 가격
 ----------|-----------

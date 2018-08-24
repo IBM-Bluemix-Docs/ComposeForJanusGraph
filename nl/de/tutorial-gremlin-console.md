@@ -112,7 +112,7 @@ Nach der Erstellung eines Diagramms müssen Sie es öffnen, um damit arbeiten zu
 def graph=ConfiguredGraphFactory.open("mygraph")
 ```
 
-Nun muss die Operation festgeschrieben werden, damit das Diagramm  bestehen bleibt.
+Nun muss die Operation festgeschrieben werden, damit das Diagramm bestehen bleibt.
 
 ```
 graph.tx().commit()

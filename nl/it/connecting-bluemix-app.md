@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ Nome campo|Descrizione
 `name`|Il nome di distribuzione del database.
 `db_type`|Il tipo di database offerto dal servizio; in questo caso `JanusGraph`.
 `uri_cli`|Una riga di comando `CURL` che illustra come inviare una query Gremlin con un'autenticazione basata sul token.
-`uri_cli_1`|Una riga di comando `CURL` alternativa che esegue il collegamento all'istanza del database.
+`uri_cli_1`|Una riga di comando `CURL` secondaria che si collega all'istanza del database.
 `maps`|non utilizzato
 `uri`|L'URI `https` utilizzato quando esegui il collegamento al servizio, che include il nome host del server e il numero di porta a cui collegarsi. Consulta [Connessione di un'applicazione esterna](./connecting-external.html).
-`uri_direct_1`|Un URI `https` alternativo per la connessione al servizio.
+`uri_direct_1`|Un URI `https` secondario per il collegamento al servizio.
 `misc`|Un campo principale contenente i campi `session`, `websocket` e `gremlin_console_yaml`.
 `misc.session`| Un URI `https` che viene utilizzato per richiamare un token di autenticazione di 60 minuti che può essere utilizzato per interagire con il servizio. Consulta [Connessione di un'applicazione esterna - Token di autenticazione](./connecting-external.html#token-authentication).
 `misc.websocket`|Gli URI `wss` utilizzati durante il collegamento al servizio utilizzando Websockets. Consulta [Connessione di un'applicazione esterna - Websockets](./connecting-external.html#websockets).
@@ -108,10 +108,10 @@ La tua applicazione deve analizzare le variabili di ambiente Cloud Foundry. In N
   let jgurl = credentials.misc.session[0];
   ```
 
-3. Trasmetti la tua applicazione a {{site.data.keyword.cloud_notm}}. Quando trasmetti l'applicazione sarà automaticamente associata al servizio.
+3. Trasmetti la tua applicazione a {{site.data.keyword.cloud_notm}}. Quando ne esegui il push, l'applicazione sarà automaticamente associata al servizio.
 
   ```
   $ cf push
   ```
 
-Per ulteriori informazioni sull'utilizzo delle applicazioni con i servizi {{site.data.keyword.cloud_notm}}, consulta [Aggiunta di un servizio alla tua applicazione](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+Per ulteriori informazioni sull'utilizzo delle applicazioni con i servizi {{site.data.keyword.cloud_notm}}, consulta [Aggiunta di un servizio alla tua applicazione](https://console.{DomainName}/docs/services/reqnsi.html#add_service).

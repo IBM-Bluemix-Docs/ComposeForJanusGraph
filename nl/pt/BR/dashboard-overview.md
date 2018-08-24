@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ O painel _Detalhes da implementação_ mostra detalhes de seu serviço.
 
 O tipo de banco de dados que é oferecido pelo serviço e a versão do banco de dados que seu serviço usa. Se uma versão de banco de dados mais recente estiver disponível, uma notificação será exibida, junto a um link para a seção [Fazer upgrade da versão](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) de seu painel de serviço.
 
-### Nome
+### ID
 
 Um identificador interno para o serviço.
 

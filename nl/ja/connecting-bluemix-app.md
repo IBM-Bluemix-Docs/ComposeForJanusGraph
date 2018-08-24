@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ lastupdated: "2017-09-13"
 `name`|データベース・デプロイメント名。
 `db_type`|サービスによって提供されるデータベースのタイプ。この場合は、`JanusGraph`。
 `uri_cli`|トークン・ベースの認証で gremlin 照会を送信する方法を示す `CURL` コマンド・ライン。
-`uri_cli_1`|データベース・インスタンスに接続する代替 `CURL` コマンド・ライン。
+`uri_cli_1`|データベース・インスタンスに接続する 2 番目の `CURL` コマンド・ライン。
 `maps`|未使用
 `uri`|サービスに接続するときに使用する `https` URI。接続先のサーバーのホスト名とポート番号が含まれます。 [外部アプリケーションの接続](./connecting-external.html)を参照してください。
-`uri_direct_1`|サービスに接続するための代替 `https` URI。
+`uri_direct_1`|サービスに接続するための 2 番目の `https` URI。
 `misc`|`session`、`websocket`、および `gremlin_console_yaml` フィールドを含む親フィールド。
 `misc.session`| サービスとの対話に使用できる 60 分認証トークンを取得するために使用する `https` URI。 [外部アプリケーションの接続 - トークン認証](./connecting-external.html#token-authentication)を参照してください。
 `misc.websocket`|Websocket を使用してサービスに接続するときに使用する `wss` URI。 [外部アプリケーションの接続 - Websocket](./connecting-external.html#websockets) を参照してください。
@@ -114,4 +114,4 @@ lastupdated: "2017-09-13"
   $ cf push
   ```
 
-{{site.data.keyword.cloud_notm}} サービスでのアプリケーションの使用について詳しくは、[アプリケーションへのサービスの追加](https://console.bluemix.net/docs/services/reqnsi.html#add_service)を参照してください。
+{{site.data.keyword.cloud_notm}} サービスでのアプリケーションの使用について詳しくは、[アプリケーションへのサービスの追加](https://console.{DomainName}/docs/services/reqnsi.html#add_service)を参照してください。

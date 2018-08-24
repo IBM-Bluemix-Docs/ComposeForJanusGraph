@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -13,7 +13,7 @@ lastupdated: "2017-09-13"
 
 # 連接 {{site.data.keyword.cloud_notm}} 應用程式
 
-若要將 {{site.data.keyword.cloud}} 應用程式連接至您的服務，請使用您在佈建服務時所建立的服務認證。
+若要將 {{site.data.keyword.cloud}} 應用程式連接至您的服務，請使用佈建服務時所建立的服務認證。
 
 ## 可用的認證
 
@@ -23,12 +23,12 @@ lastupdated: "2017-09-13"
 `name`|資料庫部署名稱。
 `db_type`|服務所提供的資料庫類型；在此情況下，為 `JanusGraph`。
 `uri_cli`|說明如何利用記號型鑑別來傳送 gremlin 查詢的 `CURL` 指令行。
-`uri_cli_1`|連接至資料庫實例的替代 `CURL` 指令行。
+`uri_cli_1`|連接至資料庫實例的第二 `CURL` 指令行。
 `maps`|未使用
 `uri`|連接至服務時所使用的 `https` URI，其中包括伺服器的主機名稱及要連接至的埠號。請參閱[連接外部應用程式](./connecting-external.html)。
-`uri_direct_1`|用於連接至服務的替代 `https` URI。
+`uri_direct_1`|用於連接至服務的第二 `https` URI。
 `misc`|包含 `session`、`websocket` 及 `gremlin_console_yaml` 欄位的母項欄位。
-`misc.session`| 用來擷取 60 分鐘鑑別記號的 `https` URI，而此鑑別記號可以用來與服務互動。請參閱[連接外部應用程式 - 記號鑑別](./connecting-external.html#token-authentication)。
+`misc.session`|用來擷取 60 分鐘鑑別記號的 `https` URI，而此鑑別記號可以用來與服務互動。請參閱[連接外部應用程式 - 記號鑑別](./connecting-external.html#token-authentication)。
 `misc.websocket`|使用 WebSocket 連接至服務時所使用的 `wss` URI。請參閱[連接外部應用程式 - Websocket](./connecting-external.html#websockets)。
 `misc.gremlin_console_yaml`|用來配置 Gremlin 主控台以連接至服務的 YAML 資訊。請參閱[連接外部應用程式 - Gremlin 主控台](./connecting-external.html#gremlin-console)。
 {: caption="表 1. Compose for JanusGraph 認證" caption-side="top"}
@@ -52,7 +52,7 @@ lastupdated: "2017-09-13"
 
 1. 登入您的 {{site.data.keyword.cloud_notm}} 帳戶
 2. 下載並安裝 [Cloud Foundry CLI](https://github.com/cloudfoundry/cli) 工具
-3. 在指令行工具中連接至 {{site.data.keyword.cloud_notm}}，並遵循提示以登入。
+3. 在指令行工具中連接至 {{site.data.keyword.cloud_notm}}，並遵循提示以進行登入。
 
   ```
   $ cf api https://api.ng.bluemix.net
@@ -114,4 +114,4 @@ lastupdated: "2017-09-13"
   $ cf push
   ```
 
-如需使用應用程式與 {{site.data.keyword.cloud_notm}} 服務搭配的相關資訊，請參閱[將服務新增至您的應用程式](https://console.bluemix.net/docs/services/reqnsi.html#add_service)。
+如需使用應用程式與 {{site.data.keyword.cloud_notm}} 服務搭配的相關資訊，請參閱[將服務新增至您的應用程式](https://console.{DomainName}/docs/services/reqnsi.html#add_service)。

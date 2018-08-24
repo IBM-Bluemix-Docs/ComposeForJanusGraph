@@ -11,7 +11,7 @@ JanusGraph 是图形数据库。您可以在数据库中创建、查询和修改
 
 要阅读有关 JanusGraph 的更多信息，请参阅 [JanusGraph 文档](http://docs.janusgraph.org/latest/index.html)。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Compose for JanusGraph 概述" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 您可以在 [IBM Compose for JanusGraph 学习中心](http://ibm.biz/janusgraph-learning)找到有关 {{site.data.keyword.composeForJanusGraph}} 的更多视频。
 {: .tip}

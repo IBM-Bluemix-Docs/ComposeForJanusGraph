@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ lastupdated: "2017-09-13"
 `name`|데이터베이스 배치 이름입니다.
 `db_type`|서비스에서 제공되는 데이터베이스의 유형입니다. 이 경우 `JanusGraph`입니다.
 `uri_cli`|토큰 기반 인증으로 gremlin 조회를 전송하는 방법을 보여주는 `CURL` 명령행입니다.
-`uri_cli_1`|데이터베이스 인스턴스에 연결하는 대체 `CURL` 명령행입니다.
+`uri_cli_1`|데이터베이스 인스턴스에 연결하는 2차 `CURL` 명령행입니다.
 `maps`|사용하지 않음
 `uri`|서비스에 연결할 때 사용하는 `https` URI로서, 서버의 호스트 이름 및 연결할 포트 이름이 포함됩니다. [외부 애플리케이션 연결](./connecting-external.html)을 참조하십시오.
-`uri_direct_1`|서비스에 연결하기 위한 대체 `https` URI입니다.
+`uri_direct_1`|서비스에 연결하기 위한 2차 `https` URI입니다.
 `misc`|`session`, `websocket` 및 `gremlin_console_yaml` 필드를 포함하는 상위 필드입니다.
 `misc.session`|서비스와 상호작용하는 데 사용될 수 있는 60분 인증 토큰을 검색하는 데 사용하는 `https` URI입니다. [외부 애플리케이션 연결 - 토큰 인증](./connecting-external.html#token-authentication)을 참조하십시오.
 `misc.websocket`|Websocket을 사용하여 서비스에 연결할 때 사용되는 `wss` URI입니다. [외부 애플리케이션 연결 - Websocket](./connecting-external.html#websockets)을 참조하십시오.
@@ -114,4 +114,4 @@ lastupdated: "2017-09-13"
   $ cf push
   ```
 
-애플리케이션을 {{site.data.keyword.cloud_notm}} 서비스와 함께 사용하는 방법에 대한 자세한 정보는 [앱에 서비스 추가](https://console.bluemix.net/docs/services/reqnsi.html#add_service)를 참조하십시오.
+애플리케이션을 {{site.data.keyword.cloud_notm}} 서비스와 함께 사용하는 방법에 대한 자세한 정보는 [앱에 서비스 추가](https://console.{DomainName}/docs/services/reqnsi.html#add_service)를 참조하십시오.

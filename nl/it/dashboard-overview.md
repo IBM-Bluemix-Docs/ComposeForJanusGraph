@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ Il pannello _Deployment Details_ mostra i dettagli del tuo servizio.
 
 Il tipo di database offerto dal servizio e la versione che il servizio utilizza. Se è disponibile una versione più recente del database, viene visualizzata una notifica, insieme a un link alla sezione [Aggiorna versione](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) del tuo dashboard del servizio.
 
-### Name
+### ID
 
 Un identificativo interno per il servizio.
 

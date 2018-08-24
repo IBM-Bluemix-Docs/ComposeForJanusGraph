@@ -11,7 +11,7 @@ JanusGraph はグラフ・データベースです。 このデータベース�
 
 JanusGraph の詳細については、[JanusGraph の資料](http://docs.janusgraph.org/latest/index.html)を参照してください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Compose for JanusGraph の概要" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning) には、{{site.data.keyword.composeForJanusGraph}} に関するビデオが他にもあります。
 {: .tip}

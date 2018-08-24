@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ Feldname|Beschreibung
 `name`|Der Name der Datenbankimplementierung.
 `db_type`|Der Datenbanktyp, der vom Service angeboten wird, in diesem Fall `JanusGraph`.
 `uri_cli`|Eine `CURL`-Befehlszeile, die veranschaulicht, wie eine Gremlin-Abfrage mit tokenbasierter Authentifizierung gesendet wird.
-`uri_cli_1`|Eine alternative `CURL`-Befehlszeile, die eine Verbindung zur Datenbankinstanz herstellt.
+`uri_cli_1`|Eine sekundäre `CURL`-Befehlszeile, mit der eine Verbindung zur Datenbankinstanz hergestellt wird.
 `maps`|Nicht verwendet
 `uri`|Der bei der Herstellung einer Verbindung zum Service verwendete `https`-URI, der den Hostnamen des Servers und die Portnummer für die Verbindungsherstellung enthält. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden](./connecting-external.html).
-`uri_direct_1`|Ein alternativer `https`-URI zum Verbinden mit dem Service.
+`uri_direct_1`|Ein sekundärer `https`-URI zum Verbinden mit dem Service.
 `misc`|Ein übergeordnetes Feld, das die Felder `session`, `websocket` und `gremlin_console_yaml` enthält.
 `misc.session`| Ein `https`-URI zum Abrufen eines 60-minütigen Authentifizierungstokens, das zur Interaktion mit dem Service verwendet werden kann. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - Tokenauthentifizierung](./connecting-external.html#token-authentication).
 `misc.websocket`|Die `wss`-URIs, die beim Herstellen einer Verbindung zu dem Service mithilfe von WebSockets verwendet werden. Weitere Informationen finden Sie im Abschnitt [Externe Anwendung verbinden - WebSockets](./connecting-external.html#websockets).
@@ -114,4 +114,4 @@ Ihre Anwendung muss die Cloud Foundry-Umgebungsvariablen parsen. In Node.js kön
   $ cf push
   ```
 
-Weitere Informationen zur Verwendung von Anwendungen mit {{site.data.keyword.cloud_notm}}-Services finden Sie im Abschnitt [Service zur App hinzufügen](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+Weitere Informationen zur Verwendung von Anwendungen mit {{site.data.keyword.cloud_notm}}-Services finden Sie im Abschnitt [Service zur App hinzufügen](https://console.{DomainName}/docs/services/reqnsi.html#add_service).

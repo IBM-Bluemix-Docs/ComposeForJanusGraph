@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ _部署详细信息_面板显示服务的详细信息。
 
 服务所提供的数据库类型，以及服务所使用的数据库版本。如果有更新的数据库版本可用，那么会显示通知以及指向服务仪表板中[升级版本](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version)部分的链接。
 
-### 名称
+### 标识
 
 服务的内部标识。
 

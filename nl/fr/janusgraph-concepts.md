@@ -11,7 +11,7 @@ JanusGraph est une base de données de graphiques. Vous pouvez créer, interroge
 
 Pour plus d'informations sur JanusGraph, voir la [documentation JanusGraph](http://docs.janusgraph.org/latest/index.html).
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Présentation de Compose for JanusGraph" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 D'autre vidéos concernant {{site.data.keyword.composeForJanusGraph}} sont disponibles dans le [centre d'apprentissage IBM Compose for JanusGraph](http://ibm.biz/janusgraph-learning).
 {: .tip}

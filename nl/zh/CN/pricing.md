@@ -19,23 +19,20 @@ lastupdated: "2018-03-27"
 
 基本配置还包含两个 HAProxy 门户网站，用于访问、HTTPS 和 IP 白名单。每个门户网站有 64 MB 内存。
 
-### 成本
 基本服务配置具有固定价格。有关以本地货币为单位的基础定价，请查阅 {{site.data.keyword.cloud_notm}} 上的“目录”磁贴。例如，以美元为单位的基础价格是 116 美元/月。这包含 JanusGraph Storage 集群的 5 个单元（90 美元/月）和 JanusGraph Engine 的 2 个单元（26 美元/月）。
 
+## 增加资源
 
-## 扩展选项
 确定内存和存储空间的最佳配置将根据用例和工作负载而变化。如果大型数据集需要更多存储空间，或者复杂查询需要更多内存，您可以增加分配给 JanusGraph Storage 集群所提供存储量以及分配给 JanusGraph Engine 节点所提供内存的资源。 
 
 存储器集群以 1 GB 为单位增加，单元单价_包含_增加集群中所有节点上资源的成本。在服务的_设置_选项卡上可以对存储器进行扩展。
  
 引擎节点以 256 MB 内存为单位增加，单元单价_包含_增加两个节点上资源的成本。目前，只能通过联系支持人员来对内存进行扩展。
 
-### 成本
+## 计算部署成本
+{: #tiered-pricing}
+
 每增加一个单元 (1 GB) 的 JanusGraph Storage 和一个单元的 JanusGraph Engine 内存 (256 MB) 都会有相应的单元单价，该单价会在服务的 {{site.data.keyword.cloud_notm}}“目录”磁贴上以本地货币列出。以美元为单位时，JanusGraph Storage 的每个单元的价格为 18 美元，JanusGraph Engine 的每个单元的价格为 13 美元。随着所有 {{site.data.keyword.composeForJanusGraph}} 服务的_总_大小增加，单元单价会下降，如下面的[分层定价](#tiered-pricing)所示。
-
-## 分层定价
-
-### {{site.data.keyword.composeForJanusGraph}} 存储空间分层定价
 
 JanusGraph Storage 的单元数|单元单价
 ----------|-----------
@@ -49,7 +46,7 @@ JanusGraph Storage 的单元数|单元单价
 5,000 个及以上单元|70% 折扣 -- 5.40 美元/存储器单元
 {: caption="表 1. {{site.data.keyword.composeForJanusGraph}} 存储空间分层定价" caption-side="top"}
 
-### {{site.data.keyword.composeForJanusGraph}} 内存分层定价
+## {{site.data.keyword.composeForJanusGraph}} 内存分层定价
 
 JanusGraph Engine 的单元数|单元单价
 ----------|-----------

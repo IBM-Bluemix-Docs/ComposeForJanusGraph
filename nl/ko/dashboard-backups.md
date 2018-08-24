@@ -60,7 +60,7 @@ https://composebroker-dashboard-public.mybluemix.net/api/2016-07/instances/$INST
 ### {{site.data.keyword.cloud_notm}} CLI를 통해 복원
 
 {{site.data.keyword.cloud_notm}} CLI를 사용하여 실행 중인 JanusGraph 서비스의 백업을 새 JanusGraph 서비스에 복원하려면 다음 단계를 사용하십시오. 
-1. 필요한 경우 [이를 다운로드하여 설치](https://console.bluemix.net/docs/cli/index.html#overview)하십시오. 
+1. 필요한 경우 [이를 다운로드하여 설치](https://console.{DomainName}/docs/cli/index.html#overview)하십시오. 
 2. 서비스에 대한 _백업_ 페이지에서 복원하려는 백업을 찾아 백업 ID를 복사하십시오.  
   **또는**  
   `GET /2016-07/deployments/:id/backups`를 사용하여 Compose API를 통해 백업 및 해당 ID를 찾으십시오. 기반 엔드포인트와 서비스 인스턴스 ID가 모두 서비스의 _개요_에 표시됩니다. 예를 들어, 다음과 같습니다. 
@@ -69,26 +69,26 @@ https://composebroker-dashboard-public.mybluemix.net/api/2016-07/instances/$INST
   ```  
   응답에는 해당 서비스 인스턴스에 대해 사용 가능한 모든 백업의 목록이 포함됩니다. 복원할 백업을 선택하고 해당 백업의 ID를 복사하십시오.
 
-3. 적절한 계정과 신임 정보로 로그인하십시오. `bx login`(또는 모든 로그인 옵션을 보려면 `bx login -help`)
+3. 적절한 계정과 신임 정보로 로그인하십시오. `ibmcloud login`(또는 모든 로그인 옵션을 보려면 `ibmcloud login -help`)
 
-4. 조직 및 영역으로 전환하십시오. `bx target -o "$YOUR_ORG" -s "YOUR_SPACE"`
+4. 조직 및 영역으로 전환하십시오. `ibmcloud target -o "$YOUR_ORG" -s "YOUR_SPACE"`
 
 5. `service create` 명령을 사용하여 새 서비스를 프로비저닝하고 소스 서비스 및 JSON 오브젝트에 복원할 특정 백업을 제공하십시오. 예를 들어, 다음과 같습니다.
 ``` 
-bx service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": "$BACKUP_ID" }'
-```
-  _SERVICE_ 필드는 compose-for-janusgraph여야 하며 _PLAN_ 필드는 사용자 환경에 따라 Standard 또는 Enterprise여야 합니다. _SERVICE\_INSTANCE\_NAME_은 새 서비스의 이름을 배치할 위치입니다. _source\_service\_instance\_id_는 백업 소스의 서비스 인스턴스 ID이며 `bx cf service DISPLAY_NAME --guid`를 실행하여 얻을 수 있습니다. 여기서 _DISPLAY\_NAME_은 백업이 생성된 JanusGraph 서비스의 이름입니다. 
+  ibmcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": "$BACKUP_ID" }'
+  ```
+  _SERVICE_에는 `compose-for-janusgraph` 값을 사용하고 _PLAN_에는 환경에 따라 Standard 또는 Enterprise를 사용하십시오. _SERVICE\_INSTANCE\_NAME_은 새 서비스의 이름을 배치할 위치입니다. _source\_service\_instance\_id_는 백업 소스의 서비스 인스턴스 ID이며 `ibmcloud cf service DISPLAY_NAME --guid`를 실행하여 얻을 수 있습니다. 여기서 _DISPLAY\_NAME_은 백업이 생성된 JanusGraph 서비스의 이름입니다. 
   
-  엔터프라이즈 사용자는 `"cluster_id": "$CLUSTER_ID"` 매개변수를 사용하여 JSON 오브젝트에 배치할 클러스터도 지정해야 합니다.
+  Enterprise 사용자인 경우 `"cluster_id": "$CLUSTER_ID"` 매개변수를 사용하여 JSON 오브젝트에 배치할 클러스터도 지정해야 합니다.
   
-### 새 버전으로 마이그레이션
+### 새 버전으로 업그레이드
 
-일부 주 버전 업그레이드는 현재 실행 중인 배치에서 사용할 수 없습니다. 업그레이드된 버전을 실행 중인 새 서비스를 프로비저닝한 후 백업을 사용하여 데이터를 해당 서비스로 마이그레이션해야 합니다. 이 프로세스는 업그레이드하려는 버전을 지정한다는 점을 제외하고 위에서 백업을 복원하는 것과 동일합니다.
+일부 주 버전 업그레이드는 현재 실행 중인 배치에서 사용할 수 없습니다. 업그레이드된 버전을 실행 중인 새 서비스를 프로비저닝한 후 백업을 사용하여 데이터를 해당 서비스로 마이그레이션해야 합니다. 이 프로세스는 업그레이드하려는 버전을 지정한다는 점을 제외하고는 백업을 복원하는 것과 동일합니다.
 
 ``` 
-bx service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": ""$BACKUP_ID", "db_version":"$VERSION_NUMBER" }'
+bimcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": ""$BACKUP_ID", "db_version":"$VERSION_NUMBER" }'
 ```
 
 예를 들어, 이전 버전의 {{site.data.keyword.composeForJanusGraph}} 서비스를 JanusGraph 0.1.1이 실행되는 새 서비스로 복원하는 방법은 다음과 같습니다.
 ```
-bx service create compose-for-janusgraph Standard migrated_janusgraph -c '{ "source_service_instance_id": "0269e284-dcac-4618-89a7-f79e3f1cea6a", "backup_id":"5a96d8a7e16c090018884566", "db_version":"0.1.1"  }'
+ibmcloud service create compose-for-janusgraph Standard migrated_janusgraph -c '{ "source_service_instance_id": "0269e284-dcac-4618-89a7-f79e3f1cea6a", "backup_id":"5a96d8a7e16c090018884566", "db_version":"0.1.1"  }'

@@ -21,23 +21,23 @@ lastupdated: "2018-03-27"
 
 ## 建立 Compose for JanusGraph 服務實例
 
-[建立 {{site.data.keyword.composeForJanusGraph}} 實例](https://console.bluemix.net/catalog/services/compose-for-janusgraph/)。
+[建立 {{site.data.keyword.composeForJanusGraph}} 實例](https://console.{DomainName}/catalog/services/compose-for-janusgraph/)。
 
 當您建立服務的實例時，請確保要選擇服務名稱及認證名稱。請維持服務不連結；稍後使用佈建服務時所提供的認證，即可將應用程式連接至服務。各種認證值以及如何在應用程式中使用它們的詳細資訊，請參閱[連接 {{site.data.keyword.cloud}} 應用程式](./connecting-bluemix-app.html)。
 
-當您佈建服務實例時，可以選擇*標準* 或*企業* 方案。使用*企業* 方案，您可以將您的實例佈建到可用的 {{site.data.keyword.composeEnterprise}} 叢集。{{site.data.keyword.composeEnterprise}} 提供企業相符性所需的安全和隔離，並使用專用網路來確保已部署之資料庫的效能。如需詳細資料，請參閱 [Compose Enterprise 文件](../ComposeEnterprise/index.html)。
+當您佈建服務實例時，可以選擇*標準* 或*企業* 方案。使用*企業* 方案，您可以將您的實例佈建到可用的 {{site.data.keyword.composeEnterprise}} 叢集。{{site.data.keyword.composeEnterprise}} 提供企業法規遵循所需的安全和隔離，並使用專用網路來確保已部署之資料庫的效能。如需詳細資料，請參閱 [{{site.data.keyword.composeEnterprise}} 文件](/docs/services/ComposeEnterprise/index.html)。
 
 ## 管理 Compose for JanusGraph
 
 您可以從服務儀表板來管理服務。在這裡，您可以找到 {{site.data.keyword.cloud_notm}} Compose 資料庫的相關資訊，以及連接方式。您也可以：
-- 管理備份
-- 為您的服務配置更多資源
-- 變更服務密碼
+- 管理備份。
+- 為您的服務配置更多資源。
+- 變更服務密碼。
 - 使用白名單來限制對資料庫的存取權。 
 
 如需相關資訊，請參閱[設定](./dashboard-settings.html)。
 
-{{site.data.keyword.composeForJanusGraph}} 根據 Cloud Foundry 角色來管理對服務的存取。只有具有「開發人員」角色的使用者才能看到或使用服務儀表板。如需 Cloud Foundry 角色的相關資訊，請參閱 [Cloud Foundry 存取](https://console.bluemix.net/docs/iam/cfaccess.html#cfaccess)及[管理 Cloud Foundry 存取](https://console.bluemix.net/docs/iam/mngcf.html#mngcf)頁面。
+{{site.data.keyword.composeForJanusGraph}} 根據 Cloud Foundry 角色來管理對服務的存取權。只有具有「開發人員」角色的使用者才能看到或使用服務儀表板。如需 Cloud Foundry 角色的相關資訊，請參閱 [Cloud Foundry 存取](https://console.{DomainName}/docs/iam/cfaccess.html#cfaccess)及[管理 Cloud Foundry 存取](https://console.{DomainName}/docs/iam/mngcf.html#mngcf)頁面。
 {: .tip}
 
 ## 連接至 Compose for JanusGraph

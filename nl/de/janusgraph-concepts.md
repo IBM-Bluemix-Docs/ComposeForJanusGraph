@@ -11,7 +11,7 @@ JanusGraph ist eine Diagrammdatenbank. Sie können eine Reihe von Diagrammen in 
 
 Weitere Informationen zu JanusGraph finden Sie in der [Dokumentation zu JanusGraph](http://docs.janusgraph.org/latest/index.html).
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Übersicht über Compose for JanusGraph" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 Weitere Videos zu {{site.data.keyword.composeForJanusGraph}} finden Sie im [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
 {: .tip}

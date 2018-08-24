@@ -40,7 +40,7 @@ Nach dem Abschluss der Skalierung wird die Anzeige _Bereitstellungsdetails_ aktu
 
 ### Hauptspeicher skalieren
 
-Wenn Sie über einen relativ kleinen Datensatz verfügen aber komplexe Abfragen ausführen müssen, können Sie die Speicherknoten auf einer Standardgröße von 5 GB belassen und den Hauptspeicher der Engineknoten skalieren, um die Leistung bei den Abfragen zu steigern. Bitte fordern Sie Unterstützung an, um die Speicherkapazität der Janus Graph Engine-Knoten zu erweitern. 
+Wenn Sie über einen relativ kleinen Datensatz verfügen aber komplexe Abfragen ausführen müssen, können Sie die Speicherknoten auf einer Standardgröße von 5 GB belassen und den Hauptspeicher der Engineknoten skalieren, um die Leistung bei den Abfragen zu steigern. Bitte fordern Sie Unterstützung an, um die Speicherkapazität der Janus Graph Engine-Knoten zu erweitern.
 
 
 ## Kennwort aktualisieren

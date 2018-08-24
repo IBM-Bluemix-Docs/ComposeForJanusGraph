@@ -19,23 +19,20 @@ Un service {{site.data.keyword.composeForJanusGraph_full}} démarre en tant que 
 
 La configuration de base inclut également deux portails HAProxy pour les accès, HTTPS et les listes blanches d'adresses IP. Ces portails disposent chacun de 64 Mo de mémoire.
 
-### Coût
 Le prix de la configuration du service de base est défini. Consultez les vignettes du catalogue sur {{site.data.keyword.cloud_notm}} pour connaître la tarification de base dans votre devise locale. Par exemple, le prix de base en dollars US est de 116 $/mois. Il inclut les 5 unités du cluster JanusGraph Storage à 90 $/mois et les 2 unités de JanusGraph Engine à 26 $/mois.
 
+## Augmentation des ressources
 
-## Options d'extension
 La configuration optimale de mémoire et de stockage variera selon l'utilisation et la charge de travail. Si vous avez besoin de davantage de stockage pour des jeux de données volumineux ou de plus de mémoire pour votre des requêtes complexes, vous pouvez augmenter les ressources allouées au stockage fourni par le cluster JanusGraph Storage et à la mémoire fournie par les noeuds JanusGraph Engine. 
 
 Les clusters de stockage augmentent par unités de 1 Go et le prix unitaire _inclut_ le coût d'augmentation des ressources dans tous les noeuds du cluster. Une mise à l'échelle du stockage est disponible dans l'onglet _Paramètres_ du service.
  
 Les noeuds JanusGraph Engine augmentent par unités de 256 Mo de mémoire et le prix unitaire _inclut_ le coût d'augmentation des ressources dans les deux noeuds. La mise à l'échelle de la mémoire n'est actuellement disponible qu'en prenant contact avec le support.
 
-### Coût
+## Calcul du coût de votre déploiement
+{: #tiered-pricing}
+
 Chaque unité supplémentaire JanusGraph Storage (1 Go) et chaque unité supplémentaire de mémoire JanusGraph Engine (256 Mo) a un prix unitaire indiqué dans votre devise locale dans la vignette du catalogue {{site.data.keyword.cloud_notm}} du service. En dollars US, chaque unité JanusGraph Storage coûte 18 $ et chaque unité JanusGraph Engine 13 $. Le prix unitaire diminue proportionnellement à l'augmentation de la taille _totale_ de vos services {{site.data.keyword.composeForJanusGraph}}, selon le barème indiqué dans le tableau de [tarification différenciée](#tiered-pricing).
-
-## Tarification différenciée
-
-### Tarification différenciée pour {{site.data.keyword.composeForJanusGraph}} Storage
 
 Nombre d'unités JanusGraph Storage|Prix unitaire
 ----------|-----------
@@ -49,7 +46,7 @@ Nombre d'unités JanusGraph Storage|Prix unitaire
 5000 unités et plus|70 % de réduction -- soit 5,40 USD/unité
 {: caption="Tableau 1. Tarification différenciée pour {{site.data.keyword.composeForJanusGraph}} Storage" caption-side="top"}
 
-### Tarification différenciée pour {{site.data.keyword.composeForJanusGraph}} Engine
+## Tarification différenciée pour {{site.data.keyword.composeForJanusGraph}} Engine
 
 Nombre d'unités JanusGraph Engine|Prix unitaire
 ----------|-----------

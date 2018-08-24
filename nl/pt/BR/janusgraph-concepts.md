@@ -11,7 +11,7 @@ JanusGraph é um banco de dados de gráfico. É possível criar, consultar e cor
 
 Para ler mais sobre o JanusGraph, veja a [Documentação do JanusGraph](http://docs.janusgraph.org/latest/index.html).
 
-<iframe class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe title="Visão geral do Compose for JanusGraph" class="embed-responsive-item" id="youtubeplayer" type="text/html" width="640" height="390" src="//www.youtube.com/embed/zTaoMWv6lnE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 É possível localizar mais vídeos sobre o {{site.data.keyword.composeForJanusGraph}} no [IBM Compose for JanusGraph Learning Center](http://ibm.biz/janusgraph-learning).
 {: .tip}

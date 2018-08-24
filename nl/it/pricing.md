@@ -19,23 +19,20 @@ Un servizio {{site.data.keyword.composeForJanusGraph_full}} viene fornito come u
 
 La configurazione di base include anche i due portali HAProxy per l'accesso, HTTPS e la whitelist IP. Hanno 64MB di memoria ognuno.
 
-### Costo
 La configurazione del servizio di base a un prezzo fissato. Consulta i tile del catalogo {{site.data.keyword.cloud_notm}} per i prezzi di base nella tua valuta locale. Ad esempio, il prezzo di base in dollari US è $116/mese. Questo include le 5 unità del cluster di archiviazione JanusGraph a $90/mese le 2 unità del motore JanusGraph a $26/mese.
 
+## Aumento delle risorse
 
-## Opzioni di espansione
 Il trovare la configurazione ottimale di memoria e archiviazione varierà tra i casi di utilizzo e i carichi di lavoro. Se hai bisogno di ulteriore archiviazione per dataset di grandi dimensioni o di memoria aggiuntiva per query complesse, puoi aumentare le risorse assegnate all'archiviazione fornita dal cluster di archiviazione JanusGraph e la memoria fornita dai nodi del motore JanusGraph. 
 
 I cluster di archiviazione vengono incrementati in unità di 1GB e il prezzo per unità _include_ il costo dell'incremento delle risorse in tutti i nodi nel cluster. Il ridimensionamento dell'archiviazione è disponibile nella scheda _Settings_ del servizio.
  
 I nodi del motore vengono incrementati per unità di 256MB di memoria e il prezzo per unità _include_ il costo dell'incremento su entrambi i nodi. Al momento, il ridimensionamento è disponibile solo contattando il supporto.
 
-### Costo
+## Calcolo del costo della tua distribuzione
+{: #tiered-pricing}
+
 Ogni unità aggiuntiva (1GB) di archiviazione JanusGraph e ogni unità di memoria del motore JanusGraph (256MB) ha un prezzo per unità che viene elencato nella tua valuta corrente nel tile del catalogo {{site.data.keyword.cloud_notm}} per il servizio. In dollari US, ogni unità di archiviazione JanusGraph è $18 e ogni unità del motore JanusGraph è $13. Quando la dimensione _totale_ di tutti i tuoi servizi {{site.data.keyword.composeForJanusGraph}} aumenta, il prezzo per unità diminuisce, come mostrato nei [prezzi a livelli](#tiered-pricing).
-
-## Prezzi a livelli
-
-### Prezzi a livelli dell'archiviazione {{site.data.keyword.composeForJanusGraph}}
 
 Numero di unità di archiviazione JanusGraph|Prezzo per unità
 ----------|-----------
@@ -49,7 +46,7 @@ Numero di unità di archiviazione JanusGraph|Prezzo per unità
 5.000+ unità|70% di riduzione -- $5.40 USD/Unità di archiviazione
 {: caption="Tabella 1. Prezzi a livelli di {{site.data.keyword.composeForJanusGraph}}" caption-side="top"}
 
-### Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}}
+## Prezzi a livelli della memoria {{site.data.keyword.composeForJanusGraph}}
 
 Numero di unità di memoria JanusGraph|Prezzo per unità
 ----------|-----------

@@ -19,23 +19,20 @@ Um serviço {{site.data.keyword.composeForJanusGraph_full}} começa como um clus
 
 A configuração base também inclui dois portais HAProxy para acesso, HTTPS e lista de aplicativos confiáveis IP. Eles têm 64 MB de memória cada um.
 
-### Total
 A configuração de serviço de base tem um preço definido. Consulte o ladrilho de catálogo no {{site.data.keyword.cloud_notm}} para precificação base em sua moeda local. Por exemplo, o preço base em dólares americanos é US$ 116/mês. Isso inclui as 5 unidades para o cluster do JanusGraph Storage a US$ 90/mês e as 2 unidades para o JanusGraph Engine a US$ 26/mês.
 
+## Aumentando recursos
 
-## Opções de expansão
 A descoberta da configuração ideal de memória e armazenamento variará entre os casos de uso e cargas de trabalho. Se você precisar de armazenamento adicional para conjuntos de dados grandes ou memória adicional para consultas complexas, poderá aumentar os recursos alocados para ambos, o armazenamento fornecido pelo cluster do JanusGraph Storage e a memória fornecida pelos nós do JanusGraph Engine. 
 
 O aumento de clusters de armazenamento em unidades de 1 GB e o preço por unidade _incluem_ o custo para aumentar os recursos em todos os nós no cluster. O ajuste de escala de armazenamento está disponível na guia _Configurações_ do serviço.
  
 O aumento de unidades de 256 MB de memória dos nós de mecanismo e o preço por unidade _incluem_ o custo para aumentar os recursos em ambos os nós. Atualmente, o ajuste de escala de memória está disponível apenas por meio do contato de suporte.
 
-### Total
+## Calculando o custo de sua implementação
+{: #tiered-pricing}
+
 Cada unidade adicional (1 GB) do JanusGraph Storage e cada unidade adicional de memória do JanusGraph Engine (256 MB) têm um preço por unidade que é listado em sua moeda local no quadro de catálogo do {{site.data.keyword.cloud_notm}} para o serviço. Em dólares americanos, cada unidade do JanusGraph Storage é US$ 18 e cada unidade do JanusGraph Engine é US$ 13. Conforme o tamanho _total_ de todos os serviços do {{site.data.keyword.composeForJanusGraph}} aumenta, o preço por unidade diminui, conforme mostrado na [precificação em camadas](#tiered-pricing).
-
-## Precificação em camadas
-
-### Precificação em camadas do {{site.data.keyword.composeForJanusGraph}} Storage
 
 Número de unidades do JanusGraph Storage|Preço por unidade
 ----------|-----------
@@ -49,7 +46,7 @@ Número de unidades do JanusGraph Storage|Preço por unidade
 + de 5.000 unidades|70% redução -- US$ 5,40/Unidade do Storage
 {: caption="Tabela 1. Precificação em camadas do {{site.data.keyword.composeForJanusGraph}} Storage" caption-side="top"}
 
-### Precificação em camadas de memória do {{site.data.keyword.composeForJanusGraph}}
+## Precificação em camadas de memória do {{site.data.keyword.composeForJanusGraph}}
 
 Número de unidades do JanusGraph Engine|Preço por unidade
 ----------|-----------

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,12 +23,12 @@ lastupdated: "2017-09-13"
 `name`|数据库部署名称。
 `db_type`|服务所提供的数据库类型；在本例中为 `JanusGraph`。
 `uri_cli`|`CURL`命令行，用于说明如何使用基于令牌的认证来发送 gremlin 查询。
-`uri_cli_1`|连接到数据库实例的替代 `CURL` 命令行。
+`uri_cli_1`|连接到数据库实例的第二个 `CURL` 命令行。
 `maps`|未使用
 `uri`|连接到服务时使用的 `https` URI，包括服务器的主机名和要连接到的端口号。请参阅[连接外部应用程序](./connecting-external.html)。
-`uri_direct_1`|用于连接到服务的替代 `https` URI。
+`uri_direct_1`|用于连接到服务的第二个 `https` URI。
 `misc`|包含 `session`、`websocket` 和 `gremlin_console_yaml` 字段的父字段。
-`misc.session`| `https` URI，用户可以使用该 URI 来检索可用于与服务交互的 60 分钟认证令牌。请参阅[连接外部应用程序 - 令牌认证](./connecting-external.html#token-authentication)。
+`misc.session`|`https` URI，用户可以使用该 URI 来检索可用于与服务交互的 60 分钟认证令牌。请参阅[连接外部应用程序 - 令牌认证](./connecting-external.html#token-authentication)。
 `misc.websocket`|`wss` URI，在使用 Websocket 连接到服务时使用。请参阅[连接外部应用程序 - Websocket](./connecting-external.html#websockets)。
 `misc.gremlin_console_yaml`|YAML 信息，用于配置 Gremlin Console 以连接到服务。请参阅[连接外部应用程序 - Gremlin Console](./connecting-external.html#gremlin-console)。
 {: caption="表 1. Compose for JanusGraph 凭证" caption-side="top"}
@@ -114,4 +114,4 @@ lastupdated: "2017-09-13"
   $ cf push
   ```
 
-有关将应用程序与 {{site.data.keyword.cloud_notm}} 服务配合使用的更多信息，请参阅[将服务添加到应用程序](https://console.bluemix.net/docs/services/reqnsi.html#add_service)。
+有关将应用程序与 {{site.data.keyword.cloud_notm}} 服务配合使用的更多信息，请参阅[将服务添加到应用程序](https://console.{DomainName}/docs/services/reqnsi.html#add_service)。

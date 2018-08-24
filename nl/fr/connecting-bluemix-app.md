@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017,2018
-lastupdated: "2017-09-13"
+lastupdated: "2018-05-08"
 ---
 
 {:new_window: target="_blank"}
@@ -23,10 +23,10 @@ Nom de zone|Description
 `name`|Nom du déploiement de base de données.
 `db_type`|Type de base de données fourni par le service, en l'occurrence, `JanusGraph`.
 `uri_cli`|Ligne de commande `CURL` qui illustre comment envoyer une requête gremlin avec une authentification basée sur un jeton.
-`uri_cli_1`|Ligne de commande `CURL` alternative qui permet d'établir la connexion à l'instance de base de données.
+`uri_cli_1`|Seconde ligne de commande `CURL` qui permet d'établir la connexion à l'instance de base de données.
 `maps`|non utilisé
 `uri`|Identificateur URI `https` qui est utilisé pour la connexion au service et qui comprend le nom d'hôte du serveur et le numéro de port auquel se connecter. Voir [Connexion d'une application externe](./connecting-external.html).
-`uri_direct_1`|Identificateur URI `https` alternatif pour la connexion au service.
+`uri_direct_1`|Second identificateur URI `https` pour la connexion au service.
 `misc`|Zone parent qui contient les zones `session`, `websocket` et `gremlin_console_yaml`.
 `misc.session`| Identificateur URI `https` permettant d'extraire un jeton d'authentification valable 60 minutes pouvant être utilisé pour interagir avec le service. Voir [Connexion d'une application externe - Authentification par jeton](./connecting-external.html#token-authentication).
 `misc.websocket`|Identificateurs URI `wss` utilisés lors de la connexion au service à l'aide de Websockets. Voir [Connexion d'une application externe - Websockets](./connecting-external.html#websockets).
@@ -114,4 +114,4 @@ Votre application a besoin d'analyser les variables d'environnement Cloud Foundr
   $ cf push
   ```
 
-Pour plus d'informations sur l'utilisation des applications avec des services {{site.data.keyword.cloud_notm}}, voir [Ajout d'un service à votre application](https://console.bluemix.net/docs/services/reqnsi.html#add_service).
+Pour plus d'informations sur l'utilisation des applications avec des services {{site.data.keyword.cloud_notm}}, voir [Ajout d'un service à votre application](https://console.{DomainName}/docs/services/reqnsi.html#add_service).

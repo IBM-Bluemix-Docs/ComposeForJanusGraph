@@ -76,7 +76,7 @@ def g=ConfiguredGraphFactory.open("example").traversal();
 g.V().has(T.label, "god").outE().inV().path();
 ```
 
-查詢結果的圖形視覺效果看起來類似：
+查詢結果的圖形視覺效果看起來如下：
 
 ![神祇的圖形視覺效果、它們的 'out' 邊緣，以及 'in' 頂點。](./images/databrowser_edgesvertices.png)
 

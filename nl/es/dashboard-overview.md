@@ -2,7 +2,7 @@
 
 Copyright:
   years: 2017,2018
-lastupdated: "2017-11-15"
+lastupdated: "2018-05-07"
 ---
 
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ El panel _Detalles de despliegue_ muestra detalles del servicio.
 
 El tipo de base de datos que ofrece el servicio y la versión de la base de datos que utiliza el servicio. Si hay disponible una versión de base de datos más reciente, se mostrará una notificación, junto con un enlace a la sección [Actualizar versión](/docs/services/ComposeForJanusGraph/dashboard-settings.html#upgrade-version) del panel de control de servicio.
 
-### Nombre
+### ID
 
 Un identificador interno para el servicio.
 

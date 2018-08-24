@@ -35,12 +35,12 @@ Os backups diários de seu banco de dados são planejados automaticamente. Para 
 
   ![Available backups](./images/janusgraph-backups-show.png "A list of available backups, including a pending backup")
 
-Clique na linha correspondente para expandir as opções para qualquer backup disponível.
-  ![Backup Options](./images/janusgraph-backups-options.png "Options for a backup.") 
+Clique na linha correspondente para expandir as opções de qualquer backup disponível.
+  ![Opções de backup](./images/janusgraph-backups-options.png "Opções para um backup.") 
 
 ### Usando a API para visualizar backups existentes
 
-Uma lista de backups está disponível no terminal `GET /2016-07/deployments/:id/backups`. O Terminal Foundation com o ID da instância de serviço e o ID da implementação são ambos mostrados na _Visão geral_ do serviço. Por exemplo: 
+Uma lista de backups está disponível no terminal `GET /2016-07/deployments/:id/backups`. O Terminal base com o ID da instância de serviço e o ID de implementação são mostrados na _Visão geral_ do serviço. Por exemplo: 
 ``` 
 https://composebroker-dashboard-public.mybluemix.net/api/2016-07/instances/$INSTANCE_ID/deployments/$DEPLOYMENT_ID/backups
 ```  
@@ -51,7 +51,7 @@ Além de backups planejados, é possível criar um backup manualmente. Para cria
 
 ### Usando a API para criar um backup
 
-Envie uma solicitação POST para o terminal de backups para iniciar um backup manual: `POST /2016-07/deployments/:id/backups`. Ele é imediatamente retornado com o ID do recibo e as informações sobre o backup enquanto ele está sendo executado. Será necessário verificar no terminal de backups se o backup foi concluído e localizar o backup_id antes de usá-lo. Use `GET /2016-07/deployments/:id/backups/`.
+Envie uma solicitação POST para o terminal de backups para iniciar um backup manual: `POST /2016-07/deployments/:id/backups`. Ele retorna imediatamente com o ID da orientação e informações sobre o backup conforme ele está em execução. Será necessário verificar no terminal de backups se o backup foi concluído e localizar o backup_id antes de usá-lo. Use `GET /2016-07/deployments/:id/backups/`.
 
 ## Restaurando um backup
 
@@ -60,35 +60,35 @@ Para restaurar um backup para uma nova instância de serviço, siga as etapas pa
 ### Restaurando por meio da CLI {{site.data.keyword.cloud_notm}}
 
 Use as etapas a seguir para restaurar um backup de um serviço do JanusGraph em execução para um novo serviço do JanusGraph usando a CLI do {{site.data.keyword.cloud_notm}}. 
-1. Se necessário, [faça download e instale-o](https://console.bluemix.net/docs/cli/index.html#overview). 
+1. Se necessário, [faça download e instale-o](https://console.{DomainName}/docs/cli/index.html#overview). 
 2. Localize o backup do qual gostaria de restaurar na página _Backups_ em seu serviço e copie o ID do backup.  
   **Ou**  
-  Use o `GET /2016-07/deployments/:id/backups` para localizar um backup e seu ID por meio da API Compose. O Terminal Foundation e o ID da instância de serviço são ambos mostrados na _Visão geral_ do serviço. Por exemplo: 
+  Use o `GET /2016-07/deployments/:id/backups` para localizar um backup e seu ID por meio da API do Compose. O Terminal base e o ID da instância de serviço são ambos mostrados na _Visão geral_ do serviço. Por exemplo: 
   ``` 
   https://composebroker-dashboard-public.mybluemix.net/api/2016-07/instances/$INSTANCE_ID/deployments/$DEPLOYMENT_ID/backups
   ```  
-  A resposta terá uma lista de todos os backups disponíveis para essa instância de serviço. Selecione o backup do qual gostaria de restaurar e copie seu ID.
+  A resposta contém uma lista de todos os backups disponíveis para essa instância de serviço. Selecione o backup do qual gostaria de restaurar e copie seu ID.
 
-3. Efetue login com a conta e as credenciais apropriadas. `bx login` (ou `bx login -help` para ver todas as opções de login).
+3. Efetue login com a conta e as credenciais apropriadas. `ibmcloud login` (ou `ibmcloud login -help` para ver todas as opções de login).
 
-4. Alterne para sua Organização e Espaço `bx target -o "$YOUR_ORG" -s "YOUR_SPACE"`
+4. Alterne para a sua Organização e Espaço `ibmcloud target -o "$YOUR_ORG" -s "YOUR_SPACE"`
 
 5. Use o comando `service create` para provisionar um novo serviço e forneça o serviço de origem e o backup específico que você está restaurando em um objeto JSON. Por exemplo:
 ``` 
-bx service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": "$BACKUP_ID" }'
+ibmcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": "$BACKUP_ID" }'
 ```
-  O campo _SERVICE_ deve ser compose-for-janusgraph e o campo _PLAN_ deve ser Padrão ou Corporativo dependendo de seu ambiente. _SERVICE\_INSTANCE\_NAME_ é onde você colocará o nome para o seu novo serviço. O _source\_service\_instance\_id_ é o ID da instância de serviço da origem do backup; ele pode ser obtido executando `bx cf service DISPLAY_NAME --guid` em que _DISPLAY\_NAME_ é o nome do serviço do JanusGraph do qual o backup é feito. 
+  Para _SERVICE_, use o valor `compose-for-janusgraph`; para _PLAN_, use Padrão ou Corporativo, dependendo de seu ambiente. _SERVICE\_INSTANCE\_NAME_ é onde você coloca o nome de seu novo serviço. O _source\_service\_instance\_id_ é o ID da instância de serviço da origem do backup; ele pode ser obtido executando `ibmcloud cf service DISPLAY_NAME --guid`, em que _DISPLAY\_NAME_ é o nome do serviço JanusGraph do qual o backup é feito. 
   
-  Os usuários corporativos também precisarão especificar em qual cluster implementar no objeto JSON com o parâmetro `"cluster_id": "$CLUSTER_ID"`.
+  Se você for um usuário Corporativo, também será necessário especificar em qual cluster implementar no objeto JSON com o parâmetro `"cluster_id": "$CLUSTER_ID"`.
   
-### Migrando para uma nova versão
+### Fazendo upgrade para uma nova versão
 
-Alguns upgrades de versão principal não estão disponíveis na implementação em execução atual. Será necessário provisionar um novo serviço que está executando a versão com upgrade e, em seguida, migrar seus dados nele usando um backup. Esse processo é o mesmo que a restauração de um backup acima, exceto que você especificará a versão para a qual gostaria de fazer ugrade.
+Alguns upgrades de versão principal não estão disponíveis na implementação em execução atual. É necessário provisionar um novo serviço que esteja executando a versão submetida a upgrade e, em seguida, migrar seus dados para ele usando um backup. Esse processo é o mesmo que restaurar um backup, exceto que aqui você especifica a versão para a qual deseja fazer upgrade.
 
 ``` 
-bx service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": ""$BACKUP_ID", "db_version":"$VERSION_NUMBER" }'
+bimcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": ""$BACKUP_ID", "db_version":"$VERSION_NUMBER" }'
 ```
 
-Por exemplo, restaurar uma versão mais velha de um serviço do {{site.data.keyword.composeForJanusGraph}} para um novo serviço executando o JanusGraph 0.1.1 será semelhante ao seguinte:
+Por exemplo, a restauração de uma versão mais antiga de um serviço {{site.data.keyword.composeForJanusGraph}} para um novo serviço que executa o JanusGraph 0.1.1 é semelhante a esta:
 ```
-bx service create compose-for-janusgraph Standard migrated_janusgraph -c '{ "source_service_instance_id": "0269e284-dcac-4618-89a7-f79e3f1cea6a", "backup_id":"5a96d8a7e16c090018884566", "db_version":"0.1.1"  }'
+ibmcloud service create compose-for-janusgraph Standard migrated_janusgraph -c '{ "source_service_instance_id": "0269e284-dcac-4618-89a7-f79e3f1cea6a", "backup_id":"5a96d8a7e16c090018884566", "db_version":"0.1.1"  }'
