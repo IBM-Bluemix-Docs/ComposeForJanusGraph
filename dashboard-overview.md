@@ -33,9 +33,9 @@ An internal identifier for the service.
 
 The size of your database and the amount of storage provided by your service plan.
 
-## Current Jobs
+## Recent Tasks
 
-Making administrative changes to your service (such as scaling, or taking a manual backup) starts a job. While a job is running, the _Current Jobs_ panel appears on the _Overview_ page, showing the job name and a progress bar. When the job is complete, the _Current Jobs_ panel no longer appears on the _Overview_ page.
+Making administrative changes to your service (such as scaling, or taking a manual backup) starts a task. While task is running, the _Recent Tasks_ panel shows the task name and a progress bar.
 
 ## Connection Strings
 
