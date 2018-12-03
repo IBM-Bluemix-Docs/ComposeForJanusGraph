@@ -21,7 +21,7 @@ For an overview of {{site.data.keyword.composeForJanusGraph}}, see [JanusGraph C
 
 ## Creating a Compose for JanusGraph service instance
 
-[Create a {{site.data.keyword.composeForJanusGraph}} instance](https://console.{DomainName}/catalog/services/compose-for-janusgraph/).
+[Create a {{site.data.keyword.composeForJanusGraph}} instance](https://{DomainName}/catalog/services/compose-for-janusgraph/).
 
 When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Leave the service unbound; you can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud}} application](./connecting-bluemix-app.html).
 
@@ -37,7 +37,7 @@ You can manage your service from the service dashboard. Here you can find inform
 
 For more information, see [Settings](./dashboard-settings.html).
 
-{{site.data.keyword.composeForJanusGraph}} relies on Cloud Foundry roles to manage access to the service. Only users with the Developer role can see or use the service dashboard. For more information on Cloud Foundry roles, see the [Cloud Foundry access](https://console.{DomainName}/docs/iam/cfaccess.html#cfaccess) and the [Managing Cloud Foundry access](https://console.{DomainName}/docs/iam/mngcf.html#mngcf) pages.
+{{site.data.keyword.composeForJanusGraph}} relies on Cloud Foundry roles to manage access to the service. Only users with the Developer role can see or use the service dashboard. For more information on Cloud Foundry roles, see the [Cloud Foundry access](https://{DomainName}/docs/iam/cfaccess.html#cfaccess) and the [Managing Cloud Foundry access](https://{DomainName}/docs/iam/mngcf.html#mngcf) pages.
 {: tip}
 
 ## Connecting to Compose for JanusGraph

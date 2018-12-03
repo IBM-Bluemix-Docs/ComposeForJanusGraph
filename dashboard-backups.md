@@ -60,7 +60,7 @@ To restore a backup to a new service instance, follow the steps to view existing
 ### Restoring via the {{site.data.keyword.cloud_notm}} CLI
 
 Use the following steps to restore a backup from a running JanusGraph service to a new JanusGraph service using the {{site.data.keyword.cloud_notm}} CLI. 
-1. If you need to, [download and install it](https://console.{DomainName}/docs/cli/index.html#overview). 
+1. If you need to, [download and install it](https://{DomainName}/docs/cli/index.html#overview). 
 2. Find the backup you would like to restore from on the _Backups_ page on your service and copy the backup id.  
   **Or**  
   Use the `GET /2016-07/deployments/:id/backups` to find a backup and its ID through the Compose API. The Foundation Endpoint and the service instance ID are both shown in the service's _Overview_. For example: 
