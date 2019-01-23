@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  years: 2017,2018
-lastupdated: "2018-03-27"
+  years: 2017,2019
+lastupdated: "2019-01-09"
 ---
 
 {:new_window: target="_blank"}
@@ -11,8 +11,8 @@ lastupdated: "2018-03-27"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Getting started with Compose for JanusGraph
-{: #getting-started-with-compose-for-janusgraph}
+# About {{site.data.keyword.composeForJanusGraph}}
+{: #about-compose-for-janusgraph}
 
 {{site.data.keyword.composeForJanusGraph_full}} is a scalable graph database that is optimized for storing and querying highly interconnected data that is modeled as millions or billions of vertices and edges. Simple and efficient retrieval of data from these complex structures is enabled by JanusGraph’s Apache Tinkerpop(TM) compatibility, which allows you to perform efficient queries that would be difficult or impossible with a traditional relational database. {{site.data.keyword.composeForJanusGraph}} makes JanusGraph even better by managing it for you, offering an easy, scalable deployment system that delivers high availability and redundancy, automated no-stop backups and much more.
 {:shortdesc}
@@ -23,17 +23,17 @@ For an overview of {{site.data.keyword.composeForJanusGraph}}, see [JanusGraph C
 
 [Create a {{site.data.keyword.composeForJanusGraph}} instance](https://{DomainName}/catalog/services/compose-for-janusgraph/).
 
-When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Leave the service unbound; you can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud}} application](./connecting-bluemix-app.html).
+When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Then, leave the service unbound. You can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud}} application](./connecting-bluemix-app.html).
 
-When you provision your service instance, you can choose the *Standard* or *Enterprise* plans. With the *Enterprise* plan, you can provision your instance into an available {{site.data.keyword.composeEnterprise}} cluster. {{site.data.keyword.composeEnterprise}} provides the security and isolation required by enterprise compliance and uses dedicated networking to ensure the performance of the deployed databases. See the [{{site.data.keyword.composeEnterprise}} documentation](/docs/services/ComposeEnterprise/index.html) for more details.
+When you provision your service instance, you can choose the *Standard* or *Enterprise* plans. With the *Enterprise* plan, you can provision your instance into an available {{site.data.keyword.composeEnterprise}} cluster. {{site.data.keyword.composeEnterprise}} provides the security and isolation that is required by enterprise compliance and uses dedicated networking to ensure the performance of the deployed databases. See the [{{site.data.keyword.composeEnterprise}} documentation](/docs/services/ComposeEnterprise/index.html) for more details.
 
 ## Managing Compose for JanusGraph
 
 You can manage your service from the service dashboard. Here you can find information about your {{site.data.keyword.cloud_notm}} Compose database and how to connect to it. You can also:
-- manage your backups
-- allocate more resources for your service
-- change the service password
-- use whitelists to restrict access to your databases. 
+- Manage your backups.
+- Allocate more resources for your service.
+- Change the service password.
+- Use whitelists to restrict access to your databases. 
 
 For more information, see [Settings](./dashboard-settings.html).
 

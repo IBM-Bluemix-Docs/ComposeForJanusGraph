@@ -1,8 +1,8 @@
 ---
 
 Copyright:
-  years: 2017,2018
-lastupdated: "2018-03-27"
+  years: 2017,2019
+lastupdated: "2019-01-11"
 ---
 
 {:new_window: target="_blank"}
@@ -19,9 +19,9 @@ These features allow you to adapt your {{site.data.keyword.composeForJanusGraph_
 
 ## Upgrade Version
 
-If there is a new version of the database available, a drop-down menu appears, allowing you to select which version you would like to upgrade to. Otherwise, your service is on the newest version available, and the panel displays the current version information.
+If a new version of the database is available, a drop-down menu appears, from which you can select which version you would like to upgrade to. Otherwise, your service is on the newest version available, and the pane displays the current version information.
 
-![The Version panel](./images/janusgraph-version-show.png "The Version panel")
+![The Version pane](./images/janusgraph-version-show.png "The Version pane")
 
 
 ## Scaling Resources
@@ -40,48 +40,50 @@ When the scaling is complete the _Deployment Details_ pane updates to show the c
 
 ### Scaling Memory
 
-If you have a relatively small data set but need to execute complex queries, you may keep the storage nodes at the default size of 5GB, and scale the memory of the Engine nodes up to make your queries more performant. To add memory to Janus Graph Engine nodes, please contact support.
+If you have a relatively small data set but need to execute complex queries, you may keep the storage nodes at the default size of 5 GB, and scale the memory of the Engine nodes up to make your queries more performant. To add memory to Janus Graph Engine nodes, please contact support.
 
 
-## Update Password
+## Changing the password
 
-You might find it necessary to change the password of your service. You can do so using _Update Password_. 
+You might find it necessary to change the password of your service.
 
-A new, randomly generated password will appear, or you can type your own password into the field. To regenerate another password, click on the dice to the right of the field. 
+1. Go to the _Change Password_ panel. 
+
+  You can use the randomly generated password that is created for you, or you can type your own password into the field. To regenerate a new random password, click the dice. 
   
-![Updating the etcd password](./images/janusgraph-update-password.png "The automatic password generator")
+  ![Updating the JanusGraph password](./images/janusgraph-update-password.png "The automatic password generator")
 
-Click **Update Password**. You will be asked to confirm the change. Click **Update Password** in the dialog to confirm the new password, or cancel to cancel the change. The _Deployment Details_ pane will show the progress of the running job.
+2. Click **Update Password**. You are asked to confirm the change.
+3. Click **Update Password** in the dialog to confirm the new password, or click **cancel** to cancel the change. The _Deployment Details_ pane shows the progress of the running job.
 
 **Note:** Changing the password changes the credentials that you and your services use to connect, and invalidates your service's connection string. It can also result in downtime.
 
 ### Updating Connected Applications
-Changing the password will invalidate the existing connection string and generate a new one. This will cause a service interruption until connected applications are updated with the new connection string. You will have to do this by suppling the new connection string to your applications.
 
-More information on connecting your applications is in [Connecting an {{site.data.keyword.cloud}} Application](./connecting-bluemix-app.html).
-and [Connecting an external application](./connecting-external.html).
+Changing the password invalidates the existing connection string and generate a new one. This can cause a service interruption until connected applications are updated with the new connection string.
 
 
-## Using Whitelists
+## Whitelists
 
-If you want to restict access to your databases, you can whitelist specific IP addresses or ranges of IP addresses on your service. When there are no IP addresses in the whitelist, the whitelist is disabled and the deployment will accept connections from any system on the internet.
+If you want to restrict access, to your databases, you can whitelist specific IP addresses or ranges of IP addresses on your service. When the whitelist is empty, it is disabled and the deployment accepts connections from any system on the internet.
 
 ![Whitelisting IPs](./images/janusgraph-whitelist-show.png "The whitelist fields.")
 
-### IP Addresses
+### IP addresses
 The *IP* field can take a single complete IPv4 address or IPv6 address with or without a netmask. Without a netmask, incoming connections must come from exactly that IP address. 
 
-Note that although the IP entry allows for IPv6, no Compose deployments are currently available to IPv6 networking and so these addresses cannot be filtered on.
+Although the *IP* field allows for IPv6, no Compose deployments are currently available to IPv6 networking, so these addresses cannot be filtered on.
 
 ### Netmasks
-To allow a connection from a specified range of IP addresses, use a netmask. The IP address must be fully specified when using a netmask. That means entering, for example, 192.168.1.0/24 rather than 192.168.1/24.
+
+Use a netmask to allow a connection from a specified range of IP addresses. The IP address must be fully specified, which means entering, for example, 192.168.1.0/24 rather than 192.168.1/24.
 
 ### Description
-The *Description* can be any user-significant text for identifying the whitelist entry - a customer name, project identifier or employee number, for example. The description field is required.
+The *Description* can be any user-significant text for identifying the whitelist entry - a customer name, project identifier, or employee number, for example. The description field is required.
 
 ### Compose Services
-We automatically add whitelist entries to Compose's servers to allow them to connect.
+Whitelist entries are automatically added to Compose's servers to allow them to connect.
 
 ### Removal
-To remove an IP address or netmask from the Whitelist, click the *Remove* entry displayed next to it.
-When all entries on the whitelist are removed, the whitelist will be disabled and all IP addresses will be accepted by the TCP access portals.
+To remove an IP address or netmask from the Whitelist, click *Remove* next to the IP address.
+When all entries on the whitelist are removed, the whitelist is disabled and all IP addresses are accepted by the TCP access portals or Mongos router portals.

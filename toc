@@ -8,6 +8,7 @@ Compose For JanusGraph
 	index.md
 	pricing.md
 	janusgraph-concepts.md
+	getting-started.md
 	janusgraph-hosted-notes.md
 
 	{: .topicgroup}
@@ -19,8 +20,6 @@ Compose For JanusGraph
 	{: .topicgroup}
 	Tutorials
 		[Video: Getting started with Compose for JanusGraph](https://developer.ibm.com/clouddataservices/docs/janusgraph/get-started/)
-		tutorial-https.md
-		tutorial-gremlin-console.md
 	{: .navgroup-end}
 
 
@@ -29,6 +28,7 @@ Compose For JanusGraph
 	
 	{: .topicgroup}
 	Connecting to Compose for JanusGraph
-		connecting-external.md
+		connecting-http-websockets.md
+		connecting-gremlin-console.md
 		connecting-bluemix-app.md
 	{: .navgroup-end}

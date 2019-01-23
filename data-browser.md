@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017,2018
-lastupdated: "2017-09-01"
+  years: 2017,2019
+lastupdated: "2019-01-07"
 ---
 
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ The link to the Data Browser is located on the _Dashboard Overview_ page of your
 
 This is a view of the Data Browser after a first query has been run.
 
-![A view of the Data Browser when it is launched](./images/databrowser_taggedFullscreenbrowser.png "A view of the Data Browser when it is launchedshowing the Query Builder, query output in JSON and visual forms, and a welcome message an tutorial.")
+![A view of the Data Browser when it is launched](./images/databrowser_taggedFullscreenbrowser.png "A view of the Data Browser when it is launched; showing the Query Builder, query output in JSON and visual forms, and a welcome message an tutorial.")
 
 The Data Browser shows the Query Builder **(1)**, where you create, edit and execute your queries. Below the Query Builder is a Query Response card **(2)**. New cards are inserted at the top of the card stack. The previous top card was the interactive introduction to the browser **(3)**, which is displayed when you launch the browser.
 
@@ -61,7 +61,7 @@ If your query result can be visualized, the card displays a graph showing the ve
 For example, using the Graph of the Gods sample database, a query to find vertices that have the label 'God' would be as follows:
 
 ```groovy
-def g=ConfiguredGraphFactory.open("example").traversal();
+g=ConfiguredGraphFactory.open("example").traversal();
 g.V().has(T.label, "god");
 ```
 
@@ -72,7 +72,7 @@ The query produces the following response card and visualization, showing all th
 The following query produces a result that shows the 'god' vertices together with any edges that go out from them, and the vertices that those edges go into:
 
 ```groovy
-def g=ConfiguredGraphFactory.open("example").traversal();
+g=ConfiguredGraphFactory.open("example").traversal();
 g.V().has(T.label, "god").outE().inV().path();
 ```
 
@@ -90,7 +90,7 @@ The Gremlin documentation on [path-step](http://tinkerpop.apache.org/docs/curren
 For example, the following query returns only vertices:
 
 ```groovy
-def g=ConfiguredGraphFactory.open("example").traversal();
+g=ConfiguredGraphFactory.open("example").traversal();
 g.V().outE().inV()
 ```
 
@@ -101,7 +101,7 @@ The resulting visualization also contains only vertices.
 You can alter the query response by adding `path()` to the same query.
 
 ```groovy
-def g=ConfiguredGraphFactory.open("example").traversal();
+g=ConfiguredGraphFactory.open("example").traversal();
 g.V().outE().inV().path()
 ```
 
