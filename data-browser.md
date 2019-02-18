@@ -13,6 +13,7 @@ lastupdated: "2019-01-07"
 {:tip: .tip}
 
 # Using the JanusGraph Data Browser
+{: #data-browser}
 
 Exploring your graph data from the command line can be a complex task, and it can be difficult to form traversals. It can be hard to visualize the results, returned as text or JSON output, in terms of digestible graph relationships. This is where the Browser for JanusGraph on Compose comes in.
 

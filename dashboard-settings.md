@@ -13,6 +13,7 @@ lastupdated: "2019-01-11"
 {:tip: .tip}
 
 # Settings
+{: #dashboard-settings}
 
 These features allow you to adapt your {{site.data.keyword.composeForJanusGraph_full}} service to better suit your needs and requirements.
 

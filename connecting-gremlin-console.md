@@ -13,6 +13,7 @@ lastupdated: "2019-01-11"
 {:tip: .tip}
 
 # Connecting to JanusGraph with the Gremlin Console
+{: #gremlin-console}
 
 ## Gremlin Console
 
@@ -25,7 +26,7 @@ To configure Gremlin Console, you provide a YAML file with the appropriate detai
 To install the Gremlin Console,
 
 1. Ensure that you have a recent version of Java installed.
-2. Download [Gremlin Console version 3.3.3](https://archive.apache.org/dist/tinkerpop/3.2.3/apache-tinkerpop-gremlin-console-3.3.3-bin.zip).
+2. Download [Gremlin Console version 3.3.3](https://archive.apache.org/dist/tinkerpop/3.3.3/apache-tinkerpop-gremlin-console-3.3.3-bin.zip).
 3. Unzip the downloaded file to a working directory.
 4. Using the command line or terminal, change directory into the root Gremlin Console directory and verify the download by executing `bin/gremlin.sh`:
 

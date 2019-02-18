@@ -12,6 +12,7 @@ lastupdated: "2019-01-11"
 {:pre: .pre}
 
 # Connecting an {{site.data.keyword.cloud_notm}} application
+{: #ibmcloud-cf-app}
 
 To connect an {{site.data.keyword.cloud}} application to your service, use the service credentials that are created when the service is provisioned.
 
@@ -25,12 +26,12 @@ Field Name|Description
 `uri_cli`|A `CURL` command-line that illustrates how to send a gremlin query with token-based authentication.
 `uri_cli_1`|A secondary `CURL` command-line that connects to the database instance.
 `maps`|Unused
-`uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to. See [Connecting an external application](./connecting-external.html).
+`uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to. See [Connecting an external application](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-external-app).
 `uri_direct_1`|A secondary `https` URI for connecting to the service.
 `misc`|A parent field that contains the `session`, `websocket`, and `gremlin_console_yaml` fields.
-`misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting an external application - Token Authentication](./connecting-external.html#token-authentication).
-`misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting an external application - Websockets](./connecting-external.html#websockets).
-`misc.gremlin_console_yaml`|YAML information that is used to configure the Gremlin console to connect to the service.  See [Connecting an external application - Gremlin Console](./connecting-external.html#gremlin-console).
+`misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets#token-authentication).
+`misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets#websockets).
+`misc.gremlin_console_yaml`|YAML information that is used to configure the Gremlin console to connect to the service.  See [Connecting to JanusGraph with the Gremlin Console](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console).
 {: caption="Table 1. Compose for JanusGraph credentials" caption-side="top"}
 
 ## Using the credentials
@@ -53,11 +54,6 @@ If you have an application that isn't uploaded to {{site.data.keyword.cloud_notm
 1. Log in to your {{site.data.keyword.cloud_notm}} account
 2. Download and install the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli) tool
 3. Connect to {{site.data.keyword.cloud_notm}} in the command-line tool and follow the prompts to log in.
-
-  ```
-  $ cf api https://api.ng.bluemix.net
-  $ cf login
-  ```
 
 4. Open your application's `manifest.yml` file.
 
@@ -114,4 +110,4 @@ Your application needs to parse the Cloud Foundry environvent variables. In Node
   $ cf push
   ```
 
-For more information on using applications with {{site.data.keyword.cloud_notm}} services, see [Adding a service to your app](https://{DomainName}/docs/services/reqnsi.html#add_service).
+For more information on using applications with {{site.data.keyword.cloud_notm}} services, see [Adding a service to your app](/docs/resources/connect_external_app?topic=resources-externalapp).

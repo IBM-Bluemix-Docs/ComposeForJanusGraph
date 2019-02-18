@@ -13,12 +13,13 @@ lastupdated: "2019-01-11"
 {:tip: .tip}
 
 # Connecting to JanusGraph with HTTP or WebSockets
+{: #http-websockets}
 
 JanusGraph supports connections that use HTTP requests or over WebSockets. All connections are performed over HTTPS and require authentication. HTTP-based requests support basic and token authentication. For anything other than a one-off call on the JanusGraph deployment, using WebSockets or Token Authentication results in better performance. Basic authentication is an expensive process that slows down requests.
 
 Communication between client and database takes place in Gremlin, a dialect of the Groovy language customized for querying graph structures and the database responding to those queries. 
 
-You can also send requests by using the Gremlin Console. For details on how to get, install, configure, and use the Gremlin Console, see [Connecting to JanusGraph with the Gremlin Console](./connecting-gremlin-console) and [Getting Started with JanusGraph](./getting-started.html#with-gremlin-console).
+You can also send requests by using the Gremlin Console. For details on how to get, install, configure, and use the Gremlin Console, see [Connecting to JanusGraph with the Gremlin Console](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console) and [Getting Started with JanusGraph](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-getting-started).
 {: tip}
 
 ## HTTP requests
