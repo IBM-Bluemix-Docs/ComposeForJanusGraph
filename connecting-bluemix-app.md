@@ -56,8 +56,7 @@ If you have an application that isn't uploaded to {{site.data.keyword.cloud_notm
 3. Connect to {{site.data.keyword.cloud_notm}} in the command-line tool and follow the prompts to log in.
 
 4. Open your application's `manifest.yml` file.
-
-  - Change the `host` value to something unique. The host that you choose determines the subdomain of your application's URL:  `<host>.mybluemix.net`.
+  - Change the `route` value to something unique. The route that you choose determines the subdomain of your application's URL: `<route>.{region}.cf.appdomain.cloud`. Be sure the `{region}` matches where your application is deployed.
   - Change the `name` value. The value that you choose is the name of the app as it appears in your {{site.data.keyword.cloud_notm}} dashboard.
 
 5. Update the `services` value in `manifest.yml` to match the name of your service. `manifest.yml` will now look similar to
@@ -65,12 +64,13 @@ If you have an application that isn't uploaded to {{site.data.keyword.cloud_notm
   ```
   ---
   applications:
-  - name:    compose-janusgraph-sample-service
-    host:    compose-janusgraph-sample-service
-    memory:  256M
+  - name: compose-janusgraph-helloworld-nodejs
+    routes:
+      - route: compose-janusgraph-helloworld-nodejs.us-south.cf.appdomain.cloud
+    memory:  128M
     services:
-      - compose-janusgraph-sample-app
-  ```
+      - example-compose-for-janusgraph
+```
 
 ### Accessing and using the credentials
 
