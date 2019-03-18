@@ -3,6 +3,9 @@
 copyright:
   years: 2017,2019
 lastupdated: "2019-01-11"
+
+subcollection: compose-for-janusgraph
+
 ---
 
 # JanusGraph Concepts

@@ -3,6 +3,9 @@
 copyright:
   years: 2016,2019
 lastupdated: "2019-01-11"
+
+subcollection: compose-for-janusgraph
+
 ---
 
 {:new_window: target="_blank"}
