@@ -3,6 +3,8 @@ copyright:
   years: '2015, 2019'
 lastupdated: '2019-01-07'
 
+keywords: janusgraph, compose
+
 subcollection: compose-for-janusgraph
 
 ---

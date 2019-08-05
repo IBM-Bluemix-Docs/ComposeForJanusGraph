@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="compose-for-janusgraph" audience="service" arm="3663056" href="/docs/services/ComposeForJanusGraph/index.html" path="services/ComposeForJanusGraph"}
+{: .toc subcollection="compose-for-janusgraph" audience="service" category="databases" arm="3663056" href="/docs/services/ComposeForJanusGraph/index.html" path="services/ComposeForJanusGraph"}
 Compose For JanusGraph
 
 	{: .navgroup id="learn"}
@@ -16,6 +16,7 @@ Compose For JanusGraph
 		dashboard-overview.md
 		dashboard-backups.md
 		dashboard-settings.md
+		dashboard-metrics.md
 
 	{: .topicgroup}
 	Tutorials

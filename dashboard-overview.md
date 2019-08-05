@@ -4,6 +4,8 @@ Copyright:
   years: 2017,2018
 lastupdated: "2018-01-11"
 
+keywords: janusgraph, compose
+
 subcollection: compose-for-janusgraph
 
 ---
