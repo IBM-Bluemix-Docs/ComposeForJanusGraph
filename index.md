@@ -26,11 +26,11 @@ For an overview of {{site.data.keyword.composeForJanusGraph}}, see [JanusGraph C
 
 ## Creating a Compose for JanusGraph service instance
 
-[Create a {{site.data.keyword.composeForJanusGraph}} instance](https://{DomainName}/catalog/services/compose-for-janusgraph/).
+[Create a {{site.data.keyword.composeForJanusGraph}} instance](https://{DomainName}/catalog/services/compose-for-janusgraph).
 
 When you create an instance of the service, ensure that you choose both a name for your service and a credential name. Then, leave the service unbound. You can connect an application to your service later by using the credentials that are provided when the service is provisioned. The various credential values and how to use them in an application are detailed in [Connecting an {{site.data.keyword.cloud}} application](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-ibmcloud-cf-app).
 
-When you provision your service instance, you can choose the *Standard* or *Enterprise* plans. With the *Enterprise* plan, you can provision your instance into an available {{site.data.keyword.composeEnterprise}} cluster. {{site.data.keyword.composeEnterprise}} provides the security and isolation that is required by enterprise compliance and uses dedicated networking to ensure the performance of the deployed databases. See the [{{site.data.keyword.composeEnterprise}} documentation](/docs/services/ComposeEnterprise/index.html) for more details.
+When you provision your service instance, you can choose the *Standard* or *Enterprise* plans. With the *Enterprise* plan, you can provision your instance into an available {{site.data.keyword.composeEnterprise}} cluster. {{site.data.keyword.composeEnterprise}} provides the security and isolation that is required by enterprise compliance and uses dedicated networking to ensure the performance of the deployed databases. See the [{{site.data.keyword.composeEnterprise}} documentation](/docs/services/ComposeEnterprise?topic=compose-enterprise-about) for more details.
 
 ## Managing Compose for JanusGraph
 

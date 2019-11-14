@@ -65,7 +65,7 @@ To restore a backup to a new service instance, follow the steps to view existing
 ### Restoring via the {{site.data.keyword.cloud_notm}} CLI
 
 Use the following steps to restore a backup from a running JanusGraph service to a new JanusGraph service by using the {{site.data.keyword.cloud_notm}} CLI. 
-1. If you need to, [download and install it](/docs/cli?topic=cloud-cli-overview). 
+1. If you need to, [download and install it](/docs/cli/reference/ibmcloud?topic=cloud-cli-getting-started). 
 2. Find the backup that you would like to restore from on the _Backups_ page on your service and copy the backup ID.  
   **Or**  
   Use the `GET /2016-07/deployments/:id/backups` to find a backup and its ID through the Compose API. The Foundation Endpoint and the service instance ID are both shown in the service's _Overview_. For example, 
@@ -89,7 +89,6 @@ ibmcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_
 ### Upgrading to a new version
 
 Some major version upgrades are not available in the current running deployment. You need to provision a new service that is running the upgraded version, and then migrate your data into it using a backup. This process is the same a restoring a backup, except here you specify the version that you want to upgrade to.
-
 ``` 
 ibmcloud service create SERVICE PLAN SERVICE_INSTANCE_NAME -c '{"source_service_instance_id": "$SERVICE_INSTANCE_ID", "backup_id": ""$BACKUP_ID", "db_version":"$VERSION_NUMBER" }'
 ```

@@ -31,7 +31,7 @@ Field Name|Description
 `uri_cli`|A `CURL` command-line that illustrates how to send a gremlin query with token-based authentication.
 `uri_cli_1`|A secondary `CURL` command-line that connects to the database instance.
 `maps`|Unused
-`uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to. See [Connecting an external application](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-external-app).
+`uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to.
 `uri_direct_1`|A secondary `https` URI for connecting to the service.
 `misc`|A parent field that contains the `session`, `websocket`, and `gremlin_console_yaml` fields.
 `misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets#token-authentication).

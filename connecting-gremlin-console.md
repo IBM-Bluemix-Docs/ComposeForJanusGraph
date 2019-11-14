@@ -20,8 +20,6 @@ subcollection: compose-for-janusgraph
 # Connecting to JanusGraph with the Gremlin Console
 {: #gremlin-console}
 
-## Gremlin Console
-
 The Gremlin Console is the essential tool for working with Tinkerpop enabled servers. Gremlin Console uses the WebSockets connectivity, but does not use the URI syntax for connecting. You need to configure it to work with the connection.
 
 To configure Gremlin Console, you provide a YAML file with the appropriate details in it. You can find this configuration in the _Gremlin Console YAML_ panel on the service dashboard overview page.
@@ -52,7 +50,7 @@ To install the Gremlin Console,
 
 5. Configure the Gremlin Console. You can find your Gremlin Console YAML on the *Overview* page of your {{site.data.keyword.composeForJanusGraph}} service. Save one of the configurations to a file in the `conf` directory. In this example, we save it as `conf/compose.yaml`.
  
-## Connecting to Compose for JanusGraph
+## Connecting
 
 To verify the connection, execute `bin/gremlin.sh` again. Then, use the `:remote` command to connect to the tinkerpop server.
 

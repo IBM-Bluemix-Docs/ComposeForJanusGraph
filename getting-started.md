@@ -155,4 +155,4 @@ curl -XPOST -d '{"gremlin": "graph=ConfiguredGraphFactory.open(\"example\"); g=g
 The use of `graph` for the graph and `g` for the traversal source is common.
 {: tip}
 
-Documentation and examples that use the Graph of the Gods are in the [JanusGraph Gremlin documentation](https://docs.janusgraph.org/latest/gremlin.html#_introductory_traversals).
+Documentation and examples that use the Graph of the Gods are in the [JanusGraph Gremlin documentation](https://docs.janusgraph.org/basics/gremlin/#introductory-traversals).
