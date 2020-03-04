@@ -17,7 +17,7 @@ subcollection: compose-for-janusgraph
 {:pre: .pre}
 
 # About {{site.data.keyword.composeForJanusGraph}}
-{: #about-compose-for-janusgraph}
+{: #about}
 
 {{site.data.keyword.composeForJanusGraph_full}} is a scalable graph database that is optimized for storing and querying highly interconnected data that is modeled as millions or billions of vertices and edges. Simple and efficient retrieval of data from these complex structures is enabled by JanusGraph’s Apache Tinkerpop(TM) compatibility, which allows you to perform efficient queries that would be difficult or impossible with a traditional relational database. {{site.data.keyword.composeForJanusGraph}} makes JanusGraph even better by managing it for you, offering an easy, scalable deployment system that delivers high availability and redundancy, automated no-stop backups and much more.
 {:shortdesc}
