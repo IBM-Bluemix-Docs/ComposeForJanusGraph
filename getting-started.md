@@ -57,11 +57,11 @@ If the request is successful, JanusGraph returns a response:
 Add your Connection String on to the end of each of the CURL commands in the tutorial.
 {: tip}
 
-To learn more about connecting over HTTP and extending that to connect with WebSockets, see the [Connecting with HTTP and Websockets](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets)
+To learn more about connecting over HTTP and extending that to connect with WebSockets, see the [Connecting with HTTP and Websockets](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets)
 
 ### With Gremlin Console
 
-Using the Gremlin Console requires installation and setup. See the [Connecting with the Gremlin Console](/docs/services/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console) page for detailed instructions, if you need them.
+Using the Gremlin Console requires installation and setup. See the [Connecting with the Gremlin Console](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console) page for detailed instructions, if you need them.
 
 Once you have installed the package and configured the YAML file, you can test your connection to your deployment by executing `bin/gremlin.sh`. Then, use the `:remote` command to connect to the tinkerpop server.
 
