@@ -6,7 +6,7 @@ lastupdated: "2019-01-11"
 
 keywords: janusgraph, compose
 
-subcollection: compose-for-janusgraph
+subcollection: ComposeForJanusGraph
 
 ---
 
@@ -34,9 +34,9 @@ Field Name|Description
 `uri`|The `https` URI that is used when connecting to the service, which includes the host name of server and port number to connect to.
 `uri_direct_1`|A secondary `https` URI for connecting to the service.
 `misc`|A parent field that contains the `session`, `websocket`, and `gremlin_console_yaml` fields.
-`misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets#token-authentication).
-`misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets#websockets).
-`misc.gremlin_console_yaml`|YAML information that is used to configure the Gremlin console to connect to the service.  See [Connecting to JanusGraph with the Gremlin Console](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console).
+`misc.session`| An `https` URI that one uses to retrieve a 60-minute authentication token that can be used to interact with the service. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-http-websockets#token-authentication).
+`misc.websocket`|The `wss` URIs that are used when connecting to the service using Websockets. See [Connecting to JanusGraph with HTTP or WebSockets](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-http-websockets#websockets).
+`misc.gremlin_console_yaml`|YAML information that is used to configure the Gremlin console to connect to the service.  See [Connecting to JanusGraph with the Gremlin Console](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-gremlin-console).
 {: caption="Table 1. Compose for JanusGraph credentials" caption-side="top"}
 
 ## Using the credentials

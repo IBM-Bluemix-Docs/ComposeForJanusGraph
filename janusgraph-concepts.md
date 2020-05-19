@@ -6,7 +6,7 @@ lastupdated: "2019-01-11"
 
 keywords: janusgraph, compose
 
-subcollection: compose-for-janusgraph
+subcollection: ComposeForJanusGraph
 
 ---
 

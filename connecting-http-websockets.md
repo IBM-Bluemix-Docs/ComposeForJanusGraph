@@ -6,7 +6,7 @@ lastupdated: "2019-01-11"
 
 keywords: janusgraph, compose, websockets
 
-subcollection: compose-for-janusgraph
+subcollection: ComposeForJanusGraph
 
 ---
 
@@ -24,7 +24,7 @@ JanusGraph supports connections that use HTTP requests or over WebSockets. All c
 
 Communication between client and database takes place in Gremlin, a dialect of the Groovy language customized for querying graph structures and the database responding to those queries. 
 
-You can also send requests by using the Gremlin Console. For details on how to get, install, configure, and use the Gremlin Console, see [Connecting to JanusGraph with the Gremlin Console](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console) and [Getting Started with JanusGraph](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-getting-started).
+You can also send requests by using the Gremlin Console. For details on how to get, install, configure, and use the Gremlin Console, see [Connecting to JanusGraph with the Gremlin Console](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-gremlin-console) and [Getting Started with JanusGraph](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-getting-started).
 {: tip}
 
 ## HTTP requests

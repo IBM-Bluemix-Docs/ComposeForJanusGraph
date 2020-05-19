@@ -6,7 +6,7 @@ lastupdated: "2018-01-11"
 
 keywords: janusgraph, compose
 
-subcollection: compose-for-janusgraph
+subcollection: ComposeForJanusGraph
 
 ---
 
@@ -29,7 +29,7 @@ The _Deployment Details_ panel shows details of your service.
 
 ### Type
 
-The type of database that is offered by the service, and the database version that your service uses. If a more recent database version is available, a notification is displayed, together with a link to the [Upgrade version](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-dashboard-settings) section of your service dashboard.
+The type of database that is offered by the service, and the database version that your service uses. If a more recent database version is available, a notification is displayed, together with a link to the [Upgrade version](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-dashboard-settings) section of your service dashboard.
 
 ### ID
 
@@ -45,7 +45,7 @@ Making administrative changes to your service (such as scaling, or taking a manu
 
 ## Connection Strings
 
-Connection Strings are used to connect to your JanusGraph deployment. Detailed information about connecting is on the [Connecting with HTTP and WebSockets](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-http-websockets) and the [Connecting with the Gremlin Console](/docs/ComposeForJanusGraph?topic=compose-for-janusgraph-gremlin-console) pages.
+Connection Strings are used to connect to your JanusGraph deployment. Detailed information about connecting is on the [Connecting with HTTP and WebSockets](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-http-websockets) and the [Connecting with the Gremlin Console](/docs/ComposeForJanusGraph?topic=ComposeForJanusGraph-gremlin-console) pages.
 
 ### Session
 
